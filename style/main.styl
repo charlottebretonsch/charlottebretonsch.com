@@ -1,1 +1,138 @@
+// VARIABLES
 
+color-dark = #333
+color-dark-high = color-dark - 44%
+color-dark-medium = color-dark - 60%
+color-dark-low = color-dark - 76%
+color-light = #FFF
+color-light-high = color-light - 5%
+color-accent = #D00149
+
+font-weight-medium = 500
+font-weight-light = 300
+
+size-grid = 0.8rem
+size-line = 0.2rem
+
+
+
+
+
+
+
+
+// SET UP
+
+html
+  height              100%
+  font-size           62.5%
+
+body
+  height              100%
+  font-family         'Roboto', sans-serif
+  color               color-dark
+
+*
+  margin              0
+  padding             0
+  text-decoration     none
+  outline             none
+  border              none
+  -webkit-box-sizing  border-box
+  -moz-box-sizing     border-box
+  box-sizing          border-box
+
+li
+  list-style          none
+
+img
+  display             block
+
+a
+  color               inherit
+  cursor              pointer
+
+.clearfix
+  clear               both
+
+.clearfix:before,
+.clearfix:after
+  content             " "
+  display             table
+
+.clearfix:after
+  clear               both
+
+
+
+
+
+
+
+
+// TYPOGRAPHY
+
+h1, h2, h3, strong
+  font-weight         font-weight-medium
+
+h1
+  font-size           size-grid * 3
+  line-height         size-grid * 3.5
+
+h2
+  font-size           size-grid * 2.5
+  line-height         size-grid * 3
+
+h3
+  font-size           size-grid * 2
+  line-height         size-grid * 2.5
+
+p
+  font-size           size-grid * 1.75
+  line-height         size-grid * 2.5
+  font-weight         font-weight-light
+
+#navigation li, #logo, .button
+  text-transform      uppercase
+  font-weight         font-weight-light
+
+#navigation li, #logo
+  font-size           size-grid * 2.5
+  line-height         size-grid * 2.5
+
+.button
+  font-size           size-grid * 2
+  line-height         size-grid * 2.5
+
+
+
+
+
+
+
+
+// HEADER
+
+.container
+  min-height          100%
+  padding-top         size-grid * 16.5
+  padding-bottom      size-grid * 7
+
+#header
+  width               100%
+  padding             size-grid * 7
+  border-bottom       size-line solid color-light-high
+  position            fixed
+  top                 0
+  z-index             15
+
+#logo
+  float               left
+
+#navigation
+  width               50%
+  float               right
+
+#navigation li
+  padding-left        size-grid * 3
+  float               right
