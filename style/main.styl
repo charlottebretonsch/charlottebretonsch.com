@@ -96,11 +96,11 @@ p
   font-weight         font-weight-light
   margin-top         size-grid
 
-#navigation li, #logo, .button
+nav li, #logo, .button
   text-transform      uppercase
   font-weight         font-weight-light
 
-#navigation li, #logo
+nav li, #logo
   font-size           size-grid * 2.5
   line-height         size-grid * 2.5
 
@@ -139,12 +139,10 @@ li a:hover
   border              size-line solid color-dark
   display             inline-block
   cursor              pointer
-  transition          background 0.5s ease-out
-  transition          color 0.5s ease-out
+  transition          background 0.5s ease-out, color 0.5s ease-out
 
 .button:hover
-  transition          background 0.5s ease-in
-  transition          color 0.5s ease-in
+  transition          background 0.5s ease-in, color 0.5s ease-in
   background          color-dark
   color               color-light
 
@@ -163,21 +161,21 @@ li a:hover
   padding             size-grid * 3.5
   display             block
 
-#aside
+aside
   min-height          100%
   width               size-grid * 46
   padding             size-grid * 3.5
   display             inline
   float               left
 
-#content
+main
   width               calc(100% - 36.8rem) // MODIFY to use size-grid
   min-height          100%
   padding             size-grid * 3.5
   display             inline
   float               right
 
-.article-glimpse
+article
   width               100%
   height              size-grid * 32
   padding             size-grid * 4
@@ -199,7 +197,7 @@ li a:hover
     bottom              size-grid * 4
     left                size-grid * 4
 
-.article-glimpse:last-child
+article:last-child
   margin-bottom        0
 
 
@@ -219,7 +217,7 @@ li a:hover
 
 // HEADER
 
-#header
+header
   width               100%
   padding             size-grid * 7
   border-bottom       size-line solid color-light-high
@@ -230,10 +228,10 @@ li a:hover
 #logo
   float               left
 
-#navigation
+nav
   width               50%
   float               right
 
-#navigation li
+nav li
   padding-left        size-grid * 3
   float               right
