@@ -5,6 +5,7 @@
   "repository": "git@github.com:charlottebretonsch/charlottebretonsch.com.git",
   "scripts": {
     "dev": "webpack-dashboard -- webpack-dev-server",
+    "build": "webpack",
     "pretest": "standard"
   },
   "dependencies": {
