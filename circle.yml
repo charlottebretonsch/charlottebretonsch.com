@@ -22,3 +22,10 @@ jobs:
           key: yarn
           paths:
             - ~/.yarn
+
+      - deploy:
+          name: Deploy
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              yarn build && yarn deploy -- --token "$FIREBASE_TOKEN"
+            fi
