@@ -74,19 +74,19 @@ a
 
 // TYPOGRAPHY
 
-h1, h2, h3, strong
+h2, h3, h4, strong
   font-weight         font-weight-medium
 
-h1
+h2
   font-size           size-grid * 3
   line-height         size-grid * 3.5
 
-h2
+h3
   font-size           size-grid * 2.5
   line-height         size-grid * 3
   margin-bottom       size-grid * 2
 
-h3
+h4
   font-size           size-grid * 2
   line-height         size-grid * 2.5
 
@@ -96,11 +96,11 @@ p
   font-weight         font-weight-light
   margin-top         size-grid
 
-nav li, #logo, .button
+nav li, h1, .button
   text-transform      uppercase
   font-weight         font-weight-light
 
-nav li, #logo
+nav li, h1
   font-size           size-grid * 2.5
   line-height         size-grid * 2.5
 
@@ -118,7 +118,7 @@ nav li, #logo
 
 // MAIN
 
-.container
+main
   width               100%
   min-height          100%
   padding-top         (size-grid * 16.5) + size-line
@@ -155,7 +155,7 @@ li a:hover
 
 // PAGE
 
-#page
+section.page
   min-height          100% // help
   width               100%
   padding             size-grid * 3.5
@@ -168,7 +168,7 @@ aside
   display             inline
   float               left
 
-main
+.page-content
   width               calc(100% - 36.8rem) // MODIFY to use size-grid
   min-height          100%
   padding             size-grid * 3.5
@@ -225,7 +225,7 @@ header
   top                 0
   z-index             15
 
-#logo
+h1
   float               left
 
 nav
@@ -235,3 +235,12 @@ nav
 nav li
   padding-left        size-grid * 3
   float               right
+
+
+
+
+
+
+
+
+// END
