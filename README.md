@@ -2,4 +2,5 @@
 
 ## How to:
 
+- install? `yarn`
 - dev? `yarn dev`
