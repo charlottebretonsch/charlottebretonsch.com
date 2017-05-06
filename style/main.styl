@@ -113,15 +113,17 @@ header
   display             flex
   justify-content     space-between
 
-ul
-  display             flex
-  justify-content     flex-end
+  nav
+    ul
+      display             flex
+      justify-content     flex-end
 
-ul li
-  padding-left        size-grid * 3
+    ul
+      li
+        padding-left        size-grid * 3
 
-  &:first-child
-    padding-left        0
+      &:first-child
+        padding-left        0
 
 
 
@@ -163,10 +165,9 @@ li a:hover
 
 
 
-// PAGE
+// SECTIONS
 
 section.page
-  min-height          100% // help
   width               100%
   padding             size-grid * 3.5
   display             flex
