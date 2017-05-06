@@ -32,7 +32,6 @@ body
   height              100%
   font-family         'Roboto', sans-serif
   color               color-dark
-  min-width           1280px // MODIFY for responsive
 
 *
   margin              0
@@ -54,16 +53,6 @@ a
   color               inherit
   cursor              pointer
 
-.clearfix
-  clear               both
-
-.clearfix:before,
-.clearfix:after
-  content             " "
-  display             table
-
-.clearfix:after
-  clear               both
 
 
 
@@ -115,13 +104,34 @@ nav li, h1
 
 
 
+// HEADER
 
-// MAIN
-
-main
+header
   width               100%
-  min-height          100%
-  padding-top         (size-grid * 16.5) + size-line
+  padding             size-grid * 7
+  border-bottom       size-line solid color-light-high
+  display             flex
+  justify-content     space-between
+
+ul
+  display             flex
+  justify-content     flex-end
+
+ul li
+  padding-left        size-grid * 3
+
+  &:first-child
+    padding-left        0
+
+
+
+
+
+
+
+
+
+// ACTIONS
 
 li a
   padding             size-grid 0
@@ -159,21 +169,16 @@ section.page
   min-height          100% // help
   width               100%
   padding             size-grid * 3.5
-  display             block
+  display             flex
+  justify-content     space-between
 
 aside
-  min-height          100%
   width               size-grid * 46
   padding             size-grid * 3.5
-  display             inline
-  float               left
+  flex-shrink         0
 
-.page-content
-  width               calc(100% - 36.8rem) // MODIFY to use size-grid
-  min-height          100%
+main
   padding             size-grid * 3.5
-  display             inline
-  float               right
 
 article
   width               100%
@@ -182,59 +187,23 @@ article
   margin-bottom       size-grid * 2
   background          color-light-high
   position            relative
+  display             flex
+  justify-content     space-between
 
-  .info
-    width               calc(100% - 33.2rem) // MODIFY to use size-grid
-    float               left
-
-  .glimpse // MODIFY to transform to image
+  .glimpse
     width               size-grid * 37.5
     height              size-grid * 24
-    float               right
+    margin-left         size-grid * 4
 
-  a
+  a.button
     position            absolute
     bottom              size-grid * 4
     left                size-grid * 4
 
-article:last-child
-  margin-bottom        0
+  &:last-child
+    margin-bottom        0
 
 
-
-
-
-
-
-// ARTICLE
-
-
-
-
-
-
-
-
-// HEADER
-
-header
-  width               100%
-  padding             size-grid * 7
-  border-bottom       size-line solid color-light-high
-  position            absolute
-  top                 0
-  z-index             15
-
-h1
-  float               left
-
-nav
-  width               50%
-  float               right
-
-nav li
-  padding-left        size-grid * 3
-  float               right
 
 
 
