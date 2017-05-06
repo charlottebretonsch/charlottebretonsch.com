@@ -4,7 +4,8 @@
   "author": "Charlotte Breton Schreiner <charlottebretonsch@gmail.com>",
   "repository": "git@github.com:charlottebretonsch/charlottebretonsch.com.git",
   "scripts": {
-    "dev": "webpack-dashboard -- webpack-dev-server"
+    "dev": "webpack-dashboard -- webpack-dev-server",
+    "pretest": "standard"
   },
   "dependencies": {
     "prop-types": "^15.5.8",
@@ -20,6 +21,7 @@
     "css-loader": "^0.28.1",
     "pug": "^2.0.0-rc.1",
     "pug-loader": "^2.3.0",
+    "standard": "^10.0.2",
     "style-loader": "^0.17.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",

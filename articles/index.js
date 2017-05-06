@@ -1,5 +1,5 @@
-import personas from './personas.pug';
+import personas from './personas.pug'
 
 export default {
   personas
-};
+}

@@ -1,28 +1,27 @@
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+import React, { PureComponent } from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import { About, Article, Contact, Header, Home } from './components';
+import { About, Article, Contact, Header, Home } from './components'
 
 class Layout extends PureComponent {
-  render() {
+  render () {
     return <BrowserRouter>
       <div>
-        <Header/>
+        <Header />
 
         <main>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/contact" component={Contact} />
-            <Route path="/work/:slug" component={Article} />
+            <Route exact path='/' component={Home} />
+            <Route exact path='/about' component={About} />
+            <Route exact path='/contact' component={Contact} />
+            <Route path='/work/:slug' component={Article} />
           </Switch>
         </main>
       </div>
-    </BrowserRouter>;
+    </BrowserRouter>
   }
 }
 
-Layout.propTypes = {};
+Layout.propTypes = {}
 
-export default Layout;
+export default Layout
