@@ -4,6 +4,7 @@
   "author": "Charlotte Breton Schreiner <charlottebretonsch@gmail.com>",
   "repository": "git@github.com:charlottebretonsch/charlottebretonsch.com.git",
   "scripts": {
+    "deploy": "firebase deploy",
     "dev": "webpack-dashboard -- webpack-dev-server",
     "build": "webpack",
     "pretest": "standard"
