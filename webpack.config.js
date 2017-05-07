@@ -37,6 +37,13 @@ module.exports = {
           'url-loader',
           'img-loader'
         ]
+      },
+      {
+        test: /\.ya?ml$/,
+        use: [
+          'json-loader',
+          'yaml-loader'
+        ]
       }
     ]
   },

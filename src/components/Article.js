@@ -6,10 +6,13 @@ import articles from '../../articles'
 class Article extends PureComponent {
   render () {
     const { match } = this.props
-    const article = articles[match.params.slug]
+    const article = articles.find(article => article.slug === match.params.slug)
 
     return <article>
-      <div dangerouslySetInnerHTML={{ __html: article() }} />
+      { article
+        ? <div dangerouslySetInnerHTML={{ __html: article.content() }} />
+        : <p>Article not found</p>
+      }
     </article>
   }
 }

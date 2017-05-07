@@ -1,5 +1,8 @@
-import personas from './personas.pug'
+import config from '../site.yml'
 
-export default {
-  personas
-}
+const articles = config.articles.map(article => ({
+  ...article,
+  content: require(`./${article.contentFile}`)
+}))
+
+export default articles
