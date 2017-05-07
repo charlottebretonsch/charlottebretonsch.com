@@ -116,6 +116,8 @@ header
   border-bottom       size-line solid color-light-high
   display             flex
   justify-content     space-between
+  background          color-light
+  z-index             3
 
   nav
     ul
@@ -236,12 +238,48 @@ article
 
 
 
-//// Page
+
+
+
+
+// PAGE
 
 section.page
   justify-content     space-between
 
 
+
+
+
+
+
+
+// ARTICLE
+
+
+
+
+//// Article navigation
+
+nav.article
+  width               100%
+  padding             size-grid * 2 size-grid * 7
+  border-bottom       size-line solid color-light-high
+  display             flex
+  justify-content     space-between
+  align-items         center
+  position            fixed
+  top                 0
+  left                0
+  background          color-light
+  z-index             2
+  opacity             0.95
+  display             none // Modify after nav interactions
+
+  a
+    margin              0
+  h3
+    margin              0
 
 
 //// Article intro
@@ -311,13 +349,6 @@ section.article.content.main
 
 section.article.content.retro
   background           color-light-high
-
-
-
-
-//// ARTICLE RETRO
-//// ARTICLE NEXT
-
 
 
 
