@@ -161,7 +161,7 @@ li a:hover
     color               color-light
 
   button-with-icon(img,img-hover)
-    position            relative
+    position            relative // Help breaks home page
     padding-right       size-grid * 5
 
     &::after
@@ -236,7 +236,7 @@ article
 
 
 
-//// PAGE
+//// Page
 
 section.page
   justify-content     space-between
@@ -244,8 +244,7 @@ section.page
 
 
 
-
-//// ARTICLE INTRO
+//// Article intro
 
 section.article.intro
   height              calc(100% - 20.4rem)
@@ -277,7 +276,7 @@ section.article.intro
 
 
 
-//// ARTICLE CONTENT
+//// Article content
 
 section.article.content
   display             flex
@@ -285,11 +284,6 @@ section.article.content
 
   main
     width               size-grid * 107
-
-  img
-    width               100%
-    margin-top          size-grid * 2
-    margin-bottom       size-grid * 2
 
   h2, h3, h4, strong, p.weak
     &:first-child
@@ -309,9 +303,14 @@ section.article.content
     margin-top          size-grid * 3
     margin-bottom       size-grid * 2
 
+section.article.content.main
+  img
+    width               100%
+    margin-top          size-grid * 2
+    margin-bottom       size-grid * 2
 
-
-
+section.article.content.retro
+  background           color-light-high
 
 
 
