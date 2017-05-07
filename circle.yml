@@ -1,0 +1,31 @@
+version: 2
+
+jobs:
+  build:
+    working_directory: ~/cbs.com
+
+    docker:
+      - image: node:7
+
+    steps:
+      - checkout
+
+      - run:
+          name: Install dependencies
+          command: yarn
+
+      - run:
+          name: Run tests
+          command: yarn test
+
+      - save_cache:
+          key: yarn
+          paths:
+            - ~/.yarn
+
+      - deploy:
+          name: Deploy
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              yarn build && yarn deploy -- --token "$FIREBASE_TOKEN"
+            fi
