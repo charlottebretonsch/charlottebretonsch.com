@@ -1,0 +1,25 @@
+---
+
+articles:
+  - title: Personas
+    slug: personas
+    description: Learn how to blah
+    contentFile: personas.pug
+    imageFile: personas.png
+
+cv:
+  education:
+    - title: School one
+      subtitle: Enki Labs - London
+      description: Blah blah blah
+      more:
+        - From sept to Jan
+        - Company size
+
+  experiences:
+    - title: Head of UX at Enki
+      subtitle: Enki Labs - London
+      description: Blah blah blah
+      more:
+        - From sept to Jan
+        - Company size
