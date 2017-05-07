@@ -19,7 +19,7 @@ class Glimpse extends PureComponent {
             <Link className="button next" to={`/work/${slug}`}>Read the article</Link>
           </nav>
         </div>
-        <img className="glimpse" src={`assets/content/${image}/glimpse.png`}/>
+        <img className="glimpse" src={ image }/>
       </article>
 
     )

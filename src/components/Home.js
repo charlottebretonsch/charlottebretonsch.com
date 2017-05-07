@@ -1,21 +1,32 @@
 import React, { PureComponent } from 'react'
+import { Link } from 'react-router-dom'
 
 import { Glimpse } from './atoms'
+
+import articles from '../../articles'
 
 class Home extends PureComponent {
   render () {
     return(
 
-      <section className="page work">
+      <section className='page work'>
 
         {/* INFOS */}
 
         <aside>
 
           <h3>Hi, I'm a designer.</h3>
-          <p>Driven by problem solving, I build products which empower people and grow businesses.</p>
-          <p>I use ergonomy and visual design to breathe life into ideas, user experience methods to drive decisions and code to deliver pixel perfect interfaces.</p>
-          <p>I love to create processes which bring teams together around one goal: make an awesome product!</p><a className="button" href="about.html" title="About">Learn more about me</a>
+          <p>
+            Driven by problem solving, I build products which empower people and grow businesses.
+          </p>
+          <p>
+            I use ergonomy and visual design to breathe life into ideas, user experience methods to drive decisions and code to deliver pixel perfect interfaces.
+          </p>
+          <p>
+            I love to create processes which bring teams together around one goal: make an awesome product!
+          </p>
+
+          <Link className='button' to='/about' title='About'>Learn more about me</Link>
 
         </aside>
 
@@ -23,14 +34,15 @@ class Home extends PureComponent {
 
         <main>
 
-          {/* Zenitth */}
-          <Glimpse
-            title="Connecting fanboys with Zenitth"
-            introduction="Learn how I used research, information architecture, interface, and prototyping in order to build my final year product."
-            tag="In-depth case study"
-            slug="Zenitth"
-            image="zenitth"
-          />
+          { articles.map(article =>
+            <Glimpse
+              title={article.title}
+              introduction={article.description}
+              tag='In-depth case study'
+              slug={article.slug}
+              image={article.glimpse}
+            />
+          )}
 
         </main>
 

@@ -1,11 +1,10 @@
 ---
 
 articles:
-  - title: Personas
-    slug: personas
-    description: Learn how to blah
-    contentFile: personas.pug
-    imageFile: personas.png
+  - title: Connecting fanboys with Zenitth
+    slug: zenitth
+    description: Learn how I used research, information architecture, interface, and prototyping in order to build my final year product.
+    contentFile: zenitth.pug
 
 cv:
   education:
