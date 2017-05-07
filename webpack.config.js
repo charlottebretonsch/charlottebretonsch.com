@@ -30,6 +30,13 @@ module.exports = {
           'css-loader',
           'stylus-loader'
         ]
+      },
+      {
+        test: /\.(png|svg)$/,
+        use: [
+          'url-loader',
+          'img-loader'
+        ]
       }
     ]
   },
