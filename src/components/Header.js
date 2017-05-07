@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 class Header extends PureComponent {
   render () {
@@ -14,13 +14,13 @@ class Header extends PureComponent {
         <nav>
           <ul>
             <li>
-              <Link to='/'>Work</Link>
+              <NavLink exact to='/'>Work</NavLink>
             </li>
             <li>
-              <Link to='/about'>About</Link>
+              <NavLink to='/about'>About</NavLink>
             </li>
             <li>
-              <Link to='/contact'>Contact</Link>
+              <NavLink to='/contact'>Contact</NavLink>
             </li>
           </ul>
         </nav>
