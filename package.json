@@ -22,6 +22,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
     "css-loader": "^0.28.1",
+    "firebase-tools": "^3.7.0",
     "img-loader": "^2.0.0",
     "pug": "^2.0.0-rc.1",
     "pug-loader": "^2.3.0",
