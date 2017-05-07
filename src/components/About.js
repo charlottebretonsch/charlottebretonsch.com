@@ -43,14 +43,14 @@ class About extends PureComponent {
 
           <h3>My work experience</h3>
 
-          { config.cv.experiences.map(exp =>
-            <Experience {...exp} />
+          { config.cv.experiences.map((exp, index) =>
+            <Experience {...exp} key={index} />
           )}
 
           <h3>My education</h3>
 
-          { config.cv.education.map(exp =>
-            <Experience {...exp} />
+          { config.cv.education.map((exp, index) =>
+            <Experience {...exp} key={index} />
           )}
         </main>
       </section>

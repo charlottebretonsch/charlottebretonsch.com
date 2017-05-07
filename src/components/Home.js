@@ -41,6 +41,7 @@ class Home extends PureComponent {
               tag='In-depth case study'
               slug={article.slug}
               image={article.glimpse}
+              key={article.slug}
             />
           )}
 
