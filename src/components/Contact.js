@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react'
-import { Link } from 'react-router-dom'
 
 class Contact extends PureComponent {
   render () {
@@ -17,7 +16,7 @@ class Contact extends PureComponent {
 
           <p><strong>charlottebretonsch@gmail.com</strong></p>
 
-          <Link to="mailto:charlottebretonsch@gmail.com" className="button">Send me an email</Link>
+          <a href="mailto:charlottebretonsch@gmail.com" className="button">Send me an email</a>
 
         </aside>
 
