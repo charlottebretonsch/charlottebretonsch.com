@@ -1,0 +1,22 @@
+// ARTICLE
+
+mixin article(title, introduction, tag)
+  article
+    div(class="info")
+      div(class="info-details")
+        h3= title
+        p= introduction
+        p  
+          strong= tag
+      nav
+        a(href="zenitth.html" title="About" class="button next") Read the article
+    img(class="glimpse" src="assets/content/zenitth/zenitth-glympse.png" alt="Image Title") 
+
+// ABOUT
+
+mixin experience(title, subtitle, description, date, details)
+  h4= title
+  h5= subtitle
+  p= description
+  p(class="weak")= date
+  p(class="weak")= details
