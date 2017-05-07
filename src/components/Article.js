@@ -1,19 +1,53 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
+import { Glimpse } from './atoms'
 import articles from '../../articles'
 
 class Article extends PureComponent {
+  getNextArticle (article) {
+    const index = articles.indexOf(article)
+    const nextIndex = index + 1 == articles.length
+      ? 0
+      : index + 1
+
+    return articles[nextIndex]
+  }
+
   render () {
     const { match } = this.props
     const article = articles.find(article => article.slug === match.params.slug)
 
-    return <article>
+    const nextArticle = this.getNextArticle(article)
+
+    const content = article.content({
+      nextArticleURL: `/work/${nextArticle.slug}`
+    })
+
+    return <div>
+      <nav className="article">
+        <h4>{ article.title }</h4>
+        <Link to={`/work/${nextArticle.slug}`} className="button next">Next article</Link>
+      </nav>
       { article
-        ? <div dangerouslySetInnerHTML={{ __html: article.content() }} />
+        ? <div dangerouslySetInnerHTML={{ __html: content }} />
         : <p>Article not found</p>
       }
-    </article>
+      <section className="article content next-article">
+        <main>
+          <h2>Next article</h2>
+
+          <Glimpse
+            title={nextArticle.title}
+            introduction={nextArticle.description}
+            tag='In-depth case study'
+            slug={nextArticle.slug}
+            image={nextArticle.glimpse}
+          />
+        </main>
+      </section>
+    </div>
   }
 }
 
