@@ -63,27 +63,43 @@ a
 
 // TYPOGRAPHY
 
-h2, h3, h4, strong, p.weak
+h2, h3, h4, h5, strong, p.weak
   font-weight         font-weight-medium
+
+  &:first-child
+    margin-top          0
+
+  &:last-child
+    margin-bottom       0
 
 h2
   font-size           size-grid * 3
   line-height         size-grid * 3.5
+  margin-top          size-grid * 5
+  margin-bottom       size-grid * 2
 
 h3
   font-size           size-grid * 2.5
   line-height         size-grid * 3
+  margin-top          size-grid * 4
   margin-bottom       size-grid * 2
 
 h4
   font-size           size-grid * 2
   line-height         size-grid * 2.5
+  margin-top          size-grid * 3
+  margin-bottom       size-grid * 2
+
+h5
+  font-size           size-grid * 1.75
+  line-height         size-grid * 2.5
+  margin-top          size-line * 2
 
 p
   font-size           size-grid * 1.75
   line-height         size-grid * 2.5
   font-weight         font-weight-light
-  margin-top          size-grid
+  margin-top          size-grid * 2
 
 nav li, h1, .button
   text-transform      uppercase
@@ -96,9 +112,16 @@ nav li, h1
 .button
   font-size           size-grid * 2
   line-height         size-grid * 2.5
+  margin-right        size-grid
+
 
 p.weak
   color               color-dark-medium !important
+h2, h3, h4, h5, strong, p.weak
+  &:first-child
+    margin-top          0
+  &:last-child
+    margin-bottom       0
 
 
 
@@ -163,7 +186,7 @@ li a:hover
     color               color-light
 
   button-with-icon(img,img-hover)
-    position            relative // Help breaks home page
+    position            relative
     padding-right       size-grid * 5
 
     &::after
@@ -227,10 +250,10 @@ article
     height              size-grid * 24
     margin-left         size-grid * 4
 
-  a.button
-    position            absolute
-    bottom              size-grid * 4
-    left                size-grid * 4
+  .info
+    display             flex
+    flex-flow           column nowrap
+    justify-content     space-between
 
   &:last-child
     margin-bottom        0
@@ -246,6 +269,25 @@ article
 
 section.page
   justify-content     space-between
+
+  main
+    width               100%
+
+
+
+
+//// Page about
+
+section.page.about
+  main
+    h4
+      margin-bottom       0
+    p
+      margin-top          size-grid
+      margin-bottom       size-grid
+    p.weak
+      font-weight         300
+      margin              size-line * 2 0
 
 
 
@@ -274,11 +316,9 @@ nav.article
   background          color-light
   z-index             2
   opacity             0.95
-  display             none // Modify after nav interactions
+  display             none // TO REMOVE when interactions done
 
-  a
-    margin              0
-  h3
+  a, h4
     margin              0
 
 
@@ -299,7 +339,6 @@ section.article.intro
 
       a.button
         margin-top          0
-        margin-right        size-grid
 
         &:last-child
           margin-right        0
@@ -322,24 +361,6 @@ section.article.content
 
   main
     width               size-grid * 107
-
-  h2, h3, h4, strong, p.weak
-    &:first-child
-      margin-top          0
-    &:last-child
-      margin-bottom       0
-
-  h2
-    margin-top          size-grid * 5
-    margin-bottom       size-grid * 2
-
-  h3
-    margin-top          size-grid * 4
-    margin-bottom       size-grid * 3
-
-  h4
-    margin-top          size-grid * 3
-    margin-bottom       size-grid * 2
 
 section.article.content.main
   img
