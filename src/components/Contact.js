@@ -4,7 +4,7 @@ class Contact extends PureComponent {
   render () {
     return (
 
-      <section className="page contact">
+      <section className='page contact'>
 
         <aside>
 
@@ -16,13 +16,13 @@ class Contact extends PureComponent {
 
           <p><strong>charlottebretonsch@gmail.com</strong></p>
 
-          <a href="mailto:charlottebretonsch@gmail.com" className="button">Send me an email</a>
+          <a href='mailto:charlottebretonsch@gmail.com' className='button'>Send me an email</a>
 
         </aside>
 
       </section>
 
-    );
+    )
   }
 }
 

@@ -7,7 +7,7 @@ class Header extends PureComponent {
 
       <header>
 
-        <Link to="/">
+        <Link to='/'>
           <h1>Charlotte Breton Schreiner</h1>
         </Link>
 
@@ -27,7 +27,7 @@ class Header extends PureComponent {
 
       </header>
 
-    );
+    )
   }
 }
 

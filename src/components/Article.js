@@ -8,7 +8,7 @@ import articles from '../../articles'
 class Article extends PureComponent {
   getNextArticle (article) {
     const index = articles.indexOf(article)
-    const nextIndex = index + 1 == articles.length
+    const nextIndex = index + 1 === articles.length
       ? 0
       : index + 1
 
@@ -26,15 +26,15 @@ class Article extends PureComponent {
     })
 
     return <div>
-      <nav className="article">
+      <nav className='article'>
         <h4>{ article.title }</h4>
-        <Link to={`/work/${nextArticle.slug}`} className="button next">Next article</Link>
+        <Link to={`/work/${nextArticle.slug}`} className='button next'>Next article</Link>
       </nav>
       { article
         ? <div dangerouslySetInnerHTML={{ __html: content }} />
         : <p>Article not found</p>
       }
-      <section className="article content next-article">
+      <section className='article content next-article'>
         <main>
           <h2>Next article</h2>
 

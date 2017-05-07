@@ -6,7 +6,7 @@ import { Experience } from './atoms'
 class About extends PureComponent {
   render () {
     return (
-      <section className="page about">
+      <section className='page about'>
         <aside>
           <h3>I love design.</h3>
 
@@ -15,23 +15,23 @@ class About extends PureComponent {
           </p>
 
           <p>
-            <strong>5 years of experience</strong><br/>
+            <strong>5 years of experience</strong><br />
             I worked for 8 different companies, including start-ups with less than 10 employees.
           </p>
 
           <p>
-            <strong>65+ projects</strong><br/>
+            <strong>65+ projects</strong><br />
             I designed hundred of projects, in various industries: health, insurance, technology, bank, education, e-commerce, travel...
           </p>
 
           <p>
-            <strong>16 hackathons</strong><br/>
+            <strong>16 hackathons</strong><br />
             I teamed up with lots of developers and won 11 prices, including 5 first place.
           </p>
 
           {/* TODO: add link to linkedin */}
-          <a className="button" href="" target="blank">My LinkedIn</a>
-          <a className="button" href="https://github.com/charlottebretonsch" target="blank">My GitHub</a>
+          <a className='button' href='' target='blank'>My LinkedIn</a>
+          <a className='button' href='https://github.com/charlottebretonsch' target='blank'>My GitHub</a>
         </aside>
 
         <main>

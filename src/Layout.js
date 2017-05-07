@@ -13,7 +13,7 @@ class Layout extends PureComponent {
       <BrowserRouter>
         <div>
 
-          <Route component={Header} />
+          <Route component={Header} />
 
           <Switch>
             <Route exact path='/' component={Home} />
@@ -24,7 +24,7 @@ class Layout extends PureComponent {
 
         </div>
       </BrowserRouter>
-    );
+    )
   }
 }
 

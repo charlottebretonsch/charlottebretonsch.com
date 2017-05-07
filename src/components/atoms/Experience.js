@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
 
 class Experience extends PureComponent {
   render () {
@@ -12,7 +11,7 @@ class Experience extends PureComponent {
         <h5>{ subtitle }</h5>
         <p>{ description }</p>
         { more.map(text =>
-          <p className="weak">{ text }</p>
+          <p className='weak'>{ text }</p>
         )}
       </div>
 

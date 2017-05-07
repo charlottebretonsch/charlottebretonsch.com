@@ -9,17 +9,17 @@ class Glimpse extends PureComponent {
     return (
 
       <article>
-        <div className="info">
-          <div className="info-details">
+        <div className='info'>
+          <div className='info-details'>
             <h3>{ title }</h3>
             <p>{ introduction }</p>
             <p><strong>{ tag }</strong></p>
           </div>
           <nav>
-            <Link className="button next" to={`/work/${slug}`}>Read the article</Link>
+            <Link className='button next' to={`/work/${slug}`}>Read the article</Link>
           </nav>
         </div>
-        <img className="glimpse" src={ image }/>
+        <img className='glimpse' src={image} />
       </article>
 
     )

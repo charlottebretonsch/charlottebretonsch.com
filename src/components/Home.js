@@ -7,7 +7,7 @@ import articles from '../../articles'
 
 class Home extends PureComponent {
   render () {
-    return(
+    return (
 
       <section className='page work'>
 
