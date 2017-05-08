@@ -1,24 +1,77 @@
 ---
 
 articles:
+
   - title: Connecting fanboys with Zenitth
     slug: zenitth
     description: Learn how I used research, information architecture, interface, and prototyping in order to build my final year product.
     contentFile: zenitth.pug
 
 cv:
+
   education:
-    - title: School one
-      subtitle: Enki Labs - London
-      description: Blah blah blah
+
+    - title: "Project management and user experience"
+      subtitle: "IESA Multimedia, alternating with Agorize – Paris, France"
+      description: "Courses: project management, user experience design, web writing, sensory marketing, digital knowledge, interaction design, user interface design, wireframing, prototyping, data mining, business model..."
       more:
-        - From sept to Jan
-        - Company size
+        - From 2014 to 2015
+        - 3rd year of college (2nd year skipped)
+
+    - title: "Front End Development and webdesign"
+      subtitle: "Fonderie de l'image, alternating with Toxicode – Paris, France"
+      description: "Courses: web design, front end development (HTML, CSS), programming (JavaScript), motion design..."
+      more:
+        - From 2013 to 2014
+        - 1st year of college
+
+    - title: "Design and applied arts"
+      subtitle: "Ecole Boulle – Paris, France"
+      description: "Courses: use case, applied research, technical art and civilization (history of art), fundamental plastic expression, technical plans, conventional representation of the image, design creation et design culture..."
+      more:
+        - From 2009 to 2012
+        - 3 years of high school
 
   experiences:
-    - title: Head of UX at Enki
-      subtitle: Enki Labs - London
-      description: Blah blah blah
+
+    - title: "Head of User Experience"
+      subtitle: "Enki Labs Inc. – London, United Kingdom"
+      description: "Enki is a mobile app which provide content to help developers improve their skills on a daily basis. My job is to advocate for the user and the user experience process. I am in primarily in charge of the research, information architecture, user interface, prototyping, visual design and data analysis. I also act as a product owner for some of our features: creation of specifications, priorisation and management. When needed, I help to improve our management tools and processes. Finally, I am responsible of many team buildings: organisation of parties (bi-weekly) and ski trip (once a year)."
       more:
-        - From sept to Jan
-        - Company size
+        - From March 2016 – Full time – Current position
+        - Startup – Less than 10 employees
+
+    - title: "UX Teacher"
+      subtitle: "Le Wagon – Paris, France"
+      description: "Le Wagon is an unconventional school to learn how to code in Ruby. Every session regroup passionate people coming from various industries, often looking to reinvent themself. As a UX Teacher, I guide students when they start their final project to help them make the product they dreamed of. I introduce them to user experience methods and organize workshops which are adapted to each team according to their level of progress."
+      more:
+        - From April 2015 – Occasionally
+        - School – 20-30 students
+
+    - title: "UX Designer"
+      subtitle: "Theodo – Paris, France"
+      description: "Theodo is a famous agile tech agency working with startups and big companies. Being the first designer in the company, I had to find solutions to implement UX methods in the Theodo agile development process as well as introducing/selling UX to our clients. Once on a project, I used all my design skills: user research, information architecture, user interfaces, visual design, prototyping and front end development. I was also in charge of some of the team buildings (star wars cinema nights, Christmas party) and internal communication (branded hoodies, powerpoint presentations)."
+      more:
+        - From November 2015 to March 2016 – Full time
+        - Agency – More than 80 employees
+
+    - title: "UX/UI Designer and Front End Developer"
+      subtitle: "Freelance – Paris, France"
+      description: "Some of my missions : establishment of UX processes in agile projects, MVP improvement using all my skills, introduction to UX Design and projects support, ergonomy and PAO for a software dedicated to jurists and lawyers, visual Identity, creation of a teaser website."
+      more:
+        - From May 2015 to November 2015 – Full time
+        - 7+ clients
+
+    - title: "UX Designer"
+      subtitle: "Agorize – Paris, France"
+      description: "Agorize is an innovation challenge platform which bring online thousands of students, developers and startups. I worked for Agorise part-time, alternating with IESA Multimedia where I was following a UX formation. I was in charge of the user experience of both our public and private platform. I was the only UX designer for the first 6 months and worked closely with the CEO to define new features and re-design old ones. I applied user research methods, improved the information architecture and designed interfaces. I also helped to modify the code of our wordpress."
+      more:
+        - From september 2014 to May 2015 – Part time
+        - Startup – Less than 80 employees
+
+    - title: "UI Designer and Front End Developer"
+      subtitle: "Toxicode – Paris, France"
+      description: "Toxicode is a small company divided in two side: agency and research/development. I worked part-time alternating with Fonderie de l'image where I was studying front-end development and web design. This is were my life as a front-end developer begun: I learned to code in Html, Css and JavaScript. I worked closely with developers to create education games. I imagined and designed many games as well digital solutions for our clients (e-commerce mainly)."
+      more:
+        - From September 2013 to August 2014 – Part time
+        - Agency – Less than 10 employees

@@ -38,7 +38,7 @@ class About extends PureComponent {
           <h3>My skills</h3>
 
           <p>
-            Hackathons addict, I quickly learned to cover a wide range of areas. I am able to build products on my own but I prefer working as a team to share my knowledge and learn from others. Although I am initially specialized in <strong>user interface</strong> and <strong>visual design</strong>, I can cover the full user experience process including #[strong user research] and <strong>information architecture</strong>. I am fond of <strong>code</strong> and love to produce my designs.
+            Hackathons addict, I quickly learned to cover a wide range of areas. I am able to build products on my own but I prefer working as a team to share my knowledge and learn from others. Although I am initially specialized in <strong>user interface</strong> and <strong>visual design</strong>, I can cover the full user experience process including <strong>user research</strong> and <strong>information architecture</strong>. I am fond of <strong>code</strong> and love to produce my designs.
           </p>
 
           <h3>My work experience</h3>
@@ -52,6 +52,7 @@ class About extends PureComponent {
           { config.cv.education.map((exp, index) =>
             <Experience {...exp} key={index} />
           )}
+          
         </main>
       </section>
     )

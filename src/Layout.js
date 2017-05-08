@@ -3,9 +3,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import { About, Article, Contact, Header, Home } from './components'
 
-import '../style/reset.styl'
-import '../style/main.styl'
-import '../style/responsive.styl'
+import './style/reset.styl'
+import './style/main.styl'
+import './style/responsive.styl'
 
 class Layout extends PureComponent {
   render () {
