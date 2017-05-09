@@ -30,8 +30,8 @@ class About extends PureComponent {
           </p>
 
           {/* TODO: add link to linkedin */}
-          <a className='button' href='' target='blank'>My LinkedIn</a>
-          <a className='button' href='https://github.com/charlottebretonsch' target='blank'>My GitHub</a>
+          <a className='button' href='https://linkedin.com/in/charlotte-breton-schreiner-43370b77' target='blank'>View my LinkedIn</a>
+          <a className='button' href='https://github.com/charlottebretonsch' target='blank'>View my GitHub</a>
         </aside>
 
         <main>
@@ -52,7 +52,7 @@ class About extends PureComponent {
           { config.cv.education.map((exp, index) =>
             <Experience {...exp} key={index} />
           )}
-          
+
         </main>
       </section>
     )

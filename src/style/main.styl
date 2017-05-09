@@ -1,4 +1,12 @@
+// IMPORT
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,500,500i')
+
+
+
+
+
+
 
 
 // VARIABLES
@@ -63,7 +71,6 @@ a
 
 
 
-
 // TYPOGRAPHY
 
 h2, h3, h4, h5, strong, p.weak
@@ -87,7 +94,7 @@ h3
   margin-top          size-grid * 4
   margin-bottom       size-grid * 2
 
-h4, .cv
+h4, .react-experience
   font-size           size-grid * 2
   line-height         size-grid * 2.5
   margin-top          size-grid * 3
@@ -120,7 +127,7 @@ nav li, h1
 p.weak
   color               color-dark-medium !important
 
-h2, h3, h4, .cv, h5, strong, p.weak
+h2, h3, h4, .rect-experience, h5, strong, p.weak
   &:first-child
     margin-top          0
   &:last-child
@@ -282,10 +289,11 @@ section.page
     position            sticky
     top                 size-grid * 3.5
 
+    a.button:last-child
+      margin-top          size-grid
+
   main
     width               100%
-
-
 
 
 //// Page about
@@ -363,8 +371,6 @@ section.article.intro
       width             100%
 
 
-
-
 //// Article content
 
 section.article.content
@@ -382,6 +388,22 @@ section.article.content.main
 
 section.article.content.retro
   background           color-light-high
+
+
+
+
+
+
+
+
+// REACT
+
+#root,
+.react-full,
+.react-container,
+.react-article
+  min-height          100%
+  display             inline
 
 
 

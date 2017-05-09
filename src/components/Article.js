@@ -25,29 +25,39 @@ class Article extends PureComponent {
       nextArticleURL: `/work/${nextArticle.slug}`
     })
 
-    return <div>
-      <nav className='article'>
-        <h4>{ article.title }</h4>
-        <Link to={`/work/${nextArticle.slug}`} className='button next'>Next article</Link>
-      </nav>
-      { article
-        ? <div dangerouslySetInnerHTML={{ __html: content }} />
-        : <p>Article not found</p>
-      }
-      <section className='article content next-article'>
-        <main>
-          <h2>Next article</h2>
+    return (
+      <div className="react-container">
 
-          <Glimpse
-            title={nextArticle.title}
-            introduction={nextArticle.description}
-            tag='In-depth case study'
-            slug={nextArticle.slug}
-            image={nextArticle.glimpse}
-          />
-        </main>
-      </section>
-    </div>
+        <nav className="article">
+          <h4>{ article.title }</h4>
+          <Link to={`/work/${nextArticle.slug}`} className='button next'>Next article</Link>
+        </nav>
+
+        { article
+          ? <div className="react-article" dangerouslySetInnerHTML={{ __html: content }} />
+          : <p>Article not found</p>
+        }
+
+        <section className='article content next-article'>
+
+          <main>
+
+            <h2>Next article</h2>
+
+            <Glimpse
+              title={nextArticle.title}
+              introduction={nextArticle.description}
+              tag='In-depth case study'
+              slug={nextArticle.slug}
+              image={nextArticle.glimpse}
+            />
+
+          </main>
+
+        </section>
+
+      </div>
+    )
   }
 }
 

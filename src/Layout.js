@@ -11,7 +11,7 @@ class Layout extends PureComponent {
   render () {
     return (
       <BrowserRouter>
-        <div>
+        <div className="react-full">
 
           <Route component={Header} />
 
