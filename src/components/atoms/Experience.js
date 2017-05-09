@@ -6,7 +6,7 @@ class Experience extends PureComponent {
     const { title, subtitle, description, more } = this.props
 
     return (
-      <div className="react-experience">
+      <div className='react-experience'>
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
         <p>{ description }</p>

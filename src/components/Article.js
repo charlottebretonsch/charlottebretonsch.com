@@ -26,15 +26,15 @@ class Article extends PureComponent {
     })
 
     return (
-      <div className="react-container">
+      <div className='react-container'>
 
-        <nav className="article">
+        <nav className='article'>
           <h4>{ article.title }</h4>
           <Link to={`/work/${nextArticle.slug}`} className='button next'>Next article</Link>
         </nav>
 
         { article
-          ? <div className="react-article" dangerouslySetInnerHTML={{ __html: content }} />
+          ? <div className='react-article' dangerouslySetInnerHTML={{ __html: content }} />
           : <p>Article not found</p>
         }
 
