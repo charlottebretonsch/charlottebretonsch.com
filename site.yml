@@ -5,9 +5,12 @@ articles:
   - title: Connecting fanboys with Zenitth
     slug: zenitth
     description: Learn how I used research, information architecture, interface, and prototyping in order to build my final year product.
+    tag: In-depth case study
     contentFile: zenitth.pug
 
-cv:
+
+
+about:
 
   education:
 

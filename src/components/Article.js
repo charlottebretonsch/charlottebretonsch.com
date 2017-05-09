@@ -28,18 +28,27 @@ class Article extends PureComponent {
     return (
       <div className='react-container'>
 
+        {/* -> ARTICLE MENU */}
+
         <nav className='article'>
+
           <h4>{ article.title }</h4>
           <Link to={`/work/${nextArticle.slug}`} className='button next'>Next article</Link>
+
         </nav>
+
+        {/* <- ARTICLE MENU */}
+        {/* -> ARTICLE CONTENT */}
 
         { article
           ? <div className='react-article' dangerouslySetInnerHTML={{ __html: content }} />
           : <p>Article not found</p>
         }
 
-        <section className='article content next-article'>
+        {/* <- ARTICLE CONTENT */}
+        {/* -> ARTICLE NEXT */}
 
+        <section className='article content next-article'>
           <main>
 
             <h2>Next article</h2>
@@ -47,14 +56,15 @@ class Article extends PureComponent {
             <Glimpse
               title={nextArticle.title}
               introduction={nextArticle.description}
-              tag='In-depth case study'
+              tag={nextArticle.tag}
               slug={nextArticle.slug}
               image={nextArticle.glimpse}
             />
 
           </main>
-
         </section>
+
+        {/* <- ARTICLE NEXT */}
 
       </div>
     )
