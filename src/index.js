@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import smoothScroll from 'smoothscroll-polyfill'
 
-smoothScroll.polyfill()
-
 import Layout from './Layout'
+
+smoothScroll.polyfill()
 
 ReactDOM.render(
   <Layout />,
