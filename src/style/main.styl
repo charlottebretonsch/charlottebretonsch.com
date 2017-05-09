@@ -1,30 +1,7 @@
 // IMPORT
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,500,500i')
-
-
-
-
-
-
-
-
-// VARIABLES
-
-color-dark = #333
-color-dark-high = color-dark + 44%
-color-dark-medium = color-dark + 60%
-color-dark-low = color-dark + 76%
-color-light = #FFF
-color-light-high = color-light - 5%
-color-accent = #D00149
-
-font-weight-medium = 500
-font-weight-light = 300
-
-size-grid = 0.8rem
-size-grid-half = size-grid / 2
-size-line = 0.2rem
+@import "variables.styl"
 
 
 
@@ -122,7 +99,6 @@ nav li, h1
 .button
   font-size           size-grid * 2
   line-height         size-grid * 2.5
-  margin-right        size-grid
 
 p.weak
   color               color-dark-medium !important
@@ -185,7 +161,7 @@ li a
 
 .button
   width               auto
-  margin-top          size-grid * 3
+  margin              size-grid * 3 size-grid 0 0
   padding             size-grid size-grid * 2
   border              size-line solid color-dark
   display             inline-block
@@ -256,12 +232,12 @@ section
 
     p
       margin-top          size-grid
+
     h3
       margin-bottom       0
 
     .glimpse
-      width               size-grid * 37.5
-      height              size-grid * 24
+      height              100%
       margin-left         size-grid * 4
 
     .info
@@ -289,9 +265,6 @@ section.page
     position            sticky
     top                 size-grid * 3.5
 
-    a.button:last-child
-      margin-top          size-grid
-
   main
     width               100%
 
@@ -299,6 +272,9 @@ section.page
 //// Page about
 
 section.page.about
+  aside
+    .button:last-child
+      margin-top          size-grid
   main
     h4
       margin-bottom       0
