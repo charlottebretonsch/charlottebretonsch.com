@@ -2,6 +2,12 @@ import React, { PureComponent } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 class Header extends PureComponent {
+  componentDidUpdate (prevProps) {
+    if (this.props.location !== prevProps.location) {
+      document.querySelector('header').scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   render () {
     return (
 
