@@ -191,6 +191,7 @@ li a
       right               size-grid * 2
       background          url(img) no-repeat
       transition          background 0.5s ease-out
+      background-size     contain
 
     &:hover::after
       background          url(img-hover) no-repeat
@@ -349,6 +350,8 @@ section.article.intro
 
     img
       width             100%
+      height            100%
+      object-fit        contain
 
 
 //// Article content
