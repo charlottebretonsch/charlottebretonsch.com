@@ -34,7 +34,12 @@ module.exports = {
       {
         test: /\.(png|svg)$/,
         use: [
-          'url-loader',
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000
+            }
+          },
           'img-loader'
         ]
       },
@@ -47,6 +52,7 @@ module.exports = {
       }
     ]
   },
+  devtool: process.env.NODE_ENV === 'prod' ? 'source-map' : false,
   devServer: {
     contentBase: './dist',
     historyApiFallback: true
