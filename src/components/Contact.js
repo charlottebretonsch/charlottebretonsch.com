@@ -10,9 +10,11 @@ class Contact extends PureComponent {
 
           <h3>Feel free to contact me</h3>
 
-          <p>I am currently working for Enki in London. Nonetheless, I am always looking for new opportunities to have fun and gain experience.</p>
+          <p>
+            I am currently working for Enki in London and looking out for new job opportunities as a UX/Product designer.
+          </p>
 
-          <p>Whether you want to talk about a project, give me some feedback on my portfolio or want to hire me, don't hesitate to drop me an email:</p>
+          <p>Whether you want to talk about a project, give me feedback on my portfolio or want to hire me, don't hesitate to drop me an email:</p>
 
           <p><strong>charlottebretonsch@gmail.com</strong></p>
 

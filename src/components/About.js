@@ -11,25 +11,24 @@ class About extends PureComponent {
           <h3>I love design.</h3>
 
           <p>
-            Working has always been a pleasure for me... Design brings excitment everyday of my life!
+            Working has always been a pleasure for me. Design brings excitment everyday of my life!
           </p>
 
           <p>
             <strong>5 years of experience</strong><br />
-            I worked for 8 different companies, including start-ups with less than 10 employees.
+            I worked for 7 different companies, including start-ups with less than 10 employees.
           </p>
 
           <p>
             <strong>65+ projects</strong><br />
-            I designed hundred of projects, in various industries: health, insurance, technology, bank, education, e-commerce, travel...
+            I designed dozens of projects, in various industries: health, insurance, technology, bank, education, e-commerce, travel...
           </p>
 
           <p>
-            <strong>16 hackathons</strong><br />
+            <strong>20+ hackathons</strong><br />
             I teamed up with lots of developers and won 11 prices, including 5 first place.
           </p>
 
-          {/* TODO: add link to linkedin */}
           <a className='button' href='https://linkedin.com/in/charlotte-breton-schreiner-43370b77' target='blank'>View my LinkedIn</a>
           <a className='button' href='https://github.com/charlottebretonsch' target='blank'>View my GitHub</a>
         </aside>
@@ -38,7 +37,7 @@ class About extends PureComponent {
           <h3>My skills</h3>
 
           <p>
-            Hackathons addict, I quickly learned to cover a wide range of areas. I am able to build products on my own but I prefer working as a team to share my knowledge and learn from others. Although I am initially specialized in <strong>user interface</strong> and <strong>visual design</strong>, I can cover the full user experience process including <strong>user research</strong> and <strong>information architecture</strong>. I am fond of <strong>code</strong> and love to produce my designs.
+            As a hackathon addict, I quickly learned to cover a wide range of areas. I am able to build products on my own but I prefer working in a team to learn from others and share my knowledge. Although I initially specialized in <strong>user interface</strong> and <strong>visual design</strong>, I can cover the full user experience process including <strong>user research</strong> and <strong>information architecture</strong>. I am fond of <strong>code</strong> and love to produce my designs.
           </p>
 
           <h3>My work experience</h3>
