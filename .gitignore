@@ -3,5 +3,20 @@ node_modules
 dist/*
 !dist/index.html
 
+!dist/android-chrome-192x192.png
+!dist/android-chrome-512x512.png
+!dist/browserconfig.xml
+!dist/apple-touch-icon.png
+!dist/favicon-16x16.png
+!dist/favicon-32x32.png
+!dist/favicon.ico
+!dist/manifest.json
+!dist/mstile-70x70.png
+!dist/mstile-144x144.png
+!dist/mstile-150x150.png
+!dist/mstile-310x150.png
+!dist/mstile-310x310.png
+!dist/safari-pinned-tab.svg
+
 *.css
 *.html
