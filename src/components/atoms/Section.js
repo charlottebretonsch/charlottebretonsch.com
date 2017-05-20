@@ -16,7 +16,7 @@ class Section extends PureComponent {
 
 class IntroSection extends PureComponent {
   onStart () {
-    document.querySelector('#start').scrollIntoView({ behavior: 'smooth' })
+    document.querySelector('#start .anchor').scrollIntoView({ behavior: 'smooth' })
   }
 
   render () {
