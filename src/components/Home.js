@@ -38,7 +38,7 @@ class Home extends PureComponent {
             <Glimpse
               title={article.title}
               introduction={article.description}
-              tag='In-depth case study'
+              tag={article.tag}
               slug={article.slug}
               image={article.glimpse}
               key={article.slug}
