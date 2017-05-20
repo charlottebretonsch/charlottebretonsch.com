@@ -43,7 +43,7 @@ class IntroSection extends PureComponent {
           <p className='weak'>{ text }</p>
         )}
 
-        <div className='action'>
+        <div className='actions'>
           <a href='#start' title='About' className='button start' onClick={this.onStart}>Start</a>
           <Link className='button next' to={nextArticleURL}>Next article</Link>
         </div>

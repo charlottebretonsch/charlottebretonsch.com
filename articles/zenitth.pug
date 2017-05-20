@@ -1,4 +1,8 @@
 include atoms/sections.pug
+include atoms/video.pug
+
+
+
 
 // ARTICLE CONTENT
 +content()
@@ -21,19 +25,19 @@ include atoms/sections.pug
 
   p In order to #[strong pinpoint the needs and motivations] of our target we interviewed 6 fanboys. The questionnaire consisted of 10 open questions divided in three distinct themes: the genesis of the brand’s idolatry, the sense of belonging to its community and the management of the conflicts tied to this passion.
 
-  img(class="glimpse" src=require("../assets/content/zenitth/interviews.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/interviews.png") alt="Image Title")
 
   h4 Data analysis
 
   p We reviewed all the interviews, one by one. For each question, we analysed the answer in two different ways: #[strong factual and emotional]. The emotional analysis helps to create emotional diagrams while the factual analysis helps to create quantitative studies.
 
-  img(class="glimpse" src=require("../assets/content/zenitth/dataanalysis.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/dataanalysis.png") alt="Image Title")
 
   h4 Emotional diagram
 
   p We mapped the emotional analysis in #[strong extreme categories] and linked each interviewee to the most accurate. It allowed us to #[strong uncover patterns]. These patterns represent different mindsets, motivations, frustrations and needs.
 
-  img(class="glimpse" src=require("../assets/content/zenitth/emotionaldiagram.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/emotionaldiagram.png") alt="Image Title")
 
   p We discovered two different psychological profiles: #[strong rational and irrational]. The irrational fanboys don’t seem to be conscious of the origin or the reasons of their idolatry. Rational fanboys, however, know that very well. The rationals enjoy competition while the irrationals try to avoid it.
 
@@ -47,7 +51,7 @@ include atoms/sections.pug
 
   p With the insights gathered we were able to create two different profile types. If our personas are similar in the excessive love for a particular brand, the are very different when it comes to feelings, #[strong frustrations and motivations].
 
-  img(class="glimpse" src=require("../assets/content/zenitth/personas.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/personas.png") alt="Image Title")
 
   h4 Maxime
 
@@ -65,19 +69,19 @@ include atoms/sections.pug
 
   p We started by analysing our targets typical day. Being quite similar no matter the persona, we decided to create one user journey which fitted both and mapped it with which service we could suggest them, when. Work time is the best moment to send push notifications or facebook posts. Idle moments like transports or lunch are great moments to push users to defy people or do a quizz.
 
-  img(class="glimpse" src=require("../assets/content/zenitth/alignmentdiagram.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/alignmentdiagram.png") alt="Image Title")
 
   h3 User flows
 
   p Our personas have different goals, and therefore different flows when it comes to using our mobile app. Maxime wants his brand to win, he likes competition and wants to know everything about it. Lisa wants to learn nice stuff about her brand but only for self-development, not to compete.
 
-  img(class="glimpse" src=require("../assets/content/zenitth/userflows.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/userflows.png") alt="Image Title")
 
   h3 Experience map
 
   p Of the two personas, Maxime is the one that’s into competition, so we focused on satisfying his needs first (competition was the theme of the exercise). To make sure his experience would be as good as possible we mapped his flow with #[strong positive and negative outcomes]. Positives outcomes are in blue and negative outcomes in green. We imagined his personal satisfaction while using our product.
 
-  img(class="glimpse" src=require("../assets/content/zenitth/experiencemap1.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/experiencemap1.png") alt="Image Title")
 
   //// specifications
 
@@ -87,7 +91,7 @@ include atoms/sections.pug
 
   p We came up with a lot of feature #[strong ideas] during the research phase. We organised a workshop to write them down, #[strong challenge] them, find new ones and #[strong prioritise] them. We pushed the team to think about the motivations and frustrations of our personas in order to keep only the features that would really matter to our final user.
 
-  img(class="glimpse" src=require("../assets/content/zenitth/brainstorming.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/brainstorming.png") alt="Image Title")
 
   //// Information architecture
 
@@ -97,19 +101,19 @@ include atoms/sections.pug
 
   p Once we had defined our set of MVP features we organised a card sorting with 7 potential users. Clear pattern emerged from the study which allowed us to create a tree view very quickly.
 
-  img(class="glimpse" src=require("../assets/content/zenitth/cardsorting.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/cardsorting.png") alt="Image Title")
 
   h3 Tree view
 
   p We used the result from the card sorting study to create a tree. The developers used it as a guide to start coding features.
 
-  img(class="glimpse" src=require("../assets/content/zenitth/treeview.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/treeview.png") alt="Image Title")
 
   h3 Tree testing
 
   p To #[strong verify the coherence] of our information architecture and labelling, we set up a tree testing study with multiple tasks and observed 4 potential users complete it. No issues were uncovered.
 
-  img(class="glimpse" src=require("../assets/content/zenitth/treetesting.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/treetesting.png") alt="Image Title")
 
   //// interface
 
@@ -119,9 +123,9 @@ include atoms/sections.pug
 
   p We looked at other mobile apps to find inspiration for our interfaces.
 
-  img(class="glimpse" src=require("../assets/content/zenitth/benchmark1.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/benchmark1.png") alt="Image Title")
 
-  img(class="glimpse" src=require("../assets/content/zenitth/benchmark2.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/benchmark2.png") alt="Image Title")
 
   h3 Zoning
 
@@ -129,17 +133,17 @@ include atoms/sections.pug
 
   p In order to gather more interface ideas, we organised a 6to1/1UP workshop with all the team on the “quizz” part of the app. Each team member sketched #[strong 6 interfaces ideas in 5 minutes]. Afterward, we hanged them on the wall and debated on what we liked/disliked in each of them and voted to keep only 3 interfaces.
 
-  img(class="glimpse" src=require("../assets/content/zenitth/zoningworkshop1.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/zoningworkshop1.png") alt="Image Title")
 
   p Finally, we each drew one interface to regroup the best ideas from the 3 previously selected interfaces, hanged them on the wall again, debated again and all agreed on the concepts we wanted to keep.
 
-  img(class="glimpse" src=require("../assets/content/zenitth/zoningworkshop2.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/zoningworkshop2.png") alt="Image Title")
 
   h4 Sketches
 
   p We put on paper all the screens of our app with the ideas gathered from the workshop fresh in mind. Once all the flows were covered, we invited the team again to #[strong uncover edge cases] we did not thought of and potential visual design or development issues. All good!
 
-  img(class="glimpse" src=require("../assets/content/zenitth/zoning.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/zoning.png") alt="Image Title")
 
   h4 Paper prototype
 
@@ -149,21 +153,21 @@ include atoms/sections.pug
 
   p Now confident in our interfaces choices, we drew the interfaces using Adobe Illustrator. It allowed us to improve on our zoning. We carefully selected the #[strong spacings and sizes of the elements and typography]. Detailed wireframes allowed the development team to start building the screens and the visual design team to apply the branding to the interface.
 
-  img(class="glimpse" src=require("../assets/content/zenitth/wireframes1.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/wireframes1.png") alt="Image Title")
 
-  img(class="glimpse" src=require("../assets/content/zenitth/wireframes2.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/wireframes2.png") alt="Image Title")
 
-  img(class="glimpse" src=require("../assets/content/zenitth/wireframes3.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/wireframes3.png") alt="Image Title")
 
-  img(class="glimpse" src=require("../assets/content/zenitth/wireframes4.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/wireframes4.png") alt="Image Title")
 
   h3 Interactions
 
   p Once our wireframes were ready, we used them to reproduce the main user flow to clearly show the interactions expected.
 
-  img(class="glimpse" src=require("../assets/content/zenitth/interactions1.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/interactions1.png") alt="Image Title")
 
-  img(class="glimpse" src=require("../assets/content/zenitth/interactions2.png") alt="Image Title")
+  img(src=require("../assets/content/zenitth/interactions2.png") alt="Image Title")
 
   h3 Prototype
 
@@ -185,7 +189,7 @@ include atoms/sections.pug
 // ARTICLE CONTENT RETRO
 
 +retrospective
-  | Looking back, I think we could have spend less time on the research and more on the interfaces. We found the fanboys stories so interesting that it was hard for us to stop digging and move on. The interface suffered at the end as we did not have enough time to work on micro-interactions which would have brought our app to another level. With some extra time we also could have done more user tests to uncover ergonomic issues.
+  p Looking back, I think we could have spend less time on the research and more on the interfaces. We found the fanboys stories so interesting that it was hard for us to stop digging and move on. The interface suffered at the end as we did not have enough time to work on micro-interactions which would have brought our app to another level. With some extra time we also could have done more user tests to uncover ergonomic issues.
 
 
 
