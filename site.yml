@@ -1,5 +1,6 @@
 ---
 
+
 articles:
 
   - title: Connecting fanboys with Zenitth
@@ -8,11 +9,19 @@ articles:
     role: Research, information architecture, interface, prototyping, oral presentation
     team: Céline, Adrien, Jeremy, Oliver, Samuel, Arnaud, Alexis
     duration: 11 days in July 2015
-    tag: In-depth case study
     contentFile: zenitth.pug
     more:
       - 16 minutes read
 
+  - title: Empowering night owl duos with Tchiiiin
+    slug: tchiiiin
+    description: Discover Tchiiiin, a SoLoMo (social, local, mobile) iOS application for clubbers who dream of an unforgettable night.
+    role: Research, interactions, interface, visual design, prototyping
+    team: Charles, Harold, Nicolas
+    duration: 6 days in February 2015
+    contentFile: tchiiiin.pug
+    more:
+      - 8 minutes read
 
 
 about:

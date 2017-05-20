@@ -1,0 +1,187 @@
+include atoms/sections.pug
+include atoms/video.pug
+include atoms/button.pug
+
+
+
+
+// ARTICLE CONTENT
++content()
+
+
+  ////
+
+  h2 Challenge
+
+  p I was grouped with 3 other user experience designers. We were asked to imagine a mobile app responding to the “SoLoMo” (social, local, mobile) requirements. We came up with Tchiiiin, a Tinder-like mobile app which #[strong allows groups of two people to share the cost of a bottle] for an evening.
+
+
+  ////
+
+  h2 Research
+
+  p Charles, one of the team member, was a #[strong night club promotor] which gave him a good understanding of the industry. He told us that his problem as a customer was that #[strong it is too expensive to book a table in a night club] when you are just with a mate. An ideal number would be four which was hard to reach several nights a week.
+
+  h3 interviews
+  
+  p To go more in-depth with the issue Charles’s raised, we talked to people who could relate to this experience. We found out that a lot of people would like to book a table but are often not enough or with people that are not motivated to buy a bottle. The bottles being quite pricey to buy on their own, they end up not buying any. Buying a bottle means having a table and guys mentioned that having a table was an #[strong advantage to seduce women]. 
+  
+  h3 Survey
+  
+  p With Charles influence on Facebook, we received hundreds of answers to our survey. We found out that the people interested by our product live in the center of Paris, are between 20-30 years old, possess a smartphone and #[strong go in clubs approximately twice a week].
+  
+  h3 Persona
+  
+  p Nicolas Dufour is 24 years old, studies at HEC, lives in Paris, goes out twice a week in club, owns an iPhone 6 and says #[strong “I love to go out in clubs but it’s often expensive and I struggle to find friends motivated to buy a bottle with me”].
+
+  img(src=require("../assets/content/tchiiiin/persona.png") alt="Persona")
+
+
+  ////
+
+  h2 Features
+
+  p Tchiiiin allows a group of two (referred as a “duo”) to meet another group of two in order to #[strong share the cost of a bottle] of champagne, for an evening.
+
+  h4 Create a duo
+  
+  p To meet this goal, the user must be able to create a duo. We decided that one user would “carry” the duo. The other person of the duo would only be able to interact with the app once they “matched” with another duo.
+
+  h4 Find a duo
+
+  p The main frustration being the budget, users should match on this point. By picking clubs they are used to, we can estimate the budget of each duo and recommend similar duos. The time was also a key information as some people indicated going out at the opening and some closer to the end of the party.
+
+  h4 Prepare the evening
+  
+  p Once two duos matched, they should be able to talk to each other to organise the party and write down the time and club chosen during their conversation.
+
+  h4 Rate your night
+  
+  p After the party and a short night sleep, users should be able to rate their night partners on different criterias (eg. ponctuality, friendliness…)
+
+
+  ////
+  
+  h2 Benchmark
+  
+  p We looked at multiple app which covered our main features: add a friend, select clubs, meet people. The most interesting were the following. 
+
+  h4 Tinder
+  
+  p The easyness of finding suitable people via the Tinder interface was definitely the kind of feeling we wanted to bring in our app. However our goal was to make people meet very fast, therefore the “like” option should be a lot more significant.
+
+  h4 GroupMe
+ 
+  p We liked how GroupMe handled the “invite a friend” option with a simple “+” button and then a suggestion of the last people you hanged out with.
+
+  h4 OpenTable
+ 
+  p The research of restaurant by list or map was very well managed by OpenTable. It could be a great inspiration for our “club” selection.
+
+
+  ////
+ 
+  h2 Branding
+  
+  h3 Moodboard
+  
+  img(src=require("../assets/content/tchiiiin/moodboard.png") alt="Moodboard")
+
+  h3 Logo
+  
+  p “Tchin” is a #[strong french expression people use when people clink glasses before drinking champagne] or other party drinks like wine or cider. We added three “i” (one for each person) to make it more special as the letter looks a bit like people (head and body). The two apostrophes at the end represent the drops which escape the glasses sometimes while toasting. 
+  
+  img(src=require("../assets/content/tchiiiin/logo.png") alt="Logo")
+
+  
+  ////
+  
+  h2 Design
+  
+  h3 Arborescence
+  
+  p The arborescence was made of #[strong 4 levels]: create a group, find partners, organise your night, rate your partners.
+  
+  img(src=require("../assets/content/tchiiiin/arborescence.png") alt="Arborescence")
+
+  h3 Interface
+  
+  p We sketched one flow of screens each for each levels. Then we put them together to give our opinion on each other interfaces ideas. We picked the best one and went straight to #[strong high fidelity wireframes]. After another round of critiques we added the branding on top of our wireframes. See bellow an extract of the wireframes…
+  
+  img(src=require("../assets/content/tchiiiin/wireframes1.png") alt="Wireframes 1")
+  
+  img(src=require("../assets/content/tchiiiin/wireframes2.png") alt="Wireframes 2")
+
+  p …and their graphic equivalent.
+  
+  img(src=require("../assets/content/tchiiiin/mockups1.png") alt="Mockups 1")
+  
+  img(src=require("../assets/content/tchiiiin/mockups2.png") alt="Mockups 2")
+  
+  
+  ////
+  
+  h2 Prototype
+  
+  p Our prototype scenario was the following: Nicolas and Charles want to go out tonight but did not find any friends to come along. They log into Tchiiiin in order to find another duo to accompany them and share a bottle…
+  
+  +button("https://invis.io/BXBPXK8CU") Try the prototype
+  
+  h3 Create a duo
+  
+  +video("https://www.youtube-nocookie.com/embed/qAL5hTZf82M?rel=0&amp;showinfo=0")
+  
+  h3 Find a duo
+  
+  +video("https://www.youtube-nocookie.com/embed/hp1I0uR5kIA?rel=0&amp;showinfo=0")
+  
+  h3 Recommendations
+  
+  p The prototype allowed us to #[strong uncover ergonomic and flow issues]. As we were running out of time, we wrote recommendations to fix these issues instead of doing the modifications ourselves. 
+
+  h4 Fluidity
+  
+  p The duo creation is not very agreeable as the user has to click at the bottom of screen to perform the expected action and then at the top right to move to the next step. The interaction is not fluid and annoyed some users.
+
+  h4 Proximity
+  
+  p People also wanted to see where the other duo was compared to them as it would greatly impact their choice. Proximity is a factor that should be taken into account.
+
+  h4 Like/dislike
+  
+  p Although our interface promotes the “like” button, people were a bit scared to rip on the “dislike” button as it was underneath it. A Tinder approach with buttons side by side would be easier to use and less stressful.
+  
+  
+  ////
+  
+  h2 Now available on the AppStore
+
+  p Charles kept working on the app afterward. He built an iOS app which is now available for free in the french AppStore. Feel free to have a look!
+  
+  img(src=require("../assets/content/tchiiiin/appstore.png") alt="AppStore")
+  
+  +button("https://itunes.apple.com/fr/app/cr%C3%A9ez-duo-avec-votre-ami-e-faites-des-rencontres-amicales/id1119436513?l=en&mt=8") Download on the AppStore
+
+
+
+
+
+
+
+
+// ARTICLE CONTENT RETRO
++retrospective
+
+
+  p The reaction to our product was unanimously very enthusiastic with a lot of people asking for its release date. It was so popular that it is now released on the french AppStore, ready to be used!
+  
+  p However, the interface could have been greatly improved if we created a prototype before the interface was fully completed (visual design included). We could have uncovered ergonomic and flow issues earlier which would have allowed us to correct the issues before handing our project. Fortunately these issues were corrected later on, before the mobile app was developed.
+
+
+
+
+
+
+
+
+// END
