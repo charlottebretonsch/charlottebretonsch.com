@@ -202,7 +202,7 @@ li a
   &.start
     button-with-icon("../../assets/layout/icon-arrow-start.svg", "../../assets/layout/icon-arrow-start-hover.svg")
 
-  &.open
+  &.open, &[href^="mailto"], &[href^="http"]
     button-with-icon("../../assets/layout/icon-arrow-open.svg", "../../assets/layout/icon-arrow-open-hover.svg")
 
 
@@ -231,7 +231,6 @@ section
   article
     width               100%
     height              size-grid * 32
-    padding             size-grid * 4
     margin-bottom       size-grid * 2
     background          color-light-high
     position            relative
@@ -246,9 +245,9 @@ section
 
     .glimpse
       height              100%
-      margin-left         size-grid * 4
 
     .info
+      padding             size-grid * 4
       display             flex
       flex-flow           column nowrap
       justify-content     space-between
@@ -329,6 +328,7 @@ nav.article
 
 section.article.intro
   height              calc(100% - 20.4rem)
+  min-height          size-grid * 67
   justify-content     space-between
   background          color-light-high
 
