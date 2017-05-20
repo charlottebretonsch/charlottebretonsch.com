@@ -26,7 +26,7 @@ class About extends PureComponent {
 
           <p>
             <strong>20+ hackathons</strong><br />
-            I teamed up with lots of developers and won 11 prices, including 5 first place.
+            I teamed up with lots of developers and won 11 prizes, including 5 first place.
           </p>
 
           <a className='button' href='https://linkedin.com/in/charlotte-breton-schreiner-43370b77' target='blank'>View my LinkedIn</a>
