@@ -39,8 +39,8 @@ class IntroSection extends PureComponent {
           {article.duration}
         </p>
 
-        { article.more.map(text =>
-          <p className='weak'>{ text }</p>
+        { article.more.map((text, index) =>
+          <p className='weak' key={index}>{ text }</p>
         )}
 
         <div className='actions'>

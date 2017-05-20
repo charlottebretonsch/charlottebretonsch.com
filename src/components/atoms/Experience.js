@@ -10,8 +10,8 @@ class Experience extends PureComponent {
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
         <p>{ description }</p>
-        { more.map(text =>
-          <p className='weak'>{ text }</p>
+        { more.map((text, index) =>
+          <p className='weak' key={index}>{ text }</p>
         )}
       </div>
 
