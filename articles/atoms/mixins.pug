@@ -6,3 +6,10 @@ mixin video(url)
       frameborder="0"
       allowfullscreen
     )
+
+mixin image(url, alt)
+  img(src=url alt=alt)
+
+mixin button(url)
+  a(class="button open" href=url target="blank")
+    block
