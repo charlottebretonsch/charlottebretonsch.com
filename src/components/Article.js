@@ -29,11 +29,14 @@ class Article extends PureComponent {
 
         {/* -> ARTICLE MENU */}
 
-        <nav className='article'>
-
+        <nav
+          className='article'
+          data-aos='slide-down'
+          data-aos-anchor='.article.intro'
+          data-aos-anchor-placement='top-top'
+        >
           <h4>{ article.title }</h4>
           <Link to={`/work/${nextArticle.slug}`} className='button next'>Next article</Link>
-
         </nav>
 
         {/* <- ARTICLE MENU */}
