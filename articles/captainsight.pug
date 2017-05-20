@@ -1,0 +1,110 @@
+include atoms/sections.pug
+include atoms/mixins.pug
+
+
+
+
+// ARTICLE CONTENT
++content()
+
+
+  ////
+
+  h2 Challenge
+  
+  p We were given 48h to create a Smart Watch application which would change the glasses wearers everyday life. I teamed up with two developers and one business analyst. We worked side by side for two days, day and night, to create a #[strong family game to help train sight] on a weekly basis.
+  
+  h3 Research
+  
+  p One of our team member pitched a crazy idea: play a game by #[strong using a smart watch to interact with a screen] (phone, tablet…). For a hackathon, it would be quite an achievement… But what kind of game would be optimal for this context?
+  
+  h4 Interviews
+  
+  p We interviewed the #[strong mentors from the sponsor team]. We found out that the jury (as well as the mentors) were around 40-60 years old parent of young kids (mostly around 10 years old). We also found out that exercising sight on a daily basis could have a positive impact on the long term. We decided to create a family game to improve sight on a daily basis which would fit the criteria and would have an emotional impact on the jury.
+  
+  h4 Target
+  
+  p Our target are families with kids between 5 and 12 years old who possess a smart watch and a smart phone or tablet. We looked at a french study on tablet ownership and found out than 50% of families, 8% of kids under 7 years old and 19% of 7-12 years old own a tablet.
+  
+  +image(require("../assets/content/captainsight/research.png"), "Research")
+  
+  
+  ////
+  
+  h2 Design
+  
+  h3 Branding
+  
+  p Our target being families we thought a super-hero global team for the game would be engaging. I created a #[strong super-hero figure for the logo] to state the atmosphere at first sight (no pun intended). I picked pink-red as primary colour because it is #[strong eye-catching] and would help the jury remember us. I also created a single background 
+
+  +image(require("../assets/content/captainsight/branding.png"), "Branding")
+
+  h3 Interactions
+  
+  p We decided that the game would be played with a smart watch paired with a external screen (tablet or smartphone). The smart watch would act as a #[strong controller] and the screen as a #[strong monitor].
+  
+  p Think of when you go check your vision at a professional. You are seated at a specific distance from a white and black paper with letters written on it. You have to spell the letter as their size diminish and it becomes harder and harder to read.
+  
+  +image(require("../assets/content/captainsight/vision.png"), "Vision")
+
+
+  p We adapted the concept of professional vision tests to our universe by replacing the letters by famous super hero figures (batman, superman…). The screen must be placed 4m away from the user who holds a smart watch. On the screen, a super hero appears. The user can select the super hero he sees on the smartwatch. The more he succeed, the harder it gets: the super hero becomes smaller or even flies by.
+
+  +image(require("../assets/content/captainsight/interactions.png"), "Interactions")
+
+  h3 Interface
+  
+  p We selected a bunch of super hero. To represent them, we found images online and cropped them one by one so we could put them on the city background. We also found simple logo for each of them that we used for the smartwatch.
+  
+  +image(require("../assets/content/captainsight/interface1.png"), "Interface 1")
+  
+  p With illustrator, I copied funny characters (of a kid tv show one of our team member liked) to create profile picture for the players. I also created a simple leaderboard screen. 
+  
+  +image(require("../assets/content/captainsight/interface2.png"), "Interface 2")
+  
+  p I also create a simulation of other games we could create in the futur to broaden the jury vision of our concept.
+  
+  +image(require("../assets/content/captainsight/interface3.png"), "Interface 3")
+
+
+  ////
+  
+  h2 Prototype
+  
+  p Our prototype was fully coded and working, even submitted to the GooglePlay store. We could actually simulate a family playing the game in front of the jury. Here is a live demo of the prototype:
+  
+  +video("https://www.youtube-nocookie.com/embed/B3tKURgZFZY?rel=0&amp;showinfo=0")
+
+  
+  //// 
+  
+  h2 Competition
+  
+  +image(require("../assets/content/captainsight/prizes.png"), "Prizes")
+  
+  h3 2nd prize & cash rush
+  
+  p We won the 2nd prize and a bonus prize called “cash rush” awarded to the team who receive the higher number of votes for its idea the first day of pitch. We competed against more than 30 teams.
+
+
+
+
+
+
+
+
+// ARTICLE CONTENT RETRO
++retrospective
+
+
+  p There is nothing I would have changed in how we worked this weekend. We had a lot of fun, worked closely, iterated a lot and made a fully working prototype in spite of the technical complexity of our idea. The jury loved our presentation and product so much that they awarded us the 2nd prize. I want to do it all over again! 
+
+
+
+
+
+
+
+
+
+// END

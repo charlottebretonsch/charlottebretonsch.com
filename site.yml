@@ -23,6 +23,16 @@ articles:
     more:
       - 8 minutes read
 
+  - title: Disrupting sight games with Captain Sight
+    slug: captainsight
+    description: 48h to create Smart Watch applications to change the everyday life of glasses wearers? Challenge accepted! Introducing CaptainSight…
+    role: Research, interaction design, interface, visual design, oral presentation
+    team: Emmanuel, Loïc, Sebastien
+    duration: 48h in June 2015
+    contentFile: captainsight.pug
+    more:
+      - 4 minutes read
+
 
 about:
 
