@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
-import { Glimpse } from './atoms'
+import { Section } from './atoms'
 import articles from '../../articles'
 
 class Article extends PureComponent {
@@ -56,21 +56,7 @@ class Article extends PureComponent {
         {/* <- ARTICLE CONTENT */}
         {/* -> ARTICLE NEXT */}
 
-        <section className='article content next-article'>
-          <main>
-
-            <h2>Next article</h2>
-
-            <Glimpse
-              title={nextArticle.title}
-              introduction={nextArticle.description}
-              tag={nextArticle.tag}
-              slug={nextArticle.slug}
-              image={nextArticle.glimpse}
-            />
-
-          </main>
-        </section>
+        <Section.NextArticle article={nextArticle} />
 
         {/* <- ARTICLE NEXT */}
 
