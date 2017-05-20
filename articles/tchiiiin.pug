@@ -1,6 +1,5 @@
 include atoms/sections.pug
-include atoms/video.pug
-include atoms/button.pug
+include atoms/mixins.pug
 
 
 
@@ -34,7 +33,7 @@ include atoms/button.pug
   
   p Nicolas Dufour is 24 years old, studies at HEC, lives in Paris, goes out twice a week in club, owns an iPhone 6 and says #[strong “I love to go out in clubs but it’s often expensive and I struggle to find friends motivated to buy a bottle with me”].
 
-  img(src=require("../assets/content/tchiiiin/persona.png") alt="Persona")
+  +image(require("../assets/content/tchiiiin/persona.png"), "Persona")
 
 
   ////
@@ -85,14 +84,14 @@ include atoms/button.pug
   
   h3 Moodboard
   
-  img(src=require("../assets/content/tchiiiin/moodboard.png") alt="Moodboard")
+  +image(require("../assets/content/tchiiiin/moodboard.png"), "Moodboard")
 
   h3 Logo
   
   p “Tchin” is a #[strong french expression people use when people clink glasses before drinking champagne] or other party drinks like wine or cider. We added three “i” (one for each person) to make it more special as the letter looks a bit like people (head and body). The two apostrophes at the end represent the drops which escape the glasses sometimes while toasting. 
   
-  img(src=require("../assets/content/tchiiiin/logo.png") alt="Logo")
-
+  +image(require("../assets/content/tchiiiin/logo.png"), "Logo")
+  
   
   ////
   
@@ -102,21 +101,21 @@ include atoms/button.pug
   
   p The arborescence was made of #[strong 4 levels]: create a group, find partners, organise your night, rate your partners.
   
-  img(src=require("../assets/content/tchiiiin/arborescence.png") alt="Arborescence")
+  +image(require("../assets/content/tchiiiin/arborescence.png"), "Arborescence")
 
   h3 Interface
   
   p We sketched one flow of screens each for each levels. Then we put them together to give our opinion on each other interfaces ideas. We picked the best one and went straight to #[strong high fidelity wireframes]. After another round of critiques we added the branding on top of our wireframes. See bellow an extract of the wireframes…
   
-  img(src=require("../assets/content/tchiiiin/wireframes1.png") alt="Wireframes 1")
+  +image(require("../assets/content/tchiiiin/wireframes1.png"), "Wireframes 1")
   
-  img(src=require("../assets/content/tchiiiin/wireframes2.png") alt="Wireframes 2")
+  +image(require("../assets/content/tchiiiin/wireframes2.png"), "Wireframes 2")
 
   p …and their graphic equivalent.
   
-  img(src=require("../assets/content/tchiiiin/mockups1.png") alt="Mockups 1")
+  +image(require("../assets/content/tchiiiin/mockups1.png"), "Mockups 1")
   
-  img(src=require("../assets/content/tchiiiin/mockups2.png") alt="Mockups 2")
+  +image(require("../assets/content/tchiiiin/mockups2.png"), "Mockups 2")
   
   
   ////
@@ -158,7 +157,7 @@ include atoms/button.pug
 
   p Charles kept working on the app afterward. He built an iOS app which is now available for free in the french AppStore. Feel free to have a look!
   
-  img(src=require("../assets/content/tchiiiin/appstore.png") alt="AppStore")
+  +image(require("../assets/content/tchiiiin/appstore.png"), "AppStore")
   
   +button("https://itunes.apple.com/fr/app/cr%C3%A9ez-duo-avec-votre-ami-e-faites-des-rencontres-amicales/id1119436513?l=en&mt=8") Download on the AppStore
 
