@@ -5,8 +5,13 @@ articles:
   - title: Connecting fanboys with Zenitth
     slug: zenitth
     description: Learn how I used research, information architecture, interface, and prototyping in order to build my final year product.
+    role: Research, information architecture, interface, prototyping, oral presentation
+    team: Céline, Adrien, Jeremy, Oliver, Samuel, Arnaud, Alexis
+    duration: 11 days in July 2015
     tag: In-depth case study
     contentFile: zenitth.pug
+    more:
+      - 16 minutes read
 
 
 

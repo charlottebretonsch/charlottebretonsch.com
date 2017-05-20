@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
-import { Glimpse } from './atoms'
+import { Section } from './atoms'
 import articles from '../../articles'
 
 class Article extends PureComponent {
@@ -15,23 +15,14 @@ class Article extends PureComponent {
     return articles[nextIndex]
   }
 
-  onClickArticle (event) {
-    const href = event.target.getAttribute('href')
-
-    if (href === '#start') {
-      document.querySelector('#start').scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
   render () {
     const { match } = this.props
     const article = articles.find(article => article.slug === match.params.slug)
 
     const nextArticle = this.getNextArticle(article)
+    const nextArticleURL = `/work/${nextArticle.slug}`
 
-    const content = article.content({
-      nextArticleURL: `/work/${nextArticle.slug}`
-    })
+    const content = article.content()
 
     return (
       <div className='react-container'>
@@ -46,31 +37,23 @@ class Article extends PureComponent {
         </nav>
 
         {/* <- ARTICLE MENU */}
+
+        <Section.Intro
+          article={article}
+          nextArticleURL={nextArticleURL}
+        />
+
         {/* -> ARTICLE CONTENT */}
 
         { article
-          ? <div className='react-article' dangerouslySetInnerHTML={{ __html: content }} onClick={this.onClickArticle} />
+          ? <div className='react-article' dangerouslySetInnerHTML={{ __html: content }} />
           : <p>Article not found</p>
         }
 
         {/* <- ARTICLE CONTENT */}
         {/* -> ARTICLE NEXT */}
 
-        <section className='article content next-article'>
-          <main>
-
-            <h2>Next article</h2>
-
-            <Glimpse
-              title={nextArticle.title}
-              introduction={nextArticle.description}
-              tag={nextArticle.tag}
-              slug={nextArticle.slug}
-              image={nextArticle.glimpse}
-            />
-
-          </main>
-        </section>
+        <Section.NextArticle article={nextArticle} />
 
         {/* <- ARTICLE NEXT */}
 
