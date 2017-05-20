@@ -15,23 +15,14 @@ class Article extends PureComponent {
     return articles[nextIndex]
   }
 
-  onClickArticle (event) {
-    const href = event.target.getAttribute('href')
-
-    if (href === '#start') {
-      document.querySelector('#start').scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
   render () {
     const { match } = this.props
     const article = articles.find(article => article.slug === match.params.slug)
 
     const nextArticle = this.getNextArticle(article)
+    const nextArticleURL = `/work/${nextArticle.slug}`
 
-    const content = article.content({
-      nextArticleURL: `/work/${nextArticle.slug}`
-    })
+    const content = article.content()
 
     return (
       <div className='react-container'>
@@ -46,10 +37,16 @@ class Article extends PureComponent {
         </nav>
 
         {/* <- ARTICLE MENU */}
+
+        <Section.Intro
+          article={article}
+          nextArticleURL={nextArticleURL}
+        />
+
         {/* -> ARTICLE CONTENT */}
 
         { article
-          ? <div className='react-article' dangerouslySetInnerHTML={{ __html: content }} onClick={this.onClickArticle} />
+          ? <div className='react-article' dangerouslySetInnerHTML={{ __html: content }} />
           : <p>Article not found</p>
         }
 
