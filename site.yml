@@ -5,8 +5,8 @@ articles:
 
   - title: Connecting fanboys with Zenitth
     slug: zenitth
-    description: Learn how I used research, information architecture, interface, and prototyping in order to build my final year product.
-    role: Research, information architecture, interface, prototyping, oral presentation
+    description: Did you know that some people are crazy in love with… brands? Discover how Zenitth brought them together for a legendary fight!
+    role: Research, information architecture, interface, prototyping, pitch
     team: Céline, Adrien, Jeremy, Oliver, Samuel, Arnaud, Alexis
     duration: 11 days in July 2015
     contentFile: zenitth.pug
@@ -16,7 +16,7 @@ articles:
   - title: Empowering night owl duos with Tchiiiin
     slug: tchiiiin
     description: Discover Tchiiiin, a SoLoMo (social, local, mobile) iOS application for clubbers who dream of an unforgettable night.
-    role: Research, interactions, interface, visual design, prototyping
+    role: Research, information architecture, interface, visual design, prototyping
     team: Charles, Harold, Nicolas
     duration: 6 days in February 2015
     contentFile: tchiiiin.pug
@@ -26,7 +26,7 @@ articles:
   - title: Disrupting sight games with Captain Sight
     slug: captainsight
     description: 48h to create Smart Watch applications to change the everyday life of glasses wearers? Challenge accepted! Introducing CaptainSight…
-    role: Research, interaction design, interface, visual design, oral presentation
+    role: Research, information architecture, interface, visual design, pitch
     team: Emmanuel, Loïc, Sebastien
     duration: 48h in June 2015
     contentFile: captainsight.pug
