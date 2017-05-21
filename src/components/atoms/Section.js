@@ -27,15 +27,15 @@ class IntroSection extends PureComponent {
         <h3>{article.title}</h3>
         <p>{article.description}</p>
         <p>
-          <strong>Role:</strong><br />
+          <strong>Role</strong><br />
           {article.role}
         </p>
         <p>
-          <strong>Team:</strong><br />
+          <strong>Team</strong><br />
           {article.team}
         </p>
         <p>
-          <strong>Duration:</strong><br />
+          <strong>Duration</strong><br />
           {article.duration}
         </p>
 
