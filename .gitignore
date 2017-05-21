@@ -16,6 +16,7 @@ dist/*
 !dist/mstile-150x150.png
 !dist/mstile-310x150.png
 !dist/mstile-310x310.png
+!dist/resume.pdf
 !dist/safari-pinned-tab.svg
 
 *.css
