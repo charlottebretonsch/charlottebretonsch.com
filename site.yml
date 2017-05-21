@@ -33,6 +33,16 @@ articles:
     more:
       - 4 minutes read
 
+  - title: Connecting travellers and locals with Welcom’
+    slug: welcom
+    description: Discover Welcom’, the project I worked on for Hack4Europe, a 6 months online hackathon with more than 300 participants from 5 different countries.
+    role: Research, information architecture, interface, visual design, prototyping, front-end development, pitch
+    team: Jean-Baptise, Julien, Robin, Tanguy
+    duration: Dozens of nights between July 2015 and March 2016
+    contentFile: welcom.pug
+    more:
+      - 16 minutes read
+
 
 about:
 
