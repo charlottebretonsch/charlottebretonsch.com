@@ -16,7 +16,7 @@ class About extends PureComponent {
 
           <p>
             <strong>5 years of experience</strong><br />
-            I worked for 7 different companies, including start-ups with less than 10 employees.
+            I worked for 7 different companies, including start-ups and mid-sized companies.
           </p>
 
           <p>
