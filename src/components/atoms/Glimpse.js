@@ -13,7 +13,9 @@ class Glimpse extends PureComponent {
           <div className='info-details'>
             <h3>{ title }</h3>
             <p>{ introduction }</p>
-            <p><strong>{ tag }</strong></p>
+            { tag &&
+              <p><strong>{ tag }</strong></p>
+            }
           </div>
           <nav>
             <Link className='button next' to={`/work/${slug}`}>Read the article</Link>
@@ -29,7 +31,7 @@ class Glimpse extends PureComponent {
 Glimpse.propTypes = {
   title: PropTypes.string.isRequired,
   introduction: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
+  tag: PropTypes.string,
   slug: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired
 }
