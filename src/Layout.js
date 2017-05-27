@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { Router, Switch, Route } from 'react-router-dom'
 
+import history from './history'
 import { About, Article, Contact, Header, Home } from './components'
 
 import './style/reset.styl'
@@ -10,7 +11,7 @@ import './style/responsive.styl'
 class Layout extends PureComponent {
   render () {
     return (
-      <BrowserRouter>
+      <Router history={history}>
         <div className='react-full'>
 
           <Route component={Header} />
@@ -23,7 +24,7 @@ class Layout extends PureComponent {
           </Switch>
 
         </div>
-      </BrowserRouter>
+      </Router>
     )
   }
 }
