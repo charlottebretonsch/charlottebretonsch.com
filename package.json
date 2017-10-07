@@ -16,8 +16,7 @@
     "react-dom": "^16.0.0",
     "react-ga": "^2.3.5",
     "react-router-dom": "^4.2.2",
-    "react-scrollable-anchor": "^0.4.2",
-    "smoothscroll-polyfill": "^0.3.5"
+    "react-scrollable-anchor": "^0.4.2"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
