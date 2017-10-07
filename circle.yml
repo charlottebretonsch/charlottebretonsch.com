@@ -10,6 +10,13 @@ jobs:
     steps:
       - checkout
 
+      - restore_cache:
+          keys:
+            - cbs-{{ .Branch }}-{{ checksum "package.json" }}
+            - cbs-{{ .Branch }}
+            - cbs-master-{{ checksum "package.json" }}
+            - cbs-master
+
       - run:
           name: Install dependencies
           command: yarn
@@ -19,9 +26,10 @@ jobs:
           command: yarn test
 
       - save_cache:
-          key: yarn
+          key: cbs-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
             - ~/.yarn
+            - ~/cbs.com/node_modules
 
       - deploy:
           name: Deploy
