@@ -4,9 +4,9 @@
   "author": "Charlotte Breton Schreiner <charlottebretonsch@gmail.com>",
   "repository": "git@github.com:charlottebretonsch/charlottebretonsch.com.git",
   "scripts": {
+    "build": "NODE_ENV=production webpack -p",
     "deploy": "firebase deploy",
     "dev": "webpack-dashboard -- webpack-dev-server",
-    "build": "NODE_ENV=prod webpack -p",
     "pretest": "standard"
   },
   "dependencies": {
@@ -37,9 +37,9 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "url-loader": "^0.5.8",
-    "webpack": "^2.5.0",
-    "webpack-dashboard": "^0.4.0",
-    "webpack-dev-server": "^2.4.5",
+    "webpack": "^3.6.0",
+    "webpack-dashboard": "^1.0.0-5",
+    "webpack-dev-server": "^2.9.1",
     "yaml-loader": "^0.4.0"
   },
   "babel": {

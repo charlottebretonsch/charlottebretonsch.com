@@ -60,7 +60,7 @@ module.exports = {
       }
     ]
   },
-  devtool: process.env.NODE_ENV === 'prod' ? 'source-map' : false,
+  devtool: process.env.NODE_ENV === 'production' ? 'source-map' : false,
   devServer: {
     contentBase: './dist',
     historyApiFallback: true
