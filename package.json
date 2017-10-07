@@ -7,7 +7,7 @@
     "build": "NODE_ENV=production webpack -p",
     "deploy": "firebase deploy",
     "dev": "webpack-dashboard -- webpack-dev-server",
-    "pretest": "standard"
+    "test": "standard"
   },
   "dependencies": {
     "aos": "^2.1.1",

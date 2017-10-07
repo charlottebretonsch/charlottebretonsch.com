@@ -1,11 +1,11 @@
 version: 2
 
 jobs:
-  build:
+  test:
     working_directory: ~/cbs.com
 
     docker:
-      - image: node:7
+      - image: node:8
 
     steps:
       - checkout
@@ -31,9 +31,42 @@ jobs:
             - ~/.yarn
             - ~/cbs.com/node_modules
 
+  deploy:
+    working_directory: ~/cbs.com
+
+    docker:
+      - image: node:8
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - cbs-{{ .Branch }}-{{ checksum "package.json" }}
+            - cbs-{{ .Branch }}
+            - cbs-master-{{ checksum "package.json" }}
+            - cbs-master
+
+      - run:
+          name: Install dependencies
+          command: yarn
+
+      - run:
+          name: Build
+          command: yarn build
+
       - deploy:
           name: Deploy
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              yarn build && yarn deploy -- --token "$FIREBASE_TOKEN"
-            fi
+          command: yarn deploy --token "$FIREBASE_TOKEN"
+
+workflows:
+  version: 2
+  stack:
+    jobs:
+      - test
+      - deploy:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
