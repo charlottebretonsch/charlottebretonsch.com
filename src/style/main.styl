@@ -205,7 +205,9 @@ li a
   &.start
     button-with-icon("../../assets/layout/icon-arrow-start.svg", "../../assets/layout/icon-arrow-start-hover.svg")
 
-  &.open, &[href^="mailto"], &[href^="http"]
+  &.open,
+  &[href^="mailto"],
+  &[href^="http"]:not([href^="https://charlottebretonsch.com"])
     button-with-icon("../../assets/layout/icon-arrow-open.svg", "../../assets/layout/icon-arrow-open-hover.svg")
 
 
@@ -299,6 +301,10 @@ section.page.about
     p.weak
       font-weight         300
       margin              size-line * 2 0
+    li
+      margin-top          0.8rem !important
+      margin-bottom       0.8rem !important
+
 
 
 
@@ -374,9 +380,8 @@ section.article.content
     width               size-grid * 96
 
     li
-      list-style        disc
-      margin-left       1.6rem
       margin-top        1.2rem !important
+      margin-bottom        1.2rem !important
 
   .video-wrapper
     margin              (size-grid * 2) 0
@@ -391,6 +396,10 @@ section.article.content
       top                 0
       width               100%
 
+main
+  li
+    list-style        disc !important
+    margin-left       1.6rem
 
 section.article.content.main
 

@@ -11,12 +11,12 @@ class About extends PureComponent {
           <h3>I love design.</h3>
 
           <p>
-            Working has always been a pleasure for me. Design brings excitment everyday of my life!
+            Working has always been a pleasure for me. Design brings excitement every day of my life!
           </p>
 
           <p>
             <strong>5 years of experience</strong><br />
-            I worked for 7 different companies, including start-ups and mid-sized companies.
+            I worked for 8 different companies, including start-ups and mid-sized companies.
           </p>
 
           <p>
@@ -38,49 +38,92 @@ class About extends PureComponent {
           <h3>My skills</h3>
 
           <p>
-            As a hackathon addict, I quickly learned to cover a wide range of areas. I am able to build products on my own but I prefer working in a team to learn from others and share my knowledge. Although I initially specialized in <strong>user interface</strong> and <strong>visual design</strong>, I can cover the full user experience process including <strong>user research</strong> and <strong>information architecture</strong>. I am fond of <strong>code</strong> and love to produce my designs.
+            Back when I was a hackathon addict, I quickly learned to cover a wide range of areas. I am able to build products on my own but I prefer working in a team to learn from others and share my knowledge. I cover the full user experience process including UX strategy, <strong>user research, information architecture, interaction design</strong> and interface design. I can code too but I reserve this skill for side-projects only.
           </p>
 
           <h3>My work experience</h3>
 
           <Experience
-            title='Head of User Experience'
-            subtitle='Enki Labs Inc. – London, United Kingdom'
+            title='Senior UX Architect'
+            subtitle='Appear Here – London, UK'
             more={[
-              'From March 2016 – Full time – Current position',
-              'Startup – Less than 10 employees'
+              'Since July 2017, full time, current position',
+              'Startup, 50 employees'
             ]}
           >
-            <p>Enki is a mobile app, with more than 200k users, which provides content to help developers improve their skills on a daily basis. My job is to advocate for the user and the user experience process. I am primarily in charge of the research, information architecture, user interface, prototyping, visual design and data analysis. I also act as a product owner for some of our features: writing specifications, priorisation and product management. I also help to improve our management tools and processes. Finally, I am responsible for the planning of team building events: organisation of parties (bi-weekly) and ski trip (yearly).</p>
+            <p>Appear Here is the leading marketplace for retail in the UK. My role was to develop a deep understanding of our users and translate insights into successful products. In 75 days, I brought UX to life by:</p>
+            <ul>
+              <li>
+                Organising bi-weekly qualitative user sessions. I recruited and organised the first regular user sessions. In total, we interviewed 9 users for a £10/user budget which is 5 times lower than the industry standard. Each session was led by me. Anyone from the company could attend as a notetaker or an observer to better understand our user’s needs.
+              </li>
+              <li>
+                Sharing UX progress across the company. I presented to the company 4 projects and posted 3 internal blog posts. I also created a transparent in-depth documentation of every UX initiatives.
+              </li>
+              <li>
+                Involving the team in UX activities. I organised and led ideation workshops during discovery and design phases.
+              </li>
+            </ul>
+          </Experience>
+
+          <Experience
+            title='Head of User Experience'
+            subtitle='Enki Labs Inc. – London, UK'
+            more={[
+              'From March 2016 to July 2017, full time',
+              'Startup, 10 employees'
+            ]}
+          >
+            <p>Enki is a mobile app, with more than 240k users, which provides content to help developers improve their skills on a daily basis. My role was to advocate for the user and the user experience process. I was:</p>
+            <ul>
+              <li>Responsible for all stages of design: user research, information architecture, user interface, prototyping, visual design. I improved many aspects of our app which resulted in a higher retention and many positive reviews on Apple and Google stores.</li>
+              <li>Product owner of multiple features: competition analysis, specifications, prioritisation, management and validation of the implementation, data analysis.</li>
+              <li>Proactive in the continuous improvement of our internal delivery process. For example, I introduced and applied a continuous validation process which dramatically reduced the number of bugs in our app.</li>
+              <li>Heavily involved in strategic business decisions as part of the weekly senior management meetings.</li>
+              <li>In charge of organising team buildings: Enkithons (bi-weekly), special activities (occasionally) and ski-trip in France (yearly).</li>
+            </ul>
           </Experience>
 
           <Experience
             title='UX Teacher'
-            subtitle='Le Wagon – Paris, France'
+            subtitle='Le Wagon – London, UK and Paris, France'
             more={[
-              'From April 2015 – Occasionally',
-              'School – 20-30 students'
+              'Since April 2015, 5 days quarterly every year',
+              'Bootcamp, 30-40 students'
             ]}
           >
-            <p>Le Wagon is an unconventional school to learn to code in Ruby. Every session brings together passionate people from various industries, often looking to reinvent themselves. As a UX Teacher, I guide students during their final project to help them build the product they dreamed of. I introduce them to user experience methods and organize workshops tailored to each team according to their level of progress.</p>
+            <p>Le Wagon is an unconventional school to learn how to code in Ruby. Every session brings together passionate people from various industries, often looking to reinvent themselves. My role is to:</p>
+            <ul>
+              <li>
+                Introduce students to user experience methods during a 1h oral presentation.
+              </li>
+              <li>
+                Guide students during their final project and organize workshops tailored to each team according to their level of progress.
+              </li>
+            </ul>
           </Experience>
 
           <Experience
             title='UX Designer'
             subtitle='Theodo – Paris, France'
             more={[
-              'From November 2015 to March 2016 – Full time',
-              'Agency – More than 80 employees'
+              'From November 2015 to March 2016, full time',
+              'Agency, 80 employees'
             ]}
           >
-            <p>Theodo is a famous agile tech agency working with startups and large companies. As the first designer in the company, I had to find solutions to implement UX methods in the Theodo agile development process as well as introducing/selling UX to our clients. While working on project, I used all my design skills: user research, information architecture, user interfaces, visual design, prototyping and front end development. I was also in charge of some of the team building events (cinema nights, Christmas party) and internal communication (branded hoodies, powerpoint presentations).</p>
+            <p>Theodo is a famous agile tech agency working with startups and large companies. I was in charge of: </p>
+            <ul>
+              <li>Implementing UX methods in Theodo’s process and work on all design stages from the research to the front-end implementation of our client’s products.</li>
+              <li>Introducing and upselling user experience to clients (eg. Societe Generale) during sales meetings as well as provide time estimations and budget.</li>
+              <li>Managing the design process with our clients: organise meetings and workshops, update budget/timing and share my progress on a daily basis.</li>
+              <li>Team buildings (cinema nights, Christmas party) and internal communication (branded hoodies, presentations for sales meetings).</li>
+            </ul>
           </Experience>
 
           <Experience
             title='UX/UI Designer and Front End Developer'
             subtitle='Freelance – Paris, France'
             more={[
-              'From May 2015 to November 2015 – Full time',
+              'From May 2015 to November 2015, full time',
               '7+ clients'
             ]}
           >
@@ -91,22 +134,22 @@ class About extends PureComponent {
             title='UX Designer'
             subtitle='Agorize – Paris, France'
             more={[
-              'From september 2014 to May 2015 – Part time',
-              'Startup – Less than 80 employees'
+              'From September 2014 to May 2015, part time',
+              'Startup, 50 employees'
             ]}
           >
-            <p>Agorize is an innovation challenge platform which bring online thousands of students, developers and startups. I worked for Agorise part-time, alternating with IESA Multimedia where I was enrolled as an UX student. I was in charge of user experience for both our public and private platforms. I was the only UX designer for the first 6 months and worked closely with the CEO to define new features and re-design old ones. I applied user research methods, improved the information architecture and designed interfaces.</p>
+            <p>Agorize is an innovation challenge platform which brings online thousands of students, developers and startups. I worked for Agorise part-time, alternating with IESA Multimedia where I was enrolled as a UX student. I was in charge of user experience for both our public and private platforms. I was the only UX designer for the first 6 months and worked closely with the CEO to define new features and redesign old ones. I applied user research methods, improved the information architecture and designed interfaces.</p>
           </Experience>
 
           <Experience
             title='UI Designer and Front End Developer'
             subtitle='Toxicode – Paris, France'
             more={[
-              'From September 2013 to August 2014 – Part time',
-              'Agency – Less than 10 employees'
+              'From September 2013 to August 2014, part time',
+              'Agency, 10 employees'
             ]}
           >
-            <p>Toxicode is a small company divided in two side: agency and research/development. I worked part-time alternating with Fonderie de l'image where I was studying front-end development and web design. This was my first experience as a front-end developer: I learned to code in HTML, CSS and JavaScript. I worked closely with developers to create education games. I imagined and designed many games as well as digital solutions for our clients (mainly e-commerce).</p>
+            <p>Toxicode is a small company divided into two sides: agency and research/development. I worked part-time alternating with Fonderie de l'image where I was studying front-end development and web design. This was my first experience as a front-end developer: I learned to code in HTML, CSS and JavaScript. I worked closely with developers to create educational games. I imagined and designed many games as well as digital solutions for our clients (mainly e-commerce).</p>
           </Experience>
 
           <h3>My education</h3>

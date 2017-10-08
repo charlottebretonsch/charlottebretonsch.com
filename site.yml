@@ -6,7 +6,7 @@ articles:
   - title: Hit the ground running at Appear Here
     slug: appearhere
     description: Creating an inclusive, transparent and collaborative user experience process is the most efficient way to build an user-centred team.
-    role: Research, interaction design, information architecture, interface design, prototyping, ux management
+    role: Research, interaction design, information architecture, interface design, prototyping, UX management
     team: Product manager, product designer, 5 developers
     duration: 3 months starting end of July 2017
     contentFile: appearhere.pug
