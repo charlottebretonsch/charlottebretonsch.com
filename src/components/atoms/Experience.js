@@ -3,13 +3,18 @@ import PropTypes from 'prop-types'
 
 class Experience extends PureComponent {
   render () {
-    const { title, subtitle, description, more } = this.props
+    const {
+      children,
+      title,
+      subtitle,
+      more
+    } = this.props
 
     return (
       <div className='react-experience'>
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
-        <p>{ description }</p>
+        { children }
         { more.map((text, index) =>
           <p className='weak' key={index}>{ text }</p>
         )}
@@ -20,9 +25,9 @@ class Experience extends PureComponent {
 }
 
 Experience.propTypes = {
+  children: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
   more: PropTypes.arrayOf(PropTypes.string).isRequired
 }
 
