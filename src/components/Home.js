@@ -20,7 +20,7 @@ class Home extends PureComponent {
             Driven by problem solving, I build products which empower people and grow businesses.
           </p>
           <p>
-            I use interface and visual design to breathe life into ideas, user experience methods to drive decisions and code to deliver pixel perfect interfaces.
+            I use interaction and interface design to breathe life into ideas, user experience methods to drive decisions and code to deliver pixel perfect interfaces.
           </p>
           <p>
             I love to create processes which bring teams together around one goal: make an awesome product!
