@@ -23,6 +23,7 @@ body
   font-family         'Roboto', sans-serif
   color               color-dark
   margin              auto
+  letter-spacing      0.2px
 
 *
   margin              0
@@ -85,7 +86,7 @@ h5
   line-height         size-grid * 2.5
   margin-top          size-line * 2
 
-p
+p, main li
   font-size           size-grid * 1.75
   line-height         size-grid * 2.5
   font-weight         font-weight-light
@@ -370,7 +371,12 @@ section.article.content
   justify-content     center
 
   main
-    width               size-grid * 100
+    width               size-grid * 96
+
+    li
+      list-style        disc
+      margin-left       1.6rem
+      margin-top        1.2rem !important
 
   .video-wrapper
     margin              (size-grid * 2) 0
