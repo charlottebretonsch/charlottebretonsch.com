@@ -3,6 +3,16 @@
 
 articles:
 
+  - title: User Research methods to kickstart your projects
+    slug: userresearch
+    description: Understanding your users' behaviors, needs and motivations is key to design kickass experiences.
+    role: Speaker
+    team: 60+ attendees
+    duration: 1 hour
+    contentFile: userresearch.pug
+    more:
+      - 1 hour read
+
   - title: Hit the ground running at Appear Here
     slug: appearhere
     description: Creating an inclusive, transparent and collaborative user experience process is the most efficient way to build an user-centred team.
