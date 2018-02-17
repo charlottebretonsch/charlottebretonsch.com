@@ -11,10 +11,10 @@ class Contact extends PureComponent {
           <h3>Feel free to contact me</h3>
 
           <p>
-            I am currently working for Appear Here in London and looking out for new job opportunities as a UX Architect, UX Designer or Product Designer.
+            I am currently working as Lead User Experience Designer for Trussle in London, UK.
           </p>
 
-          <p>Whether you want to talk about a project, give me feedback on my portfolio or want to hire me, don't hesitate to drop me an email:</p>
+          <p>Whether you want to talk about a project, give me feedback on my portfolio or simply have a chat, don't hesitate to drop me an email:</p>
 
           <p><strong>charlottebretonsch@gmail.com</strong></p>
 

@@ -15,12 +15,12 @@ class About extends PureComponent {
           </p>
 
           <p>
-            <strong>5 years of experience</strong><br />
-            I worked for 8 different companies, including start-ups and mid-sized companies.
+            <strong>6 years of experience</strong><br />
+            I worked for 10 different companies, including start-ups and mid-sized companies.
           </p>
 
           <p>
-            <strong>65+ projects</strong><br />
+            <strong>70+ projects</strong><br />
             I designed dozens of projects, in various industries: health, insurance, technology, bank, education, e-commerce, travel...
           </p>
 
@@ -44,11 +44,33 @@ class About extends PureComponent {
           <h3>My work experience</h3>
 
           <Experience
+            title='Lead User Experience Designer'
+            subtitle='Trussle – London, UK'
+            more={[
+              'Since October 2017, full time, current position',
+              'Mid-sized company, 60 employees'
+            ]}
+          >
+            <p>Trussle is the home of home ownership. Our mission is to help everyone love their journey of owning a home. Disrupting the mortgage industry, we strive to create the very best experience for one of the most important and emotional moments of our lives. I am in charge of:</p>
+            <ul>
+              <li>
+                Using empathy to highlight meaningful problems and spread a user-centric mindset in the company. I organise and lead regular qualitative user sessions involving everyone in the company and translating insights into shareable information which is used as a decision-making tool for each of our projects.
+              </li>
+              <li>
+                Planning and running user experience activities to craft simple, delightful and usable solutions. As well as designing solutions, I plan projects ahead, organise design pairing exercises and lead workshops including people from different parts of the business.
+              </li>
+              <li>
+                Creating and improving user experience processes to create a collaborative working environment.
+              </li>
+            </ul>
+          </Experience>
+
+          <Experience
             title='Senior UX Architect'
             subtitle='Appear Here – London, UK'
             more={[
-              'Since July 2017, full time, current position',
-              'Startup, 50 employees'
+              'From July 2017 to October 2017, full time',
+              'Mid-sized company, 50 employees'
             ]}
           >
             <p>Appear Here is the leading marketplace for retail in the UK. My role was to develop a deep understanding of our users and translate insights into successful products. In 75 days, I brought UX to life by:</p>
@@ -135,7 +157,7 @@ class About extends PureComponent {
             subtitle='Agorize – Paris, France'
             more={[
               'From September 2014 to May 2015, part time',
-              'Startup, 50 employees'
+              'Mid-sized company, 50+ employees'
             ]}
           >
             <p>Agorize is an innovation challenge platform which brings online thousands of students, developers and startups. I worked for Agorise part-time, alternating with IESA Multimedia where I was enrolled as a UX student. I was in charge of user experience for both our public and private platforms. I was the only UX designer for the first 6 months and worked closely with the CEO to define new features and redesign old ones. I applied user research methods, improved the information architecture and designed interfaces.</p>
