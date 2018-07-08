@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 
-import config from '../../site.yml'
+import config from '../../articles/site.yml'
 import { Experience } from './atoms'
 
 class About extends PureComponent {

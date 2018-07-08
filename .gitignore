@@ -21,3 +21,5 @@ dist/*
 
 *.css
 *.html
+
+launch.sh

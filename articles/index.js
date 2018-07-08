@@ -1,4 +1,4 @@
-import config from '../site.yml'
+import config from './site.yml'
 
 const articles = config.articles.map(article => ({
   ...article,
