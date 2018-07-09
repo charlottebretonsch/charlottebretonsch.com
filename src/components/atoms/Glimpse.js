@@ -1,46 +1,35 @@
 /* This is a glimpse of an article */
 
-import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import React, { PureComponent } from "react"
+import PropTypes from "prop-types"
+import { Link } from "react-router-dom"
 
 class Glimpse extends PureComponent {
-  render () {
-    const { title, introduction, tag, slug, image } = this.props
+  static propTypes = {
+    title: PropTypes.string.isRequired,
+    introduction: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired
+  }
+
+  render() {
+    const { title, introduction, slug, image } = this.props
 
     return (
-
       <article>
+        <img src={image} />
 
-        <img className='glimpse' src={image} />
-
-        <div className='details'>
-
-          <h3>{ title }</h3>
-          <p>{ introduction }</p>
-
-          { tag &&
-            <p><strong>{ tag }</strong></p>
-          }
+        <div>
+          <h3>{title}</h3>
+          <p>{introduction}</p>
 
           <nav>
-            <Link className='button next' to={`/work/${slug}`}>Read the article</Link>
+            <Link to={`/${slug}`}>Read the story</Link>
           </nav>
-
         </div>
-
       </article>
-
     )
   }
-}
-
-Glimpse.propTypes = {
-  title: PropTypes.string.isRequired,
-  introduction: PropTypes.string.isRequired,
-  tag: PropTypes.string,
-  slug: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired
 }
 
 export default Glimpse

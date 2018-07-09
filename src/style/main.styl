@@ -7,9 +7,6 @@
 
 
 
-
-
-
 // SET UP
 
 html
@@ -32,16 +29,12 @@ body
   -moz-box-sizing     border-box
   box-sizing          border-box
 
-li
-  list-style          none
-
-img
-  display             block
-
 a
+  border-bottom       2px solid color-dark
   color               inherit
   cursor              pointer
-  display             block
+  font-size           size-grid * 2
+  text-transform      uppercase
 
 
 
@@ -52,11 +45,6 @@ a
 
 
 //// TYPOGRAPHY
-
-nav li, a, .button
-  font-size           size-grid * 2
-  line-height         size-grid * 3
-  text-transform      uppercase
 
 h1
   font-size           size-grid * 5
@@ -84,34 +72,23 @@ p
 
 
 
+container()
+  width               size-grid * 110
+
 
 
 // HEADER
 
 header
-  width               100%
   border-bottom       size-grid-half solid color-light-medium
   background          color-light
-  z-index             3
+  display             flex
+  justify-content     center
+  padding             (size-grid * 5) 0
 
-  section
-    width               size-grid * 120
-    margin              auto
-    display             flex
-    justify-content     space-between
-    padding             size-grid * 5 size-grid * 5
-
-  nav
-    ul
-      display             flex
-      justify-content     flex-end
-
-      li
-        padding-left        size-grid * 3
-
-        &:first-child
-          padding-left        0
-
+  a
+    container()
+    border            none
 
 
 
@@ -122,70 +99,77 @@ header
 // MAIN
 
 main
-  width               100%
+  align-items         center
   background          color-light
-  margin              size-grid * 5 auto size-grid * 10 auto
-  z-index             0
+  display             flex
+  flex-flow           column nowrap
+  margin-bottom       15 * size-grid
 
   section
-    padding             size-grid * 5 0
-    width               size-grid * 120
-    margin              auto
+    container()
 
     h1, h2
-      margin              size-grid * 5
+      margin-bottom   5 * size-grid
 
-      &:first-child
-        margin-top          0
+    p a
+      font-size       inherit
+      text-transform  none
 
-    h4, h3
-      margin              size-grid * 3 size-grid * 5
+    nav
+      display         flex
+      flex-flow       row nowrap
+      margin-top      5 * size-grid
 
-    p
-      margin              size-grid * 2 size-grid * 5
+      a + a
+        margin-left  2 * size-grid
 
-      &:last-child
-        margin-bottom       0
+    &.hero
+      margin-top      10 * size-grid
 
+      p
+        font-size       3 * size-grid
+        line-height     5 * size-grid
 
-//// Article content
+        & + p
+          margin-top    3 * size-grid
 
-section.article.content
-  display             flex
-  justify-content     center
-
-
+    & + section
+      margin-top      10 * size-grid
 
 
 
 // GLIMPSE
 
 article
-  width               100%
-  height              size-grid * 40
-  margin              size-grid * 4 0
   background          color-light-high
+  height              size-grid * 38
   display             flex
-  justify-content     space-between
+  flex-flow           row nowrap
 
-  img.glimpse
-    width               auto
-    height              inherit
+  margin              0 (-5 * size-grid)
 
-  .details
-    padding             size-grid * 5
+  img
+    object-fit          cover
+    width               size-grid * 48
+
+  div
     display             flex
-    flex-direction      column
+    flex-flow           column nowrap
+    padding             size-grid * 5
 
     h3
-      margin-bottom       size-grid * 2
+      font-weight         normal
 
     p
       flex-grow           1
-      margin              0 0 size-grid * 2 0
+      font-size           20px
+      margin-top          size-grid * 2
 
-  &:last-child
-    margin-bottom       0
+    nav
+      margin              0
+
+  & + &
+    margin-top            4 * size-grid
 
 
 
@@ -296,15 +280,6 @@ section#start
   img
     width               100%
     margin              size-grid * 5 0
-
-// REACT
-
-#root,
-.react-full,
-.react-container,
-.react-article
-  min-height          100%
-  display             inline
 
 /*
 
@@ -434,7 +409,6 @@ nav.article
   top                 0
   left                0
   background          color-light
-  z-index             2
   opacity             0.95
 
   a, h4

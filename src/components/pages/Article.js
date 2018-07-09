@@ -1,21 +1,19 @@
-import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import React, { PureComponent } from "react"
+import PropTypes from "prop-types"
+import { Link } from "react-router-dom"
 
-import { Section } from './atoms'
-import articles from '../../articles'
+import { Section } from "@atoms"
+import articles from "@articles"
 
 class Article extends PureComponent {
-  getNextArticle (article) {
+  getNextArticle(article) {
     const index = articles.indexOf(article)
-    const nextIndex = index + 1 === articles.length
-      ? 0
-      : index + 1
+    const nextIndex = index + 1 === articles.length ? 0 : index + 1
 
     return articles[nextIndex]
   }
 
-  render () {
+  render() {
     const { match } = this.props
     const article = articles.find(article => article.slug === match.params.slug)
 
@@ -25,10 +23,9 @@ class Article extends PureComponent {
     const content = article.content()
 
     return (
-      <div className='react-container'>
-
-          {/* -> ARTICLE MENU */}
-  {/*
+      <div className="react-container">
+        {/* -> ARTICLE MENU */}
+        {/*
           <nav
             className='article'
             data-aos='slide-down'
@@ -39,26 +36,23 @@ class Article extends PureComponent {
             <Link to={`/work/${nextArticle.slug}`} className='button next'>Next article</Link>
           </nav>
   */}
-          {/* -> ARTICLE INTRO */}
+        {/* -> ARTICLE INTRO */}
 
-          <Section.Intro
-            article={article}
-            nextArticleURL={nextArticleURL}
-          />
+        <Section.Intro article={article} nextArticleURL={nextArticleURL} />
 
-          {/* -> ARTICLE CONTENT */}
+        {/* -> ARTICLE CONTENT */}
         <main>
-          { article
-            ? <div className='react-article' dangerouslySetInnerHTML={{ __html: content }} />
-            : <p>Article not found</p>
-          }
+          {article ? (
+            <div className="react-article" dangerouslySetInnerHTML={{ __html: content }} />
+          ) : (
+            <p>Article not found</p>
+          )}
 
           {/* -> ARTICLE NEXT */}
 
           <Section.NextArticle article={nextArticle} />
 
           {/* -> ARTICLE END */}
-
         </main>
       </div>
     )

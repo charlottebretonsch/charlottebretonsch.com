@@ -1,3 +1,3 @@
-export { default as Experience } from './Experience'
-export { default as Glimpse } from './Glimpse'
-export { default as Section } from './Section'
+export { default as Glimpse } from "./Glimpse"
+export { default as Header } from "./Header"
+export { default as Section } from "./Section"
