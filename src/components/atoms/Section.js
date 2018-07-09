@@ -14,6 +14,8 @@ class Section extends PureComponent {
   }
 }
 
+/* This is the introduction of the article */
+
 class IntroSection extends PureComponent {
   onStart (event) {
     event.preventDefault()
@@ -66,6 +68,8 @@ IntroSection.propTypes = {
   article: PropTypes.object.isRequired,
   nextArticleURL: PropTypes.string.isRequired
 }
+
+/* This is the next article at the end of an article */
 
 class NextArticleSection extends PureComponent {
   render () {

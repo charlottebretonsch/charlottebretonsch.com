@@ -1,3 +1,5 @@
+/* This is a block of experience containing the job title and description - used in "About section" */
+
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 

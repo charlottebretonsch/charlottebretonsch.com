@@ -1,3 +1,5 @@
+/* This is the main header navigation with the logo */
+
 import React, { PureComponent } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 

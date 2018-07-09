@@ -1,3 +1,5 @@
+/* This is the contact page */
+
 import React, { PureComponent } from 'react'
 
 class Contact extends PureComponent {

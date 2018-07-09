@@ -1,3 +1,5 @@
+/* This is the home page */
+
 import React, { PureComponent } from 'react'
 import { Link } from 'react-router-dom'
 
