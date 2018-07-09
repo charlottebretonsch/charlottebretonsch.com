@@ -15,23 +15,27 @@ class Header extends PureComponent {
 
       <header>
 
-        <Link to='/'>
-          <h1>Charlotte Breton Schreiner</h1>
-        </Link>
+        <section>
 
-        <nav>
-          <ul>
-            <li>
-              <NavLink exact to='/'>Work</NavLink>
-            </li>
-            <li>
-              <NavLink to='/about'>About</NavLink>
-            </li>
-            <li>
-              <NavLink to='/contact'>Contact</NavLink>
-            </li>
-          </ul>
-        </nav>
+          <Link to='/'>
+            Charlotte Breton Schreiner
+          </Link>
+
+          <nav>
+            <ul>
+              <li>
+                <NavLink exact to='/'>Work</NavLink>
+              </li>
+              <li>
+                <NavLink to='/about'>About</NavLink>
+              </li>
+              <li>
+                <NavLink to='/contact'>Contact</NavLink>
+              </li>
+            </ul>
+          </nav>
+
+        </section>
 
       </header>
 

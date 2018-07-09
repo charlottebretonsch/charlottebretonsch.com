@@ -1,6 +1,6 @@
 // IMPORT
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,500,500i')
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700')
 @import "variables.styl"
 
 
@@ -14,16 +14,13 @@
 
 html
   height              100%
-  font-size           62.5%
 
 body
   height              100%
-  min-width           370px
-  max-width           1800px
-  font-family         'Roboto', sans-serif
+  min-width           360px
+  font-family         'Work Sans', sans-serif
   color               color-dark
   margin              auto
-  letter-spacing      0.2px
 
 *
   margin              0
@@ -44,80 +41,46 @@ img
 a
   color               inherit
   cursor              pointer
+  display             block
 
 
 
 
 
+// GENERAL
 
 
 
-// TYPOGRAPHY
+//// TYPOGRAPHY
 
-h2, h3, h4, h5, strong, p.weak
-  font-weight         font-weight-medium
+nav li, a, .button
+  font-size           size-grid * 2
+  line-height         size-grid * 3
+  text-transform      uppercase
 
-  &:first-child
-    margin-top          0
-
-  &:last-child
-    margin-bottom       0
+h1
+  font-size           size-grid * 5
+  line-height         size-grid * 6.25
 
 h2
-  font-size           size-grid * 3
-  line-height         size-grid * 3.5
-  margin-top          size-grid * 7
-  margin-bottom       size-grid * 2
+  font-size           size-grid * 4
+  line-height         size-grid * 5
 
 h3
-  font-size           size-grid * 2.5
-  line-height         size-grid * 3
-  margin-top          size-grid * 4
-  margin-bottom       size-grid * 2
+  font-size           size-grid * 3
+  line-height         size-grid * 3.75
 
-h4, .react-experience
-  font-size           size-grid * 2
-  line-height         size-grid * 2.5
-  margin-top          size-grid * 3
-  margin-bottom       size-grid * 2
+h4
+  font-size           size-grid * 3
+  line-height         size-grid * 5
 
 h5
-  font-size           size-grid * 1.75
-  line-height         size-grid * 2.5
-  margin-top          size-line * 2
-
-p, main li
-  font-size           size-grid * 1.75
-  line-height         size-grid * 2.5
-  font-weight         font-weight-light
-  margin-top          size-grid * 2
-
-nav li, h1, .button
-  text-transform      uppercase
-  font-weight         font-weight-light
-
-nav li, h1
-  font-size           size-grid * 2.5
-  line-height         size-grid * 2.5
-
-.button
   font-size           size-grid * 2
-  line-height         size-grid * 2.5
+  line-height         size-grid * 3
 
-p.weak
-  color               color-dark-medium !important
-
-h2, h3, h4, .rect-experience, h5, strong, p.weak
-  &:first-child
-    margin-top          0
-  &:last-child
-    margin-bottom       0
-
-
-
-
-
-
+p
+  font-size           size-grid * 2.5
+  line-height         size-grid * 3.75
 
 
 
@@ -127,12 +90,16 @@ h2, h3, h4, .rect-experience, h5, strong, p.weak
 
 header
   width               100%
-  padding             size-grid * 7
-  border-bottom       size-line solid color-light-high
-  display             flex
-  justify-content     space-between
+  border-bottom       size-grid-half solid color-light-medium
   background          color-light
   z-index             3
+
+  section
+    width               size-grid * 120
+    margin              auto
+    display             flex
+    justify-content     space-between
+    padding             size-grid * 5 size-grid * 5
 
   nav
     ul
@@ -145,8 +112,80 @@ header
         &:first-child
           padding-left        0
 
+
+
+
+
+
+
+
+// MAIN
+
+main
+  width               100%
+  background          color-light
+  margin              size-grid * 5 auto size-grid * 10 auto
+  z-index             0
+
+  section
+    padding             size-grid * 5 0
+    width               size-grid * 120
+    margin              auto
+
+    h1, h2
+      margin              size-grid * 5
+
       &:first-child
-        padding-left        0
+        margin-top          0
+
+    h4, h3
+      margin              size-grid * 3 size-grid * 5
+
+    p
+      margin              size-grid * 2 size-grid * 5
+
+      &:last-child
+        margin-bottom       0
+
+
+//// Article content
+
+section.article.content
+  display             flex
+  justify-content     center
+
+
+
+
+
+// GLIMPSE
+
+article
+  width               100%
+  height              size-grid * 40
+  margin              size-grid * 4 0
+  background          color-light-high
+  display             flex
+  justify-content     space-between
+
+  img.glimpse
+    width               auto
+    height              inherit
+
+  .details
+    padding             size-grid * 5
+    display             flex
+    flex-direction      column
+
+    h3
+      margin-bottom       size-grid * 2
+
+    p
+      flex-grow           1
+      margin              0 0 size-grid * 2 0
+
+  &:last-child
+    margin-bottom       0
 
 
 
@@ -154,6 +193,120 @@ header
 
 
 
+// ARTCILE
+
+
+//// Article intro
+
+section.article.intro
+  height              calc(100% - 208px)
+  min-height          size-grid * 67
+  justify-content     space-between
+  background          color-light-high
+  width               100%
+  padding             size-grid * 3.5
+  display             flex
+  flex-flow           row nowrap
+
+  aside
+    width               size-grid * 46
+    padding             size-grid * 3.5
+    flex-shrink         0
+
+    .actions
+      position            absolute
+      bottom              size-grid * 3.5
+      left                size-grid * 3.5
+
+      a.button
+        margin-top          0
+
+  article
+    width               100%
+    height              size-grid * 32
+    margin-bottom       size-grid * 2
+    background          color-light-high
+    position            relative
+    display             flex
+    justify-content     space-between
+
+    p
+      margin-top          size-grid
+
+    h3
+      margin-bottom       0
+
+    .glimpse
+      height              100%
+
+    .info
+      padding             size-grid * 4
+      display             flex
+      flex-flow           column nowrap
+      justify-content     space-between
+
+      nav
+        margin-top          size-grid
+      .button
+        margin              0
+
+    &:last-child
+      margin-bottom        0
+
+  .article-image
+    display             flex
+    align-items         center
+    padding             size-grid * 5
+
+    img
+      width             100%
+      height            100%
+      object-fit        contain
+
+section.article.content.retro
+  background           color-light-high
+
+section#start
+  position              relative
+
+  .anchor
+    content             ''
+    position            absolute
+    top                 -9.25 * size-grid
+
+.video-wrapper
+  padding-bottom      56.25%
+  position            relative
+  width               100%
+  margin              size-grid * 4 0
+
+  iframe
+    height              100%
+    left                0
+    position            absolute
+    top                 0
+    width               100%
+
+.article.content.retro
+  background-color    color-light-high
+  padding             size-grid * 5 0
+  margin              size-grid * 5 auto
+.article.content
+
+  img
+    width               100%
+    margin              size-grid * 5 0
+
+// REACT
+
+#root,
+.react-full,
+.react-container,
+.react-article
+  min-height          100%
+  display             inline
+
+/*
 
 // ACTIONS
 
@@ -217,55 +370,6 @@ li a
 
 
 
-// SECTIONS
-
-section
-  width               100%
-  padding             size-grid * 3.5
-  display             flex
-  flex-flow           row nowrap
-
-  aside
-    width               size-grid * 46
-    padding             size-grid * 3.5
-    flex-shrink         0
-
-  main
-    padding             size-grid * 3.5
-
-  article
-    width               100%
-    height              size-grid * 32
-    margin-bottom       size-grid * 2
-    background          color-light-high
-    position            relative
-    display             flex
-    justify-content     space-between
-
-    p
-      margin-top          size-grid
-
-    h3
-      margin-bottom       0
-
-    .glimpse
-      height              100%
-
-    .info
-      padding             size-grid * 4
-      display             flex
-      flex-flow           column nowrap
-      justify-content     space-between
-
-      nav
-        margin-top          size-grid
-      .button
-        margin              0
-
-    &:last-child
-      margin-bottom        0
-
-
 
 
 
@@ -274,7 +378,7 @@ section
 
 // PAGE
 
-section.page
+  section.page
   justify-content     space-between
   align-items         flex-start
 
@@ -282,8 +386,6 @@ section.page
     position            sticky
     top                 size-grid * 3.5
 
-  main
-    width               100%
 
 
 //// Page about
@@ -292,6 +394,8 @@ section.page.about
   aside
     .button:last-child
       margin-top          size-grid
+  */
+  /*
   main
     h4
       margin-bottom       0
@@ -304,7 +408,7 @@ section.page.about
     li
       margin-top          0.8rem !important
       margin-bottom       0.8rem !important
-
+  */
 
 
 
@@ -316,8 +420,7 @@ section.page.about
 // ARTICLE
 
 
-
-
+/*
 //// Article navigation
 
 nav.article
@@ -338,47 +441,19 @@ nav.article
     margin              0
 
 
-//// Article intro
 
-section.article.intro
-  height              calc(100% - 20.4rem)
-  min-height          size-grid * 67
-  justify-content     space-between
-  background          color-light-high
-
-  aside
-    position          relative
-
-    .actions
-      position            absolute
-      bottom              size-grid * 3.5
-      left                size-grid * 3.5
-
-      a.button
-        margin-top          0
-
-        &:last-child
-          margin-right        0
-
-  main
-    display             flex
-    align-items         center
-
-    img
-      width             100%
-      height            100%
-      object-fit        contain
-
-
+/*
 //// Article content
 
 section.article.content
   display             flex
   justify-content     center
-
+*/
+/*
   main
     width               size-grid * 96
-
+    */
+/*
     li
       margin-top        1.2rem !important
       margin-bottom        1.2rem !important
@@ -450,3 +525,4 @@ section#start
 
 
 // END
+*/

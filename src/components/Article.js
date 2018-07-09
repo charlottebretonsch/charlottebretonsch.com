@@ -27,39 +27,39 @@ class Article extends PureComponent {
     return (
       <div className='react-container'>
 
-        {/* -> ARTICLE MENU */}
+          {/* -> ARTICLE MENU */}
+  {/*
+          <nav
+            className='article'
+            data-aos='slide-down'
+            data-aos-anchor='.article.intro'
+            data-aos-anchor-placement='top-top'
+          >
+            <h4>{ article.title }</h4>
+            <Link to={`/work/${nextArticle.slug}`} className='button next'>Next article</Link>
+          </nav>
+  */}
+          {/* -> ARTICLE INTRO */}
 
-        <nav
-          className='article'
-          data-aos='slide-down'
-          data-aos-anchor='.article.intro'
-          data-aos-anchor-placement='top-top'
-        >
-          <h4>{ article.title }</h4>
-          <Link to={`/work/${nextArticle.slug}`} className='button next'>Next article</Link>
-        </nav>
+          <Section.Intro
+            article={article}
+            nextArticleURL={nextArticleURL}
+          />
 
-        {/* <- ARTICLE MENU */}
+          {/* -> ARTICLE CONTENT */}
+        <main>
+          { article
+            ? <div className='react-article' dangerouslySetInnerHTML={{ __html: content }} />
+            : <p>Article not found</p>
+          }
 
-        <Section.Intro
-          article={article}
-          nextArticleURL={nextArticleURL}
-        />
+          {/* -> ARTICLE NEXT */}
 
-        {/* -> ARTICLE CONTENT */}
+          <Section.NextArticle article={nextArticle} />
 
-        { article
-          ? <div className='react-article' dangerouslySetInnerHTML={{ __html: content }} />
-          : <p>Article not found</p>
-        }
+          {/* -> ARTICLE END */}
 
-        {/* <- ARTICLE CONTENT */}
-        {/* -> ARTICLE NEXT */}
-
-        <Section.NextArticle article={nextArticle} />
-
-        {/* <- ARTICLE NEXT */}
-
+        </main>
       </div>
     )
   }

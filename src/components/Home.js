@@ -11,30 +11,37 @@ class Home extends PureComponent {
   render () {
     return (
 
-      <section className='page work'>
+      <main>
 
-        {/* INFOS */}
+        {/* ABOUT */}
 
-        <aside>
+        <section>
 
-          <h3>Hi, I'm a designer.</h3>
-          <p>
-            Driven by problem-solving, I build solutions which empower people and grow businesses.
-          </p>
-          <p>
-            I use interaction and interface design to breathe life into ideas, user experience methods to drive decisions and code to deliver pixel perfect interfaces.
-          </p>
-          <p>
-            I love to create processes which bring teams together around one goal: create delightful experiences!
-          </p>
+          <h1>Hi, I'm a designer.</h1>
 
-          <Link className='button' to='/about' title='About'>Learn more about me</Link>
+          <h4>
+            I love crafting products, services and systems for people, with people.
+          </h4>
 
-        </aside>
+          <h4>
+            My expertise lies in information architecture, interface design, user research and design strategy – Although code and visual design come in handy when working on side projects, prototyping or presenting things ;)
+          </h4>
 
-        {/* CONTENT */}
+          <h4>
+            When I’m not designing, I play the piano, pretend to be a ballet dancer, read love stories, travel, volunteer for cool events and watch Netflix.
+          </h4>
 
-        <main>
+          {/*
+          <Link className='button' to='/about' title='About'>My resume</Link>
+          */}
+
+        </section>
+
+        {/* PROJECTS */}
+
+        <section>
+
+          <h2>Here are some of my projects.</h2>
 
           { articles.map(article =>
             <Glimpse
@@ -47,9 +54,9 @@ class Home extends PureComponent {
             />
           )}
 
-        </main>
+        </section>
 
-      </section>
+      </main>
 
     )
   }

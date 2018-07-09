@@ -32,23 +32,23 @@ class IntroSection extends PureComponent {
 
     return <Section className='article intro'>
       <aside>
-        <h3>{article.title}</h3>
+        <h1>{article.title}</h1>
         <p>{article.description}</p>
-        <p>
-          <strong>Role</strong><br />
+        <h5>
+          Role<br />
           {article.role}
-        </p>
-        <p>
-          <strong>Team</strong><br />
+        </h5>
+        <h5>
+          Team<br />
           {article.team}
-        </p>
-        <p>
-          <strong>Duration</strong><br />
+        </h5>
+        <h5>
+          Duration<br />
           {article.duration}
-        </p>
+        </h5>
 
         { article.more.map((text, index) =>
-          <p className='weak' key={index}>{ text }</p>
+          <h5 key={index}>{ text }</h5>
         )}
 
         <div className='actions'>
@@ -57,9 +57,9 @@ class IntroSection extends PureComponent {
         </div>
       </aside>
 
-      <main>
+      <div class="article-image">
         <img className='glimpse' src={article.glimpse} />
-      </main>
+      </div>
     </Section>
   }
 }
@@ -75,8 +75,8 @@ class NextArticleSection extends PureComponent {
   render () {
     const { article } = this.props
 
-    return <Section className='article content next-article'>
-      <main>
+    return <div className='article content next-article'>
+      <section>
         <h2>Next article</h2>
         <Glimpse
           title={article.title}
@@ -85,8 +85,8 @@ class NextArticleSection extends PureComponent {
           slug={article.slug}
           image={article.glimpse}
         />
-      </main>
-    </Section>
+      </section>
+    </div>
   }
 }
 
