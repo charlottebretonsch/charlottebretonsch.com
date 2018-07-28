@@ -12,7 +12,7 @@ const Container = styled.header`
   box-sizing: border-box;
   display: flex;
   flex-flow: row nowrap;
-  height: ${p => p.theme.spacing.mult(80)}px;
+  height: calc(100vh - ${p => p.theme.spacing.mult(27)}px);
   margin-left: calc(${p => p.theme.spacing.containerWidth / 2}px - 50vw);
   padding: ${p => p.theme.spacing.mult(10)}px;
   width: 100vw;

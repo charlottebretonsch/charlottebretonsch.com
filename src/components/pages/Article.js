@@ -8,7 +8,7 @@ import { Intro, Glimpse, Section } from "@molecules"
 import articles from "@articles"
 
 const Content = styled.article`
-  margin-top: ${p => p.theme.spacing.mult(10)}px 0;
+  margin-top: ${p => p.theme.spacing.mult(10)}px;
 
   h2 {
     font-size: 32px;
