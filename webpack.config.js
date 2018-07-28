@@ -13,6 +13,7 @@ module.exports = {
       "@articles": path.resolve(__dirname, "articles"),
       "@atoms": path.resolve(__dirname, "src/components/atoms"),
       "@history": path.resolve(__dirname, "src/history"),
+      "@molecules": path.resolve(__dirname, "src/components/molecules"),
       "@pages": path.resolve(__dirname, "src/components/pages"),
       "@style": path.resolve(__dirname, "src/style")
     }

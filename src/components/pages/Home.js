@@ -1,9 +1,8 @@
-/* This is the home page */
-
 import React, { PureComponent } from "react"
 import { Link } from "react-router-dom"
 
-import { Glimpse } from "@atoms"
+import { H1, H2, Nav } from "@atoms"
+import { Glimpse, Section } from "@molecules"
 
 import articles from "@articles"
 
@@ -11,10 +10,8 @@ class Home extends PureComponent {
   render() {
     return (
       <main>
-        {/* ABOUT */}
-
-        <section className="hero">
-          <h1>Hi, I'm a designer.</h1>
+        <Section>
+          <H1>Hello, I’m a Designer.</H1>
 
           <p>I love crafting products, services and systems for people, with people.</p>
 
@@ -29,17 +26,15 @@ class Home extends PureComponent {
             stories, travel, volunteer for cool events and watch Netflix.
           </p>
 
-          <nav>
+          <Nav>
             <a>My resume</a>
             <a>My LinkedIn</a>
             <a>My Github</a>
-          </nav>
-        </section>
+          </Nav>
+        </Section>
 
-        {/* PROJECTS */}
-
-        <section>
-          <h2>Here are some of my projects.</h2>
+        <Section>
+          <H2>Here are some of my projects.</H2>
 
           {articles.map(article => (
             <Glimpse
@@ -51,10 +46,10 @@ class Home extends PureComponent {
               key={article.slug}
             />
           ))}
-        </section>
+        </Section>
 
-        <section>
-          <h2>Want to have a chat?</h2>
+        <Section>
+          <H2>Want to have a chat?</H2>
 
           <p>
             I’m always happy to meet new people and talk about new opportunities so don’t hesitate
@@ -64,7 +59,7 @@ class Home extends PureComponent {
           <nav>
             <a href="#">Send me an email</a>
           </nav>
-        </section>
+        </Section>
       </main>
     )
   }
