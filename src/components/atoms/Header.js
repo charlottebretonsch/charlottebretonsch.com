@@ -16,13 +16,14 @@ const Wrapper = styled.header`
   background: ${p =>
     p.becomesGrey && p.shrunk ? p.theme.colours.lightGrey : p.theme.colours.light};
   box-sizing: border-box;
-  height: ${p => p.theme.spacing.mult(p.shrunk ? 9 : 13)}px;
+  height: ${p => p.theme.spacing.mult(13)}px;
   margin-bottom: ${p => p.theme.spacing.mult(0.5)}px;
   margin-left: calc(${p => p.theme.spacing.containerWidth / 2}px - 50vw);
   padding: 0 calc(50vw - ${p => p.theme.spacing.containerWidth / 2}px);
   position: sticky;
   top: 0;
-  transition: 0.2s;
+  transition: 0.6s;
+  transform: translate(0, ${p => (p.shrunk ? -p.theme.spacing.mult(4) : 0)}px);
   width: 100vw;
   z-index: 10;
 
@@ -46,9 +47,9 @@ const Container = styled.div`
   justify-content: space-between;
   opacity: ${p => (isHidden(p) ? 0 : 1)};
   position: absolute;
-  top: 50%;
+  top: calc(50% + ${p => (p.shrunk ? p.theme.spacing.mult(2) : 0)}px);
   transform: translate(0, calc(-50% - ${p => (isHidden(p) ? 70 : 0)}px));
-  transition: 0.8s;
+  transition: 0.6s;
   width: ${p => p.theme.spacing.containerWidth}px;
 
   a {
