@@ -57,6 +57,10 @@ const Container = styled.div`
       p.main &&
       css`
         border: none;
+
+        &::after {
+          content: none;
+        }
       `};
     color: inherit;
     text-decoration: none;

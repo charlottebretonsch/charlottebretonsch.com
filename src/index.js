@@ -2,7 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom"
 import { Router } from "react-router-dom"
 import ReactGA from "react-ga"
-import { ThemeProvider, injectGlobal } from "styled-components"
+import { ThemeProvider, injectGlobal, keyframes } from "styled-components"
 import AOS from "aos"
 import "aos/dist/aos.css"
 
@@ -12,6 +12,17 @@ import theme from "./theme"
 
 AOS.init()
 ReactGA.initialize("UA-53041838-2")
+
+const linkLine = keyframes`
+  0% {
+    opacity: 1;
+    width: 0%;
+  }
+  100% {
+    opacity: .4;
+    width: 100%;
+  }
+`
 
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
@@ -30,7 +41,22 @@ injectGlobal`
   a {
     border-bottom: 2px solid ${theme.colours.dark};
     color: inherit;
+    position: relative;
     text-decoration: none;
+
+    &::after {
+      background: ${theme.colours.grey};
+      content: "";
+      height: 2px;
+      left: 0;
+      position: absolute;
+      top: 100%;
+      width: 0%;
+    }
+
+    &:hover::after {
+      animation: 1s ${linkLine} ease-in infinite;
+    }
   }
 `
 
