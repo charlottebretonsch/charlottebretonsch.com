@@ -57,6 +57,7 @@ const Container = styled.div`
       p.main &&
       css`
         border: none;
+        padding: 0;
 
         &::after {
           content: none;

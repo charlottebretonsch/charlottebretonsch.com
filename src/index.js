@@ -41,8 +41,10 @@ injectGlobal`
   a {
     border-bottom: 2px solid ${theme.colours.dark};
     color: inherit;
+    padding: 0 ${theme.spacing.mult(0.25)}px ${theme.spacing.mult(0.5)}px;
     position: relative;
     text-decoration: none;
+    text-transform: uppercase;
 
     &::after {
       background: ${theme.colours.grey};
