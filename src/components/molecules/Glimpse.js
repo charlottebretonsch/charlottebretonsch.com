@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 
-import { H4 } from "@atoms"
+import { H4, Nav } from "@atoms"
 
 const Container = styled.article`
   background: ${p => p.theme.colours.lightGrey};
@@ -60,9 +60,9 @@ class Glimpse extends PureComponent {
           <H4>{title}</H4>
           <p>{introduction}</p>
 
-          <nav>
+          <Nav>
             <Link to={`/${slug}`}>Read the story</Link>
-          </nav>
+          </Nav>
         </div>
       </Container>
     )
