@@ -22,7 +22,7 @@ const Wrapper = styled.header`
   padding: 0 calc(50vw - ${p => p.theme.spacing.containerWidth / 2}px);
   position: sticky;
   top: 0;
-  transition: 0.6s;
+  transition: 0.5s;
   transform: translate(0, ${p => (p.shrunk ? -p.theme.spacing.mult(4) : 0)}px);
   width: 100vw;
   z-index: 10;
@@ -49,7 +49,7 @@ const Container = styled.div`
   position: absolute;
   top: calc(50% + ${p => (p.shrunk ? p.theme.spacing.mult(2) : 0)}px);
   transform: translate(0, calc(-50% - ${p => (isHidden(p) ? 70 : 0)}px));
-  transition: 0.6s;
+  transition: 0.5s;
   width: ${p => p.theme.spacing.containerWidth}px;
 
   a {
@@ -76,7 +76,7 @@ class Header extends PureComponent {
   }
 
   static defaultProps = {
-    threshold: 200,
+    threshold: 50,
   }
 
   state = {
