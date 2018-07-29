@@ -40,5 +40,5 @@ ReactDOM.render(
       <App />
     </Router>
   </ThemeProvider>,
-  document.getElementById("root")
+  document.getElementById("root"),
 )

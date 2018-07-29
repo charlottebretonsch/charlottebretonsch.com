@@ -46,7 +46,7 @@ class Glimpse extends PureComponent {
     title: PropTypes.string.isRequired,
     introduction: PropTypes.string.isRequired,
     slug: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired
+    image: PropTypes.string.isRequired,
   }
 
   render() {

@@ -1,6 +1,5 @@
 import React, { PureComponent } from "react"
 import PropTypes from "prop-types"
-import { Link } from "react-router-dom"
 import styled from "styled-components"
 
 import { H2, Header } from "@atoms"
@@ -113,7 +112,7 @@ class Article extends PureComponent {
 }
 
 Article.propTypes = {
-  match: PropTypes.object.isRequired
+  match: PropTypes.object.isRequired,
 }
 
 export default Article

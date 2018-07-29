@@ -5,8 +5,6 @@ import styled from "styled-components"
 
 import { H1, Nav } from "@atoms"
 
-const Wrapper = styled.div``
-
 const Container = styled.header`
   background: ${p => p.theme.colours.lightGrey};
   box-sizing: border-box;
@@ -56,7 +54,7 @@ class Intro extends PureComponent {
     introduction: PropTypes.string.isRequired,
     nextSlug: PropTypes.string.isRequired,
     meta: PropTypes.arrayOf(PropTypes.string),
-    image: PropTypes.string.isRequired
+    image: PropTypes.string.isRequired,
   }
 
   render() {

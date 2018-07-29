@@ -10,7 +10,7 @@ export default {
     dark: "#333333",
     grey: "#dfdfdf",
     lightGrey: "#f1f1f1",
-    light: "#ffffff"
+    light: "#ffffff",
   },
   container: css`
     width: ${containerWidth}px;
@@ -18,12 +18,12 @@ export default {
   fonts: {
     weight: {
       light: 300,
-      medium: 500
-    }
+      medium: 500,
+    },
   },
   spacing: {
     base: baseSpacing,
     containerWidth,
-    mult: spacingMult
-  }
+    mult: spacingMult,
+  },
 }

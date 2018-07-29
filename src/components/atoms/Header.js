@@ -71,16 +71,16 @@ class Header extends PureComponent {
   static propTypes = {
     nextLink: PropTypes.string,
     title: PropTypes.string,
-    threshold: PropTypes.number.isRequired
+    threshold: PropTypes.number.isRequired,
   }
 
   static defaultProps = {
-    threshold: 200
+    threshold: 200,
   }
 
   state = {
     progress: 0,
-    shrunk: false
+    shrunk: false,
   }
 
   componentDidMount() {
@@ -94,7 +94,7 @@ class Header extends PureComponent {
     const progress = (winScroll / height) * 100
     this.setState({
       progress,
-      shrunk: winScroll >= this.props.threshold
+      shrunk: winScroll >= this.props.threshold,
     })
   }
 
