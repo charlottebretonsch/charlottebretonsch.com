@@ -106,7 +106,7 @@ class Article extends PureComponent {
           introduction={article.description}
           nextSlug={nextArticle.slug}
           image={article.glimpse}
-          meta={["Speaker", "60+ attendees", "1 hour"]}
+          meta={[article.role, article.team, article.duration]}
         />
 
         <Content dangerouslySetInnerHTML={{ __html: article.content() }} />
