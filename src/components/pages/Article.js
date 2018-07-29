@@ -9,6 +9,11 @@ import articles from "@articles"
 const Content = styled.article`
   margin-top: ${p => p.theme.spacing.mult(10)}px;
 
+  .anchor {
+    position: relative;
+    top: ${p => p.theme.spacing.mult(-12)}px;
+  }
+
   h2 {
     font-size: 32px;
     font-weight: normal;

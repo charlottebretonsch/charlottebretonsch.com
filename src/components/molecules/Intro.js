@@ -57,6 +57,16 @@ class Intro extends PureComponent {
     image: PropTypes.string.isRequired,
   }
 
+  onStart = event => {
+    event.preventDefault()
+
+    document.querySelector(".anchor").scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    })
+  }
+
   render() {
     const { title, introduction, nextSlug, meta, image } = this.props
 
@@ -69,7 +79,9 @@ class Intro extends PureComponent {
           {meta && <ul>{meta.map((x, i) => <li key={i}>{x}</li>)}</ul>}
 
           <Nav>
-            <a href="">Start</a>
+            <a href="#anchor" onClick={this.onStart}>
+              Start
+            </a>
             <Link to={`/${nextSlug}`}>Next project</Link>
           </Nav>
         </aside>
