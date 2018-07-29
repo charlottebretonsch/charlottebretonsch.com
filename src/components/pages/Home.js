@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react"
 import { Link } from "react-router-dom"
 
-import { H1, H2, Nav } from "@atoms"
+import { H1, H2, Header, Nav } from "@atoms"
 import { Glimpse, Section } from "@molecules"
 
 import articles from "@articles"
@@ -10,6 +10,8 @@ class Home extends PureComponent {
   render() {
     return (
       <main>
+        <Header />
+
         <Section>
           <H1>Hello, I’m a Designer.</H1>
 

@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 
-import { H2 } from "@atoms"
-import { Intro, Glimpse, Section } from "@molecules"
+import { H2, Header } from "@atoms"
+import { Glimpse, Intro, Section } from "@molecules"
 import articles from "@articles"
 
 const Content = styled.article`
@@ -85,6 +85,8 @@ class Article extends PureComponent {
 
     return (
       <main>
+        <Header title={article.title} nextLink={nextArticle.slug} />
+
         <Intro
           title={article.title}
           introduction={article.description}

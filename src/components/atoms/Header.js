@@ -1,5 +1,3 @@
-/* This is the main header navigation with the logo */
-
 import React, { PureComponent } from "react"
 import styled from "styled-components"
 import { Link } from "react-router-dom"
