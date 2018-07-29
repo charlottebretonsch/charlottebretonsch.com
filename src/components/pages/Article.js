@@ -75,6 +75,16 @@ const Content = styled.article`
 `
 
 class Article extends PureComponent {
+  componentDidMount() {
+    this.resetScroll()
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) this.resetScroll()
+  }
+
+  resetScroll = () => window.scrollTo(0, 0)
+
   getNextArticle(article) {
     const index = articles.indexOf(article)
     const nextIndex = index + 1 === articles.length ? 0 : index + 1
@@ -117,6 +127,7 @@ class Article extends PureComponent {
 }
 
 Article.propTypes = {
+  location: PropTypes.object.isRequired,
   match: PropTypes.object.isRequired,
 }
 
