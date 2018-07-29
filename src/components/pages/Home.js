@@ -19,7 +19,7 @@ class Home extends PureComponent {
           <p>
             My expertise lies in information architecture, interface design, user research and
             design strategy – Although code and visual design come in handy when working on side
-            projects, prototyping or <a href="#">presenting things</a>. ;)
+            projects, prototyping or presenting things. ;)
           </p>
 
           <p>
@@ -28,9 +28,9 @@ class Home extends PureComponent {
           </p>
 
           <Nav>
-            <a>My resume</a>
-            <a>My LinkedIn</a>
-            <a>My Github</a>
+            <a href="resume.pdf">My resume</a>
+            <a href="https://www.linkedin.com/in/charlotte-breton-schreiner">My LinkedIn</a>
+            <a href="https://github.com/charlottebretonsch">My Github</a>
           </Nav>
         </Section>
 
@@ -57,9 +57,9 @@ class Home extends PureComponent {
             to get in touch with me.
           </p>
 
-          <nav>
-            <a href="#">Send me an email</a>
-          </nav>
+          <Nav>
+            <a href="mailto:charlottebretonsch@gmail.com">Send me an email</a>
+          </Nav>
         </Section>
       </main>
     )
