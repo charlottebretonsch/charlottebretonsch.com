@@ -31,6 +31,7 @@ injectGlobal`
     color: ${theme.colours.dark};
     font-family: 'Work Sans', sans-serif;
     margin: 0;
+    min-width: ${theme.spacing.mult(160)}px;
   }
 
   * {
