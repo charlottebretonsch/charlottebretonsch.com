@@ -10,7 +10,8 @@ const Container = styled.header`
   box-sizing: border-box;
   display: flex;
   flex-flow: row nowrap;
-  height: calc(100vh - ${p => p.theme.spacing.mult(27)}px);
+  height: calc(100vh - ${p => p.theme.spacing.mult(31)}px);
+  min-height: ${p => p.theme.spacing.mult(60)}px;
   padding: ${p => p.theme.spacing.mult(10)}px;
   width: 100%;
 
