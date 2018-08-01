@@ -11,9 +11,8 @@ const Container = styled.header`
   display: flex;
   flex-flow: row nowrap;
   height: calc(100vh - ${p => p.theme.spacing.mult(27)}px);
-  margin-left: calc(${p => p.theme.spacing.containerWidth / 2}px - 50vw);
   padding: ${p => p.theme.spacing.mult(10)}px;
-  width: 100vw;
+  width: 100%;
 
   aside {
     display: flex;
@@ -41,7 +40,7 @@ const Container = styled.header`
   }
 
   img {
-    margin-left: ${p => p.theme.spacing.mult(12)}px;
+    margin-left: ${p => p.theme.spacing.mult(7)}px;
     object-fit: cover;
     flex-grow: 7;
     width: 10%;

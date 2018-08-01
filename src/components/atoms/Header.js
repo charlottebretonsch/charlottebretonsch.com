@@ -18,13 +18,12 @@ const Wrapper = styled.header`
   box-sizing: border-box;
   height: ${p => p.theme.spacing.mult(13)}px;
   margin-bottom: ${p => p.theme.spacing.mult(0.5)}px;
-  margin-left: calc(${p => p.theme.spacing.containerWidth / 2}px - 50vw);
   padding: 0 calc(50vw - ${p => p.theme.spacing.containerWidth / 2}px);
   position: sticky;
   top: 0;
-  transition: 0.5s;
+  transition: transform 0.5s;
   transform: translate(0, ${p => (p.shrunk ? -p.theme.spacing.mult(4) : 0)}px);
-  width: 100vw;
+  width: 100%;
   z-index: 10;
 
   &::before {

@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react"
+import React, { Fragment, PureComponent } from "react"
 
 import { H1, H2, Header, Nav } from "@atoms"
 import { Glimpse, Section } from "@molecules"
@@ -8,7 +8,7 @@ import articles from "@articles"
 class Home extends PureComponent {
   render() {
     return (
-      <main>
+      <Fragment>
         <Header />
 
         <Section>
@@ -61,7 +61,7 @@ class Home extends PureComponent {
             <a href="mailto:charlottebretonsch@gmail.com">Send me an email</a>
           </Nav>
         </Section>
-      </main>
+      </Fragment>
     )
   }
 }

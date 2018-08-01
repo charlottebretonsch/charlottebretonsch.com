@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react"
+import React, { Fragment, PureComponent } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
@@ -8,6 +8,7 @@ import articles from "@articles"
 
 const Content = styled.article`
   margin-top: ${p => p.theme.spacing.mult(10)}px;
+  width: ${p => p.theme.spacing.containerWidth}px;
 
   .anchor {
     position: relative;
@@ -98,7 +99,7 @@ class Article extends PureComponent {
     const nextArticle = this.getNextArticle(article)
 
     return (
-      <main>
+      <Fragment>
         <Header title={article.title} nextLink={nextArticle.slug} />
 
         <Intro
@@ -121,7 +122,7 @@ class Article extends PureComponent {
             image={nextArticle.glimpse}
           />
         </Section>
-      </main>
+      </Fragment>
     )
   }
 }
