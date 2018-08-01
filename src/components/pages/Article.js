@@ -56,10 +56,27 @@ const Content = styled.article`
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    margin-left: calc(${p => p.theme.spacing.containerWidth / 2}px - 50vw);
     padding: ${p => p.theme.spacing.mult(10)}px 0;
+    position: relative;
     margin-top: ${p => p.theme.spacing.mult(10)}px;
-    width: 100vw;
+
+    &::before,
+    &::after {
+      background: ${p => p.theme.colours.lightGrey};
+      bottom: 0;
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100vw;
+    }
+
+    &::before {
+      right: 100%;
+    }
+
+    &::after {
+      left: 100%;
+    }
 
     section {
       width: ${p => p.theme.spacing.containerWidth}px;
