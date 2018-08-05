@@ -39,6 +39,13 @@ const Container = styled.article`
   & + & {
     margin-top: ${p => p.theme.spacing.mult(4)}px;
   }
+
+  @media (max-width: ${p => p.theme.responsive.limits.medium}px) {
+    margin: 0 -${p => p.theme.spacing.mult(4)}px;
+  }
+  @media (max-width: ${p => p.theme.responsive.limits.small}px) {
+    margin: 0 -${p => p.theme.spacing.mult(1)}px;
+  }
 `
 
 class Glimpse extends PureComponent {

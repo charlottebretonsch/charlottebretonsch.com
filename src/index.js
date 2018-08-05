@@ -29,12 +29,12 @@ injectGlobal`
     color: ${theme.colours.dark};
     font-family: 'Work Sans', sans-serif;
     margin: 0;
-    min-width: ${theme.spacing.mult(160)}px;
   }
 
   * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
   }
 
   a {

@@ -3,8 +3,8 @@ import styled from "styled-components"
 import { Nav } from "@atoms"
 
 export default styled.section`
+  ${p => p.theme.css.containerWidth};
   margin-top: ${p => p.theme.spacing.mult(10)}px;
-  width: ${p => p.theme.responsive.container.large}px;
 
   p {
     line-height: 40px;

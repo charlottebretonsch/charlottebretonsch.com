@@ -7,13 +7,20 @@ import { Glimpse, Intro, Section } from "@molecules"
 import articles from "@articles"
 
 const Content = styled.article`
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
   font-size: 20px;
   margin-top: ${p => p.theme.spacing.mult(10)}px;
-  width: ${p => p.theme.responsive.container.large}px;
+  width: 100%;
 
   .anchor {
     position: relative;
     top: ${p => p.theme.spacing.mult(-12)}px;
+  }
+
+  section {
+    ${p => p.theme.css.containerWidth};
   }
 
   h2 {
@@ -39,6 +46,10 @@ const Content = styled.article`
     margin: ${p => p.theme.spacing.mult(2)}px 0;
   }
 
+  section > a {
+    margin: ${p => p.theme.spacing.mult(3)}px 0;
+  }
+
   ul,
   ol {
     margin: ${p => p.theme.spacing.mult(3)}px 0;
@@ -53,7 +64,7 @@ const Content = styled.article`
   .video-wrapper {
     display: block;
     margin: ${p => p.theme.spacing.mult(3)}px 0;
-    max-width: ${p => p.theme.responsive.container.large}px;
+    width: 100%;
   }
 
   .video-wrapper {
@@ -70,79 +81,68 @@ const Content = styled.article`
   }
 
   .retro {
-    background: ${p => p.theme.colours.lightGrey};
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    ${p => p.theme.css.horizontalRow};
+    margin: ${p => p.theme.spacing.mult(10)}px 0 0;
     padding: ${p => p.theme.spacing.mult(10)}px 0;
-    position: relative;
-    margin-top: ${p => p.theme.spacing.mult(10)}px;
 
-    h2 {
-      margin: 0 0 ${p => p.theme.spacing.mult(4)}px;
-    }
+    div {
+      ${p => p.theme.css.containerWidth};
 
-    & > ul,
-    & > ol {
-      display: flex;
-      flex-flow: row nowrap;
-      list-style: none;
-      margin: 0;
-      padding: 0;
+      h2 {
+        margin: 0 0 ${p => p.theme.spacing.mult(4)}px;
+      }
 
-      li {
+      & > ul,
+      & > ol {
         display: flex;
-        flex-flow: column nowrap;
-        flex-grow: 1;
-        font-size: 16px;
+        flex-flow: row nowrap;
+        list-style: none;
         margin: 0;
-        width: 20%;
+        padding: 0;
 
-        h3 {
-          margin: 0 0 ${p => p.theme.spacing.mult(2)}px;
-        }
-
-        p {
-          font-size: inherit;
-          line-height: ${p => p.theme.spacing.mult(3)}px;
-          margin: 0 0 ${p => p.theme.spacing.base}px;
-        }
-
-        ul,
-        ol {
-          align-items: stretch;
+        li {
           display: flex;
           flex-flow: column nowrap;
-          list-style: none;
+          flex-grow: 1;
+          font-size: 16px;
           margin: 0;
-          padding: 0;
+          width: 20%;
 
-          li {
-            display: block;
-            width: 100%;
+          h3 {
+            margin: 0 0 ${p => p.theme.spacing.mult(2)}px;
+          }
+
+          p {
+            font-size: inherit;
+            line-height: ${p => p.theme.spacing.mult(3)}px;
+            margin: 0 0 ${p => p.theme.spacing.base}px;
+          }
+
+          ul,
+          ol {
+            align-items: stretch;
+            display: flex;
+            flex-flow: column nowrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+              display: block;
+              width: 100%;
+            }
           }
         }
       }
     }
 
-    &::before,
-    &::after {
-      background: ${p => p.theme.colours.lightGrey};
-      bottom: 0;
-      content: "";
-      position: absolute;
-      top: 0;
-      width: 50vw;
-    }
-
-    &::before {
-      right: 100%;
-    }
-
-    &::after {
-      left: 100%;
-    }
-  }
+    /* background: ${p => p.theme.colours.lightGrey};
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: ${p => p.theme.spacing.mult(10)}px 0;
+    position: relative;
+    margin-top: ${p => p.theme.spacing.mult(10)}px; */
 `
 
 class Article extends PureComponent {

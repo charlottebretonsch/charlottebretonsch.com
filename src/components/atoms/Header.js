@@ -15,10 +15,8 @@ const line = colour => css`
 const Wrapper = styled.header`
   background: ${p =>
     p.becomesGrey && p.shrunk ? p.theme.colours.lightGrey : p.theme.colours.light};
-  box-sizing: border-box;
   height: ${p => p.theme.spacing.mult(13)}px;
   margin-bottom: ${p => p.theme.spacing.mult(0.5)}px;
-  padding: 0 calc(50vw - ${p => p.theme.responsive.container.large / 2}px);
   position: sticky;
   top: 0;
   transition: transform 0.5s;
@@ -41,15 +39,16 @@ const Wrapper = styled.header`
 const isHidden = p => (p.main && p.shrunk && p.isArticle) || (p.article && !p.shrunk)
 
 const Container = styled.div`
+  ${p => p.theme.css.containerWidth};
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  left: 50%;
   opacity: ${p => (isHidden(p) ? 0 : 1)};
   position: absolute;
   top: calc(50% + ${p => (p.shrunk ? p.theme.spacing.mult(2) : 0)}px);
-  transform: translate(0, calc(-50% - ${p => (isHidden(p) ? 70 : 0)}px));
+  transform: translate(-50%, calc(-50% - ${p => (isHidden(p) ? 70 : 0)}px));
   transition: 0.5s;
-  width: ${p => p.theme.responsive.container.large}px;
 
   a {
     ${p =>

@@ -3,17 +3,15 @@ import PropTypes from "prop-types"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 
-import { H1, Nav } from "@atoms"
+import { H1, HorizontalRow, Nav } from "@atoms"
 
 const Container = styled.header`
-  background: ${p => p.theme.colours.lightGrey};
   box-sizing: content-box;
   display: flex;
   flex-flow: row nowrap;
-  height: ${p => p.theme.spacing.mult(60)}px;
+  min-height: ${p => p.theme.spacing.mult(60)}px;
   max-width: ${p => p.theme.spacing.mult(140)}px;
   padding: ${p => p.theme.spacing.mult(10)}px;
-  position: relative;
 
   aside {
     display: flex;
@@ -50,24 +48,6 @@ const Container = styled.header`
     flex-grow: 7;
     width: 10%;
   }
-
-  &::before,
-  &::after {
-    background: ${p => p.theme.colours.lightGrey};
-    bottom: 0;
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 50vw;
-  }
-
-  &::before {
-    right: 100%;
-  }
-
-  &::after {
-    left: 100%;
-  }
 `
 
 class Intro extends PureComponent {
@@ -93,23 +73,25 @@ class Intro extends PureComponent {
     const { title, introduction, nextSlug, meta, image } = this.props
 
     return (
-      <Container>
-        <aside>
-          <H1>{title}</H1>
-          <p>{introduction}</p>
+      <HorizontalRow>
+        <Container>
+          <aside>
+            <H1>{title}</H1>
+            <p>{introduction}</p>
 
-          {meta && <ul>{meta.map((x, i) => <li key={i}>{x}</li>)}</ul>}
+            {meta && <ul>{meta.map((x, i) => <li key={i}>{x}</li>)}</ul>}
 
-          <Nav>
-            <a href="#anchor" onClick={this.onStart}>
-              Start
-            </a>
-            <Link to={`/${nextSlug}`}>Next project</Link>
-          </Nav>
-        </aside>
+            <Nav>
+              <a href="#anchor" onClick={this.onStart}>
+                Start
+              </a>
+              <Link to={`/${nextSlug}`}>Next project</Link>
+            </Nav>
+          </aside>
 
-        <img src={image} />
-      </Container>
+          <img src={image} />
+        </Container>
+      </HorizontalRow>
     )
   }
 }

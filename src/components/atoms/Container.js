@@ -5,5 +5,4 @@ export default styled.main`
   display: flex;
   flex-flow: column nowrap;
   margin: 0 auto ${p => p.theme.spacing.mult(15)}px;
-  overflow-x: hidden;
 `
