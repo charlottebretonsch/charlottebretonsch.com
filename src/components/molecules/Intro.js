@@ -26,6 +26,7 @@ const Container = styled.header`
     p {
       font-size: 20px;
       line-height: 30px;
+      margin: 0;
     }
 
     ul {
