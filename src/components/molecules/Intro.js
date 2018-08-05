@@ -48,6 +48,20 @@ const Container = styled.header`
     flex-grow: 7;
     width: 10%;
   }
+
+  @media (max-width: ${p => p.theme.responsive.limits.small}px) {
+    flex-flow: column nowrap;
+    padding: ${p => p.theme.spacing.mult(3)}px;
+
+    aside {
+      width: 100%;
+    }
+
+    img {
+      margin: ${p => p.theme.spacing.mult(3)}px 0 0;
+      width: 100%;
+    }
+  }
 `
 
 class Intro extends PureComponent {
