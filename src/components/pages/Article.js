@@ -7,6 +7,7 @@ import { Glimpse, Intro, Section } from "@molecules"
 import articles from "@articles"
 
 const Content = styled.article`
+  font-size: 20px;
   margin-top: ${p => p.theme.spacing.mult(10)}px;
   width: ${p => p.theme.spacing.containerWidth}px;
 
@@ -19,23 +20,40 @@ const Content = styled.article`
     font-size: 32px;
     font-weight: normal;
     line-height: 50px;
+    margin: ${p => p.theme.spacing.mult(6)}px 0 ${p => p.theme.spacing.mult(4)}px;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   h3 {
     font-size: 24px;
     font-weight: normal;
     line-height: 40px;
+    margin: ${p => p.theme.spacing.mult(4)}px 0 ${p => p.theme.spacing.mult(3)}px;
   }
 
   p {
-    font-size: 20px;
     line-height: 30px;
+    margin: ${p => p.theme.spacing.mult(2)}px 0;
+  }
+
+  ul,
+  ol {
+    margin: ${p => p.theme.spacing.mult(3)}px 0;
+    padding-left: ${p => p.theme.spacing.mult(2.5)}px;
+
+    li {
+      margin: ${p => p.theme.spacing.mult(1.5)}px 0;
+    }
   }
 
   img,
   .video-wrapper {
-    margin: 0 -${p => p.theme.spacing.mult(5)}px;
-    width: ${p => p.theme.spacing.containerWidth + p.theme.spacing.mult(10)}px;
+    display: block;
+    margin: ${p => p.theme.spacing.mult(3)}px 0;
+    max-width: ${p => p.theme.spacing.containerWidth}px;
   }
 
   .video-wrapper {
