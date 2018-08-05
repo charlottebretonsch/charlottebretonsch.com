@@ -47,6 +47,7 @@ const Container = styled.header`
     margin-left: ${p => p.theme.spacing.mult(7)}px;
     object-fit: cover;
     flex-grow: 7;
+    height: 100%;
     width: 10%;
   }
 
