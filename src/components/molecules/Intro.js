@@ -72,6 +72,7 @@ const Container = styled.header`
     }
 
     img {
+      height: auto;
       margin: ${p => p.theme.spacing.mult(3)}px 0 0;
       width: 100%;
     }
