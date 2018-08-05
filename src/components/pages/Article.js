@@ -72,11 +72,58 @@ const Content = styled.article`
   .retro {
     background: ${p => p.theme.colours.lightGrey};
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
     padding: ${p => p.theme.spacing.mult(10)}px 0;
     position: relative;
     margin-top: ${p => p.theme.spacing.mult(10)}px;
+
+    h2 {
+      margin: 0 0 ${p => p.theme.spacing.mult(4)}px;
+    }
+
+    & > ul,
+    & > ol {
+      display: flex;
+      flex-flow: row nowrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: flex;
+        flex-flow: column nowrap;
+        flex-grow: 1;
+        font-size: 16px;
+        margin: 0;
+        width: 20%;
+
+        h3 {
+          margin: 0 0 ${p => p.theme.spacing.mult(2)}px;
+        }
+
+        p {
+          font-size: inherit;
+          line-height: ${p => p.theme.spacing.mult(3)}px;
+          margin: 0 0 ${p => p.theme.spacing.base}px;
+        }
+
+        ul,
+        ol {
+          align-items: stretch;
+          display: flex;
+          flex-flow: column nowrap;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          li {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
 
     &::before,
     &::after {
@@ -94,18 +141,6 @@ const Content = styled.article`
 
     &::after {
       left: 100%;
-    }
-
-    section {
-      width: ${p => p.theme.spacing.containerWidth}px;
-
-      h2 {
-        margin: 0 0 ${p => p.theme.spacing.mult(5)}px;
-      }
-
-      p {
-        margin-bottom: 0;
-      }
     }
   }
 `
