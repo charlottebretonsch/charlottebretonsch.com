@@ -1,3 +1,5 @@
-export { default as Experience } from './Experience'
-export { default as Glimpse } from './Glimpse'
-export { default as Section } from './Section'
+export { default as Container } from "./Container"
+export { default as Header } from "./Header"
+export { default as HorizontalRow } from "./HorizontalRow"
+export { default as Nav } from "./Nav"
+export { H1, H2, H3, H4 } from "./headings"
