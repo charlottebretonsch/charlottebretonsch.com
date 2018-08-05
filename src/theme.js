@@ -1,8 +1,5 @@
-import { css } from "styled-components"
-
 const baseSpacing = 8
 const spacingMult = n => n * baseSpacing
-const containerWidth = spacingMult(110)
 
 export default {
   colours: {
@@ -12,18 +9,24 @@ export default {
     lightGrey: "#f1f1f1",
     light: "#ffffff",
   },
-  container: css`
-    width: ${containerWidth}px;
-  `,
   fonts: {
     weight: {
       light: 300,
       medium: 500,
     },
   },
+  responsive: {
+    container: {
+      large: spacingMult(110),
+      medium: spacingMult(100),
+    },
+    limits: {
+      large: spacingMult(126),
+      medium: spacingMult(112),
+    },
+  },
   spacing: {
     base: baseSpacing,
-    containerWidth,
     mult: spacingMult,
   },
 }

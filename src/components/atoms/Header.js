@@ -18,7 +18,7 @@ const Wrapper = styled.header`
   box-sizing: border-box;
   height: ${p => p.theme.spacing.mult(13)}px;
   margin-bottom: ${p => p.theme.spacing.mult(0.5)}px;
-  padding: 0 calc(50vw - ${p => p.theme.spacing.containerWidth / 2}px);
+  padding: 0 calc(50vw - ${p => p.theme.responsive.container.large / 2}px);
   position: sticky;
   top: 0;
   transition: transform 0.5s;
@@ -49,7 +49,7 @@ const Container = styled.div`
   top: calc(50% + ${p => (p.shrunk ? p.theme.spacing.mult(2) : 0)}px);
   transform: translate(0, calc(-50% - ${p => (isHidden(p) ? 70 : 0)}px));
   transition: 0.5s;
-  width: ${p => p.theme.spacing.containerWidth}px;
+  width: ${p => p.theme.responsive.container.large}px;
 
   a {
     ${p =>

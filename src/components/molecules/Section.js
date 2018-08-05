@@ -4,7 +4,7 @@ import { Nav } from "@atoms"
 
 export default styled.section`
   margin-top: ${p => p.theme.spacing.mult(10)}px;
-  width: ${p => p.theme.spacing.containerWidth}px;
+  width: ${p => p.theme.responsive.container.large}px;
 
   p {
     line-height: 40px;

@@ -9,7 +9,7 @@ import articles from "@articles"
 const Content = styled.article`
   font-size: 20px;
   margin-top: ${p => p.theme.spacing.mult(10)}px;
-  width: ${p => p.theme.spacing.containerWidth}px;
+  width: ${p => p.theme.responsive.container.large}px;
 
   .anchor {
     position: relative;
@@ -53,7 +53,7 @@ const Content = styled.article`
   .video-wrapper {
     display: block;
     margin: ${p => p.theme.spacing.mult(3)}px 0;
-    max-width: ${p => p.theme.spacing.containerWidth}px;
+    max-width: ${p => p.theme.responsive.container.large}px;
   }
 
   .video-wrapper {
