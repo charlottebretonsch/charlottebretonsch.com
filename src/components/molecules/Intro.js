@@ -37,6 +37,10 @@ const Container = styled.header`
       list-style: none;
       margin: ${p => p.theme.spacing.mult(2)}px 0 0;
       padding: 0;
+
+      li {
+        margin-bottom: ${p => p.theme.spacing.base}px;
+      }
     }
   }
 
