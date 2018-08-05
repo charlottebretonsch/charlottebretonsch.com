@@ -15,11 +15,9 @@ ReactGA.initialize("UA-53041838-2")
 
 const linkLine = keyframes`
   0% {
-    opacity: 1;
     width: 0%;
   }
   100% {
-    opacity: .4;
     width: 100%;
   }
 `
@@ -52,13 +50,14 @@ injectGlobal`
       content: "";
       height: 2px;
       left: 0;
+      opacity: 0.7;
       position: absolute;
       top: 100%;
       width: 0%;
     }
 
     &:hover::after {
-      animation: 1s ${linkLine} ease-in infinite;
+      animation: 1.5s ${linkLine} ease-in forwards;
     }
   }
 `
