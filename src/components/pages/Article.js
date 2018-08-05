@@ -132,7 +132,7 @@ const Content = styled.article`
       content: "";
       position: absolute;
       top: 0;
-      width: 100vw;
+      width: 50vw;
     }
 
     &::before {

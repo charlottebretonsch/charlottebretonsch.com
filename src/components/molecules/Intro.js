@@ -7,13 +7,13 @@ import { H1, Nav } from "@atoms"
 
 const Container = styled.header`
   background: ${p => p.theme.colours.lightGrey};
-  box-sizing: border-box;
+  box-sizing: content-box;
   display: flex;
   flex-flow: row nowrap;
-  height: calc(100vh - ${p => p.theme.spacing.mult(31)}px);
-  min-height: ${p => p.theme.spacing.mult(60)}px;
+  height: ${p => p.theme.spacing.mult(60)}px;
+  max-width: ${p => p.theme.spacing.mult(140)}px;
   padding: ${p => p.theme.spacing.mult(10)}px;
-  width: 100%;
+  position: relative;
 
   aside {
     display: flex;
@@ -49,6 +49,24 @@ const Container = styled.header`
     object-fit: cover;
     flex-grow: 7;
     width: 10%;
+  }
+
+  &::before,
+  &::after {
+    background: ${p => p.theme.colours.lightGrey};
+    bottom: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50vw;
+  }
+
+  &::before {
+    right: 100%;
+  }
+
+  &::after {
+    left: 100%;
   }
 `
 
