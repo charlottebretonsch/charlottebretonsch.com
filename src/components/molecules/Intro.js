@@ -49,6 +49,18 @@ const Container = styled.header`
     width: 10%;
   }
 
+  @media (max-width: ${p => p.theme.responsive.limits.medium}px) {
+    aside {
+      p {
+        margin: ${p => p.theme.spacing.mult(1)}px 0;
+      }
+
+      ul {
+        margin: 0;
+      }
+    }
+  }
+
   @media (max-width: ${p => p.theme.responsive.limits.small}px) {
     flex-flow: column nowrap;
     padding: ${p => p.theme.spacing.mult(3)}px;
