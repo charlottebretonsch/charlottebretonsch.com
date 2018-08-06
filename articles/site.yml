@@ -6,6 +6,9 @@ articles:
   - title: Getting tasks done with Trello Air
     slug: trelloair
     description: Trello Air is a theme for Trello.com which reduces clutter and provides more efficient visual cues to help you get things done.
+    role: NA
+    team: NA
+    duration: NA
     contentFile: trelloair.pug
     more:
       - Project introduction
@@ -14,6 +17,9 @@ articles:
   - title: Making mortgages simple
     slug: trussle
     description: The story behind of some of the design projects I led at Trussle which impacted the business, increasing conversion and satisfaction rates.
+    role: NA
+    team: NA
+    duration: NA
     contentFile: trussle.pug
     more:
       - Case study
@@ -22,6 +28,9 @@ articles:
   - title: Kickstarting projects with research methods
     slug: userresearch
     description: Understanding your users' behaviors, needs and motivations is key to design kickass experiences.
+    role: NA
+    team: NA
+    duration: NA
     contentFile: userresearch.pug
     more:
       - Talk, 60+ attendees
@@ -30,6 +39,9 @@ articles:
   - title: Hitting the ground running at Appear Here
     slug: appearhere
     description: Creating an inclusive, transparent and collaborative user experience process is the a great way to build an user-centred.
+    role: NA
+    team: NA
+    duration: NA
     contentFile: appearhere.pug
     more:
       - Case study
@@ -38,6 +50,9 @@ articles:
   - title: Connecting fanboys with Zenitth
     slug: zenitth
     description: Did you know that some people are crazy in love with… brands? Discover how Zenitth brought them together for a legendary fight!
+    role: NA
+    team: NA
+    duration: NA
     contentFile: zenitth.pug
     more:
       - Case study
@@ -46,6 +61,9 @@ articles:
   - title: Empowering night owl duos with Tchiiiin
     slug: tchiiiin
     description: Discover Tchiiiin, a SoLoMo (social, local, mobile) iOS application for clubbers who dream of an unforgettable night.
+    role: NA
+    team: NA
+    duration: NA
     contentFile: tchiiiin.pug
     more:
       - Case study
@@ -54,6 +72,9 @@ articles:
   - title: Disrupting sight games with Captain Sight
     slug: captainsight
     description: 48h to create Smart Watch applications to change the everyday life of glasses wearers? Challenge accepted! Introducing CaptainSight…
+    role: NA
+    team: NA
+    duration: NA
     contentFile: captainsight.pug
     more:
       - Case study
@@ -62,6 +83,9 @@ articles:
   - title: Connecting travellers and locals with Welcom’
     slug: welcom
     description: Welcom' is a project done during a 6 months online hackathon with more than 300 participants from 5 different countries.
+    role: NA
+    team: NA
+    duration: NA
     contentFile: welcom.pug
     more:
       - Case study
