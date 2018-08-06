@@ -3,6 +3,14 @@
 
 articles:
 
+  - title: Getting tasks done with Trello Air
+    slug: trelloair
+    description: Trello Air is a theme for Trello.com which reduces clutter and provides more efficient visual cues to help you get things done.
+    contentFile: trelloair.pug
+    more:
+      - Project introduction
+      - 5 min read
+
   - title: Making mortgages simple
     slug: trussle
     description: The story behind of some of the design projects I led at Trussle which impacted the business, increasing conversion and satisfaction rates.
@@ -11,7 +19,7 @@ articles:
       - Case study
       - 5 min read
 
-  - title: User Research methods to kickstart your projects
+  - title: Kickstarting projects with research methods
     slug: userresearch
     description: Understanding your users' behaviors, needs and motivations is key to design kickass experiences.
     contentFile: userresearch.pug
