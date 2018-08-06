@@ -167,7 +167,7 @@ const Content = styled.article`
   }
 
   @media (max-width: ${p => p.theme.responsive.limits.medium}px) {
-    margin: ${p => p.theme.spacing.mult(7)}px 0;
+    margin: ${p => p.theme.spacing.mult(7)}px 0 0 0;
 
     h2 {
       font-size: 24px;
