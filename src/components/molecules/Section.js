@@ -33,7 +33,11 @@ export default styled.section`
       line-height: 30px;
       margin: 0 0 ${p => p.theme.spacing.mult(4)}px 0;
     }
-    p, a {
+    p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    a {
       font-size: 16px;
       line-height: 24px;
     }
