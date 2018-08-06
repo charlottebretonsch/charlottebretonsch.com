@@ -3,6 +3,17 @@
 
 articles:
 
+  - title: Helping travellers to pack with Wanderlist
+    slug: wanderlist
+    description: Travelling somewhere? Don’t forget your toothbrush. Wanderlist offers pre-defined checklists to help you pack for your trips.
+    role: NA
+    team: NA
+    duration: NA
+    contentFile: wanderlist.pug
+    more:
+      - Project introduction
+      - 2 min read
+
   - title: Getting tasks done with Trello Air
     slug: trelloair
     description: Trello Air is a theme for Trello.com which reduces clutter and provides more efficient visual cues to help you get things done.
@@ -12,11 +23,11 @@ articles:
     contentFile: trelloair.pug
     more:
       - Project introduction
-      - 5 min read
+      - 2 min read
 
   - title: Making mortgages simple
     slug: trussle
-    description: The story behind of some of the design projects I led at Trussle which impacted the business, increasing conversion and satisfaction rates.
+    description: The story behind some of the design projects I led at Trussle which impacted the business, increasing conversion and satisfaction rates.
     role: NA
     team: NA
     duration: NA
