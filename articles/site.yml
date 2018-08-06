@@ -3,7 +3,7 @@
 
 articles:
 
-  - title: Helping travellers to pack with Wanderlist
+  - title: Helping travellers pack with Wanderlist
     slug: wanderlist
     description: Travelling somewhere? Don’t forget your toothbrush. Wanderlist offers pre-defined checklists to help you pack for your trips.
     role: NA
@@ -25,7 +25,7 @@ articles:
       - Project introduction
       - 2 min read
 
-  - title: Making mortgages simple
+  - title: Making mortgages simple at Trussle
     slug: trussle
     description: The story behind some of the design projects I led at Trussle which impacted the business, increasing conversion and satisfaction rates.
     role: NA
