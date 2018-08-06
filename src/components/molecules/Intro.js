@@ -52,9 +52,30 @@ const Container = styled.header`
   }
 
   @media (max-width: ${p => p.theme.responsive.limits.medium}px) {
+    padding: ${p => p.theme.spacing.mult(7)}px;
+
     aside {
+      h1 {
+        font-size: 32px;
+        line-height: 40px;
+        margin: 0 0 ${p => p.theme.spacing.mult(4)}px 0;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 36px;
+        margin: 0 0 ${p => p.theme.spacing.mult(4)}px 0;
+      }
+      h3 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 0 ${p => p.theme.spacing.mult(4)}px 0;
+      }
+      p, a {
+        font-size: 16px;
+        line-height: 24px;
+      }
       p {
-        margin: ${p => p.theme.spacing.mult(1)}px 0;
+        margin: ${p => p.theme.spacing.mult(1)}px 0 ${p => p.theme.spacing.mult(2)}px 0;
       }
 
       ul {
@@ -65,7 +86,11 @@ const Container = styled.header`
 
   @media (max-width: ${p => p.theme.responsive.limits.small}px) {
     flex-flow: column nowrap;
-    padding: ${p => p.theme.spacing.mult(3)}px;
+    padding: ${p => p.theme.spacing.mult(7)}px ${p => p.theme.spacing.mult(3)}px;
+
+    nav {
+      margin: ${p => p.theme.spacing.mult(1)}px 0;
+    }
 
     aside {
       width: 100%;

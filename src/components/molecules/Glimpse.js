@@ -42,6 +42,21 @@ const Container = styled.article`
 
   @media (max-width: ${p => p.theme.responsive.limits.medium}px) {
     margin: 0 -${p => p.theme.spacing.mult(4)}px;
+
+    h4 {
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0 0 ${p => p.theme.spacing.mult(1)}px 0;
+    }
+    p {
+      font-size: 16px !important;
+      line-height: 24px !important;
+      margin: ${p => p.theme.spacing.mult(1)}px 0 ${p => p.theme.spacing.mult(2)}px 0!important;
+    }
+    a {
+      font-size: 16px !important;
+      line-height: 24px;
+    }
   }
   @media (max-width: ${p => p.theme.responsive.limits.small}px) {
     flex-flow: column nowrap;
@@ -49,7 +64,7 @@ const Container = styled.article`
     margin: 0 -${p => p.theme.spacing.mult(1)}px;
 
     img {
-      height: ${p => p.theme.spacing.mult(32)}px;
+      height: auto;
       width: 100%;
     }
 

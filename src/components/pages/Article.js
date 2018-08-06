@@ -144,6 +144,47 @@ const Content = styled.article`
     padding: ${p => p.theme.spacing.mult(10)}px 0;
     position: relative;
     margin-top: ${p => p.theme.spacing.mult(10)}px; */
+
+    @media (max-width: ${p => p.theme.responsive.limits.medium}px) {
+      margin: ${p => p.theme.spacing.mult(7)}px 0 0 0;
+      padding: ${p => p.theme.spacing.mult(7)}px 0;
+
+      h2 {
+        font-size: 24px;
+        line-height: 36px;
+        margin: 0 0 ${p => p.theme.spacing.mult(4)}px 0;
+      }
+      h3 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 0 ${p => p.theme.spacing.mult(4)}px 0;
+      }
+      p, a {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  @media (max-width: ${p => p.theme.responsive.limits.medium}px) {
+    margin: ${p => p.theme.spacing.mult(7)}px 0;
+
+    h2 {
+      font-size: 24px;
+      line-height: 36px;
+      margin: ${p => p.theme.spacing.mult(5)}px 0 ${p => p.theme.spacing.mult(3)}px 0;
+    }
+    h3 {
+      font-size: 20px;
+      line-height: 30px;
+      margin: ${p => p.theme.spacing.mult(3)}px 0 ${p => p.theme.spacing.mult(2)}px 0;
+    }
+    p, a {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+  }
 `
 
 class Article extends PureComponent {
