@@ -3,6 +3,16 @@
 
 articles:
 
+  - title: Making mortgages simple
+    slug: trussle
+    description: The story behind of one of the design project I led at Trussle which increased the conversion rate of a specific user group by 300%.
+    role: Design strategy, information architecture, interaction design, user research
+    team: Product manager, 2 designers, 3 developers
+    duration: 3 months starting October 2017
+    contentFile: trussle.pug
+    more:
+      - 30 min presentation
+
   - title: User Research methods to kickstart your projects
     slug: userresearch
     description: Understanding your users' behaviors, needs and motivations is key to design kickass experiences.
@@ -55,7 +65,7 @@ articles:
 
   - title: Connecting travellers and locals with Welcom’
     slug: welcom
-    description: Discover Welcom’, the project I worked on for Hack4Europe, a 6 months online hackathon with more than 300 participants from 5 different countries.
+    description: Welcom' is a project done during a 6 months online hackathon with more than 300 participants from 5 different countries.
     role: Research, information architecture, interface, visual design, prototyping, front-end development, pitch
     team: Jean-Baptise, Julien, Robin, Tanguy
     duration: Dozens of nights between July 2015 and March 2016
