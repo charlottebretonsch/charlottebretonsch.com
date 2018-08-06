@@ -65,6 +65,14 @@ const Container = styled.div`
     text-decoration: none;
     text-transform: uppercase;
   }
+
+  @media (max-width: ${p => p.theme.responsive.limits.small}px) {
+    flex-flow: row wrap;
+    p {
+      width:100%;
+      padding-bottom: 6px;
+    }
+  }
 `
 
 const Title = styled.p`
