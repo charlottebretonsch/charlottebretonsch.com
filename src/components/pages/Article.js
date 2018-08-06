@@ -47,7 +47,8 @@ const Content = styled.article`
   }
 
   section > a {
-    margin: ${p => p.theme.spacing.mult(3)}px 0;
+    margin: 0 0 ${p => p.theme.spacing.mult(3)}px 0;
+    display: inline-block;
   }
 
   ul,
