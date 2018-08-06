@@ -17,7 +17,7 @@ class Home extends PureComponent {
           <p>I love crafting products, services and systems for people, with people.</p>
 
           <p>
-            My expertise lies in information architecture, interface design, user research and
+            My expertise lies in information architecture, interaction design, user research and
             design strategy – Although code and visual design come in handy when working on side
             projects, prototyping or presenting things. ;)
           </p>
