@@ -11,7 +11,7 @@ const responsive = {
     medium: spacingMult(100),
   },
   limits: {
-    medium: spacingMult(126),
+    medium: spacingMult(160),
     small: spacingMult(112),
   },
 }
