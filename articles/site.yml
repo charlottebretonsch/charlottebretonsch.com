@@ -43,9 +43,9 @@ articles:
       - Work case study
       - 10 min read
 
-  - title: Optimising developers learning habit at Enki
+  - title: Optimising developers habit at Enki
     slug: enki
-    description: Enki is a mobile app which helps developers learn something new every single day. Discover some challenges I tackled there.
+    description: Enki is a mobile app which helps developers learn something new every day. Discover some of the challenges I tackled there.
     contentFile: enki.pug
     more:
       - Work case study

@@ -37,7 +37,7 @@ include atoms/mixins.pug
 
   h3 Version 1
 
-  p In the first version, in order to go through insights, you had to swipe left or right depending on whether you learned something or already knew about it (see video below). Although users liked the swiping interaction, they were confused: 
+  p In the first version, in order to go through insights, you had to swipe left or right depending on whether you learned something or already knew about it (see video below). #[strong Although users liked the swiping interaction, they were confused]: 
 
   ul 
     li The progression dots at the top are only moving from left to right although users navigate by swiping both left and right.
@@ -49,14 +49,15 @@ include atoms/mixins.pug
   
   h3 Version 2
 
-  p To solve this issue, I suggested to keep the swiping interaction to go through insights but twist it so that it feels natural: swipe left to go to the next insight, swipe right to go to the previous one. We regrouped the actions “already knew” and “learned something” which allowed us to add a “skip” option for too complicated insights.
+  p To solve this issue, #[strong I suggested to keep the swiping interaction to go through insights but twist it so that it feels natural]: swipe left to go to the next insight, swipe right to go to the previous one. We regrouped the actions “already knew” and “learned something” which allowed us to add a “skip” option for too complicated insights.
   
   +video("https://www.youtube.com/embed/yPWhhYqnLcI?rel=0")
   
+  p I had the opportunity to test the new interaction with users at dev meetups. Both already existing users and new users understood it quickly without needing any explanations. Exciting users who did see the explanation of the new interaction were expectantly momentarily confused but got used to it within a day. #[strong This modification reduced the number of complaints by 100%] and increased the number of positive comments about our interface on both PlayStore and AppStore.
   
   h3 Version 3
 
-  p A couple of months afterwards, we took on a full redesign of the app and its architecture. I suggested to remove the feedback between insights and replace it with a practice question based on the following assessments: 
+  p A couple of months afterwards, we took on a full redesign of the app and its architecture. #[strong I suggested to remove the feedback between insights and replace it with a practice question] based on the following assessments: 
 
 
   ul
@@ -67,7 +68,7 @@ include atoms/mixins.pug
 
   +video("https://www.youtube.com/embed/Uc0ie2boWM8?rel=0")
 
-  p I tested the prototype with a couple of already existing users. They understood immediately the new interaction. They said “it feels more dynamic” and “it seems to be faster to complete a workout”. Although the first feedbacks are great, we need to wait for the quantitative data to see if this new flow is actually improving retention or not.
+  p I tested the prototype with a couple of already existing users. They understood immediately the new interaction. They said #[strong “it feels more dynamic”] and #[strong “it seems to be faster to complete a workout”]. Although the first feedbacks are great, we need to wait for the quantitative data to see if this new flow is actually improving retention or not.
 
   h2 Improving insight actions
 
@@ -75,21 +76,21 @@ include atoms/mixins.pug
 
   h3 Version 1
 
-  p In the first version, in order to bookmark an insight, users had to click on a “…” sign fixed at the bottom right of the insight which would then show multiple other signs representing the 3 actions (see video below). Although this type of interaction comes from the famous material UI design library, it is problematic for the following reasons: 
+  p In the first version, in order to bookmark an insight, users had to click on a “…” sign fixed at the bottom right of the insight which would then show multiple other signs representing the 3 actions (see video below). #[strong Although this type of interaction comes from the famous material UI design library, it is problematic for the following reasons]: 
   
   ul 
     li It distracted users from the insight content (which is the real value of Enki).
     li Users were not sure what an action would do before clicking on it. Some users would click on them just to see what it would do which altered our quantitative data analysis.
   
-    +video("https://www.youtube.com/embed/4u23YOHSBGg?rel=0")
+  +video("https://www.youtube.com/embed/4u23YOHSBGg?rel=0")
     
   h3 Version 2
   
-  p In order to solve this issue, I suggested to remove the “…” button and replace it with 3 clear buttons at the end of the workout (see video below). This solution gave users a clear understanding of what the actions would actually do.
+  p In order to solve this issue, I suggested to remove the “…” button and replace it with #[strong 3 clear buttons at the end of the workout] (see video below). This solution gave users a clear understanding of what the actions would actually do.
   
   +video("https://www.youtube.com/embed/M3ZeZu4EYmU?rel=0")
 
-  p Improving this feature increased the percentage of users using the insights actions by 42% – going from 24% to 34%. During usability tests, users also mentioned that the new feature made it very clear what each action does. 
+  p Improving this feature #[strong increased the percentage of users using the insights actions by 42%] – going from 24% to 34%. During usability tests, users also mentioned that the new feature made it very clear what each action does. 
 
   h3 Version 3
   
@@ -100,11 +101,12 @@ include atoms/mixins.pug
     li The “comment” section could be more attractive if people knew if a conversation was going on.
     li The “bookmark” section is not really about bookmarking anymore but more about digging into the information given by reading related articles which we send the user by email.
     
-  p To improve the feature, I suggested removing the colour from the background of the button to allow the user to fully focus on the content, change the “bookmark” icon to a more representative one, and add the number of comments in the “comment” icon to encourage users to join the discussion. I also suggested a more attractive and representative copy (see illustration below).
-
-  p These changes have yet to be implemented, we will know how big of an impact it will have on the actions usage once the new version will be released. In the meantime, the general feedback I collected from users is positive. Although some of them mentioned that buttons were taking a lot of space visually, they still found it more attractive than the previous version. 
+  p To improve the feature, I suggested removing the colour from the background of the button to #[strong allow the user to fully focus on the content], change the “bookmark” icon to a more representative one, and add the number of comments in the “comment” icon to encourage users to join the discussion. I also suggested a more attractive and representative copy (see illustration below).
 
   +image(require("../assets/content/enki/insightactions.png"), "Insight actions")
+
+  p These changes have yet to be implemented, we will know how big of an impact it will have on the actions usage once the new version will be released. In the meantime, #[strong the general feedback I collected from users is positive]. Although some of them mentioned that buttons were taking a lot of space visually, they still found it more attractive than the previous version. 
+
 
 // ARTICLE CONTENT DETAILS
 +details
