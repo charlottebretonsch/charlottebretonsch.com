@@ -23,8 +23,7 @@ class Home extends PureComponent {
           </p>
 
           <p>
-            When I’m not designing, I play the piano, pretend to be a ballet dancer, read love
-            stories, travel, volunteer for cool events and watch Netflix.
+            When I’m not designing, I play the piano, pretend to be a ballet dancer, speak about design, travel, volunteer for cool events and watch Netflix.
           </p>
 
           <Nav>
