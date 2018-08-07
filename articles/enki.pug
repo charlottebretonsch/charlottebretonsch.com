@@ -10,19 +10,122 @@ include atoms/mixins.pug
 
   ////
 
-  h2 Challenge
+  h2 Introduction
 
-  p Hack4Europe is a long-term online hackathon which lasted more than 6 months. Participants had to build a prototype which would fit one (or more) of the following categories: #[strong social positive, e-commerce, mobility, smart city, energy, internet of things].
+  p When I joined Enki in March 2016, the first version of the app was already released on both the AppStore and the PlayStores. Enki had 16,000 users and was renowned for its good content for expert developers. The interface was full of usability issues and the reviews on the stores stated an impressive number of bugs both technicals and visuals. I was hired to help the team grow toward a more stable and usable version of the app.
+  
+  ul
+    li Version 1 has been made by a visual designer who worked at Enki and left before I arrived.
+    li Version 2 was the latest version of Enki when I left, based on Version 1 which I improved over time.
+    li Version 3 is the future version of Enki which I redesigned to embrace our new content architecture and switch to a native iOS/Android app.
 
-  p We created Welcom’, #[strong a platform for traveller to meet locals]. We were selected among 120+ teams for the final and ended-up winning the mobility price and 1st price of the hackathon.
-
-  +image(require("../assets/content/welcom/team.png"), "Team")
+  p During my time there, we gained more than 220,000 users. Here’s a short selection of the challenges I tackled then.
 
 
+  ////
+  
+  h2 Understanding our users
+  
+  p Among other user research studies, I conducted interviews to uncover the different profile types of our users. When I joined our primary and only target was expert developers. Since then our user database had grown and we started to receive comments and requests which seemed to come from more junior developers, even complete beginners. We used the finding of interviews with beginners and junior developers to design a more inclusive product.
 
 
+  ////
+  
+  h2 Improving workout navigation
+
+  p Every day, we suggest 5 minutes workouts for our users. A workout is composed of 5 insights. An insight is a short programming lesson.
+
+  h3 Version 1
+
+  p In the first version, in order to go through insights, you had to swipe left or right depending on whether you learned something or already knew about it (see video below). Although users liked the swiping interaction, they were confused: 
+
+  ul 
+    li The progression dots at the top are only moving from left to right although users navigate by swiping both left and right.
+    li Users forgot which way to swipe in order to give the right statement and felt frustrated when they picked the unintended one because it would impact our recommendations.
+    li Users did not know which way to swipe when an insight was too complicated as they could only choose from “Learned something” or “Already knew”.
+    li Users could not go back to a previous insight which frustrated them a lot especially if they swiped by mistake before the end of the insight.
+  
+  +video("https://www.youtube.com/embed/VkZqotKLi18?rel=0")
+  
+  h3 Version 2
+
+  p To solve this issue, I suggested to keep the swiping interaction to go through insights but twist it so that it feels natural: swipe left to go to the next insight, swipe right to go to the previous one. We regrouped the actions “already knew” and “learned something” which allowed us to add a “skip” option for too complicated insights.
+  
+  +video("https://www.youtube.com/embed/yPWhhYqnLcI?rel=0")
+  
+  
+  h3 Version 3
+
+  p A couple of months afterwards, we took on a full redesign of the app and its architecture. I suggested to remove the feedback between insights and replace it with a practice question based on the following assessments: 
 
 
+  ul
+    li We recently added a practice question (“Try it out”) at the bottom of each insight (see Version 2 video above). We uncovered that people who answered the question were more likely to finish their workout and come back the next day.
+    li The feedback requested between insight was not used by our algorithm nor our content team. Furthermore, we asked a general feedback on the workout at the end.
+
+  p This new interaction (see video below) should increase our retention.
+
+  +video("https://www.youtube.com/embed/Uc0ie2boWM8?rel=0")
+
+  p I tested the prototype with a couple of already existing users. They understood immediately the new interaction. They said “it feels more dynamic” and “it seems to be faster to complete a workout”. Although the first feedbacks are great, we need to wait for the quantitative data to see if this new flow is actually improving retention or not.
+
+  h2 Improving insight actions
+
+  p Users can perform actions on each insight of a workout: share, comment and bookmark.
+
+  h3 Version 1
+
+  p In the first version, in order to bookmark an insight, users had to click on a “…” sign fixed at the bottom right of the insight which would then show multiple other signs representing the 3 actions (see video below). Although this type of interaction comes from the famous material UI design library, it is problematic for the following reasons: 
+  
+  ul 
+    li It distracted users from the insight content (which is the real value of Enki).
+    li Users were not sure what an action would do before clicking on it. Some users would click on them just to see what it would do which altered our quantitative data analysis.
+  
+    +video("https://www.youtube.com/embed/4u23YOHSBGg?rel=0")
+    
+  h3 Version 2
+  
+  p In order to solve this issue, I suggested to remove the “…” button and replace it with 3 clear buttons at the end of the workout (see video below). This solution gave users a clear understanding of what the actions would actually do.
+  
+  +video("https://www.youtube.com/embed/M3ZeZu4EYmU?rel=0")
+
+  p Improving this feature increased the percentage of users using the insights actions by 42% – going from 24% to 34%. During usability tests, users also mentioned that the new feature made it very clear what each action does. 
+
+  h3 Version 3
+  
+  p A couple of months afterwards, we collected more feedback on this feature: 
+
+  ul
+    li The actions were still taking too much attention visually because of the bright colour.
+    li The “comment” section could be more attractive if people knew if a conversation was going on.
+    li The “bookmark” section is not really about bookmarking anymore but more about digging into the information given by reading related articles which we send the user by email.
+    
+  p To improve the feature, I suggested removing the colour from the background of the button to allow the user to fully focus on the content, change the “bookmark” icon to a more representative one, and add the number of comments in the “comment” icon to encourage users to join the discussion. I also suggested a more attractive and representative copy (see illustration below).
+
+  p These changes have yet to be implemented, we will know how big of an impact it will have on the actions usage once the new version will be released. In the meantime, the general feedback I collected from users is positive. Although some of them mentioned that buttons were taking a lot of space visually, they still found it more attractive than the previous version. 
+
+  +image(require("../assets/content/enki/insightactions.png"), "Insight actions")
+
+// ARTICLE CONTENT DETAILS
++details
+
+  ol
+    li
+      h3 Team
+      ul
+        li CEO
+        li 1 Designer (me)
+        li 6 Developers
+        li 1 Growth Hacker
+
+    li
+      h3 Role
+      p Head of User Experience
+      
+    li
+      h3 Timing
+      p From March 2016 to July 2017
+      p 15 months, full-time
 
 
   // END

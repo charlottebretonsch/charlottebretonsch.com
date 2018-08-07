@@ -29,7 +29,7 @@ articles:
 
   - title: Kickstarting projects with research methods
     slug: userresearch
-    description: Understanding your users' behaviors, needs and motivations is key to design kickass experiences.
+    description: My talk about understanding users' behaviours, needs and motivations to design kickass experiences.
     contentFile: userresearch.pug
     more:
       - Talk, 60+ attendees
@@ -43,9 +43,17 @@ articles:
       - Work case study
       - 10 min read
 
+  - title: Optimising developers learning habit at Enki
+    slug: enki
+    description: Enki is a mobile app which helps developers learn something new every single day. Discover some challenges I tackled there.
+    contentFile: enki.pug
+    more:
+      - Work case study
+      - 20 min read
+
   - title: Connecting fanboys with Zenitth
     slug: zenitth
-    description: Did you know that some people are crazy in love with brands? Introducing Zenitth.
+    description: A research adventure to understand the minds and needs of people who are in love with brands.
     contentFile: zenitth.pug
     more:
       - School case study
@@ -53,7 +61,7 @@ articles:
 
   - title: Empowering night owl duos with Tchiiiin
     slug: tchiiiin
-    description: Discover Tchiiiin, a SoLoMo (social, local, mobile) iOS application for clubbers who dream of an unforgettable night.
+    description: Discover Tchiiiin, a social/local/mobile iOS application for clubbers who dream of an unforgettable night.
     contentFile: tchiiiin.pug
     more:
       - School case study
@@ -61,7 +69,7 @@ articles:
 
   - title: Disrupting sight games with Captain Sight
     slug: captainsight
-    description: 48h to create Smart Watch applications to change the everyday life of glasses wearers? Challenge accepted!
+    description: 48h to create smartwatch applications to change the everyday life of glasses wearers? Challenge accepted!
     contentFile: captainsight.pug
     more:
       - Hackathon case study
@@ -69,7 +77,7 @@ articles:
 
   - title: Connecting travellers and locals with Welcom’
     slug: welcom
-    description: Welcom' was created during a 6 months online hackathon with more than 300 participants from 5 different countries.
+    description: Welcom' is a project born from a 6 months online hackathon with more than 300 participants from 5 different countries.
     contentFile: welcom.pug
     more:
       - Hackathon case study
