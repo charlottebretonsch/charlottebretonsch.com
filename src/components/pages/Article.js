@@ -164,6 +164,20 @@ const Content = styled.article`
         line-height: 24px;
       }
     }
+    @media (max-width: ${p => p.theme.responsive.limits.small}px) {
+      ol {
+        flex-flow: row wrap !important;
+      }
+      li {
+        width: 100% !important;
+      }
+      h2 {
+        margin-bottom: ${p => p.theme.spacing.mult(2)}px !important;
+      }
+      h3 {
+        margin-top: ${p => p.theme.spacing.mult(2)}px !important;
+      }
+    }
   }
 
   @media (max-width: ${p => p.theme.responsive.limits.medium}px) {
