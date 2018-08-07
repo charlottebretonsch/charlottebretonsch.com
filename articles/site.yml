@@ -6,9 +6,6 @@ articles:
   - title: Helping travellers pack with Wanderlist
     slug: wanderlist
     description: Travelling somewhere? Don’t forget your toothbrush. Wanderlist offers pre-defined checklists to help you pack for your trips.
-    role: NA
-    team: NA
-    duration: NA
     contentFile: wanderlist.pug
     more:
       - Project introduction
@@ -17,9 +14,6 @@ articles:
   - title: Getting tasks done with Trello Air
     slug: trelloair
     description: Trello Air is a theme for Trello.com which reduces clutter and provides more efficient visual cues to help you get things done.
-    role: NA
-    team: NA
-    duration: NA
     contentFile: trelloair.pug
     more:
       - Project introduction
@@ -27,21 +21,15 @@ articles:
 
   - title: Making mortgages simple at Trussle
     slug: trussle
-    description: The story behind some of the design projects I led at Trussle which increasing conversion and satisfaction rates.
-    role: NA
-    team: NA
-    duration: NA
+    description: The story behind some of the design projects I led at Trussle which increased conversion and satisfaction rates.
     contentFile: trussle.pug
     more:
-      - Case study
+      - Work case study
       - 5 min read
 
   - title: Kickstarting projects with research methods
     slug: userresearch
     description: Understanding your users' behaviors, needs and motivations is key to design kickass experiences.
-    role: NA
-    team: NA
-    duration: NA
     contentFile: userresearch.pug
     more:
       - Talk, 60+ attendees
@@ -50,56 +38,41 @@ articles:
   - title: Hitting the ground running at Appear Here
     slug: appearhere
     description: Find out how I created an inclusive, transparent and collaborative user experience process.
-    role: NA
-    team: NA
-    duration: NA
     contentFile: appearhere.pug
     more:
-      - Case study
+      - Work case study
       - 10 min read
 
   - title: Connecting fanboys with Zenitth
     slug: zenitth
     description: Did you know that some people are crazy in love with brands? Introducing Zenitth.
-    role: NA
-    team: NA
-    duration: NA
     contentFile: zenitth.pug
     more:
-      - Case study
+      - School case study
       - 20 min read
 
   - title: Empowering night owl duos with Tchiiiin
     slug: tchiiiin
     description: Discover Tchiiiin, a SoLoMo (social, local, mobile) iOS application for clubbers who dream of an unforgettable night.
-    role: NA
-    team: NA
-    duration: NA
     contentFile: tchiiiin.pug
     more:
-      - Case study
+      - School case study
       - 15 min read
 
   - title: Disrupting sight games with Captain Sight
     slug: captainsight
     description: 48h to create Smart Watch applications to change the everyday life of glasses wearers? Challenge accepted!
-    role: NA
-    team: NA
-    duration: NA
     contentFile: captainsight.pug
     more:
-      - Case study
+      - Hackathon case study
       - 5 min read
 
   - title: Connecting travellers and locals with Welcom’
     slug: welcom
     description: Welcom' was created during a 6 months online hackathon with more than 300 participants from 5 different countries.
-    role: NA
-    team: NA
-    duration: NA
     contentFile: welcom.pug
     more:
-      - Case study
+      - Hackathon case study
       - 15 min read
 
 
