@@ -42,7 +42,11 @@ export default styled.section`
       line-height: 24px;
     }
     ${Nav} {
-      margin: ${p => p.theme.spacing.mult(4)}px 0 0 0;
+      margin: ${p => p.theme.spacing.mult(2)}px 0 0 0;
+      flex-flow: row wrap;
+    }
+    ${Nav} a {
+      margin: ${p => p.theme.spacing.mult(2)}px ${p => p.theme.spacing.mult(2)}px 0 0;
     }
 
 
