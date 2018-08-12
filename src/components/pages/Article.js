@@ -27,7 +27,7 @@ const Content = styled.article`
     font-size: 32px;
     font-weight: normal;
     line-height: 50px;
-    margin: ${p => p.theme.spacing.mult(6)}px 0 ${p => p.theme.spacing.mult(4)}px;
+    margin: ${p => p.theme.spacing.mult(7)}px 0 ${p => p.theme.spacing.mult(4)}px;
 
     &:first-child {
       margin-top: 0;
@@ -38,7 +38,7 @@ const Content = styled.article`
     font-size: 24px;
     font-weight: normal;
     line-height: 40px;
-    margin: ${p => p.theme.spacing.mult(4)}px 0 ${p => p.theme.spacing.mult(3)}px;
+    margin: ${p => p.theme.spacing.mult(5)}px 0 ${p => p.theme.spacing.mult(3)}px;
   }
 
   p {
@@ -57,14 +57,14 @@ const Content = styled.article`
     padding-left: ${p => p.theme.spacing.mult(2.5)}px;
 
     li {
-      margin: ${p => p.theme.spacing.mult(1.5)}px 0;
+      margin: ${p => p.theme.spacing.mult(3)}px 0;
     }
   }
 
   img,
   .video-wrapper {
     display: block;
-    margin: ${p => p.theme.spacing.mult(3)}px 0;
+    margin: ${p => p.theme.spacing.mult(4)}px 0;
     width: 100%;
   }
 
@@ -186,12 +186,12 @@ const Content = styled.article`
     h2 {
       font-size: 24px;
       line-height: 36px;
-      margin: ${p => p.theme.spacing.mult(5)}px 0 ${p => p.theme.spacing.mult(3)}px 0;
+      margin: ${p => p.theme.spacing.mult(6)}px 0 ${p => p.theme.spacing.mult(4)}px 0;
     }
     h3 {
       font-size: 20px;
       line-height: 30px;
-      margin: ${p => p.theme.spacing.mult(3)}px 0 ${p => p.theme.spacing.mult(2)}px 0;
+      margin: ${p => p.theme.spacing.mult(4)}px 0 ${p => p.theme.spacing.mult(3)}px 0;
     }
     li, p, a {
       font-size: 16px;
@@ -200,7 +200,10 @@ const Content = styled.article`
     ul {
       margin: ${p => p.theme.spacing.mult(2)}px 0;
     }
-
+    img,
+    .video-wrapper {
+      margin: ${p => p.theme.spacing.mult(3)}px 0;
+    }
   }
 `
 
