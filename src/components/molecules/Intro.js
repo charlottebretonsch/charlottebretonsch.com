@@ -70,7 +70,8 @@ const Container = styled.header`
         line-height: 30px;
         margin: 0 0 ${p => p.theme.spacing.mult(4)}px 0;
       }
-      p, a {
+      p,
+      a {
         font-size: 16px;
         line-height: 24px;
       }

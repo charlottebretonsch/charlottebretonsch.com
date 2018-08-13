@@ -48,8 +48,5 @@ export default styled.section`
     ${Nav} a {
       margin: ${p => p.theme.spacing.mult(2)}px ${p => p.theme.spacing.mult(2)}px 0 0;
     }
-
-
-
   }
 `

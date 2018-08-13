@@ -69,7 +69,7 @@ const Container = styled.div`
   @media (max-width: ${p => p.theme.responsive.limits.small}px) {
     flex-flow: row wrap;
     p {
-      width:100%;
+      width: 100%;
       padding-bottom: 6px;
     }
   }

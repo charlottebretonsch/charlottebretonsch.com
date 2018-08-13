@@ -51,7 +51,7 @@ const Container = styled.article`
     p {
       font-size: 16px !important;
       line-height: 24px !important;
-      margin: ${p => p.theme.spacing.mult(1)}px 0 ${p => p.theme.spacing.mult(2)}px 0!important;
+      margin: ${p => p.theme.spacing.mult(1)}px 0 ${p => p.theme.spacing.mult(2)}px 0 !important;
     }
     a {
       font-size: 16px !important;
