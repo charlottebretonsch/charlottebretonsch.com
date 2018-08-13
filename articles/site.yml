@@ -3,6 +3,14 @@
 
 articles:
 
+  - title: Compiling code effortlessly with Metamorph
+    slug: metamorph
+    description: Transform Pug and Stylus files into HTML and CSS files without opening your terminal.
+    contentFile: metamorph.pug
+    more:
+      - Project introduction
+      - 2 min read
+
   - title: Helping travellers pack with Wanderlist
     slug: wanderlist
     description: Travelling somewhere? Don’t forget your toothbrush. Wanderlist offers pre-defined checklists to help you pack for your trips.

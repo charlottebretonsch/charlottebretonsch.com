@@ -1,0 +1,80 @@
+include atoms/sections.pug
+include atoms/mixins.pug
+
+
+
+
+// ARTICLE CONTENT
++content()
+
+  ////
+
+  h2 Metamorph is live
+
+  p Go to the landing page to find out more and start using it.
+  
+  +button("https://metamorph.charlottebretonsch.com/") Metamorph landing page
+
+
+  ////
+
+  h2 The Story
+
+  p I like to code static pages but I don’t like to code in HTML and CSS, rather I prefer to use Pug and Stylus which are much more efficient – and prettier. The only problem is that Pug and Stylus files need to be compiled into HTML and CSS and to do that you either need to find a tool online and copy/paste your code every time you make a change or use the frightening terminal.
+
+  p You get it, I’m not a good friend of the terminal and I don’t like repetitive tasks! So we created Metamorph, a desktop app which does that for you. It’s simple: select the files you want to compile and that’s it. You can choose the manual mode – which is handy when debugging – or the automatic mode.
+
+
+
+
+  ////
+  
+  h2 Framer prototype
+  
+  p Before implementing the latest design, I made a prototype of the desktop app with Framer to test and refine the micro-interactions. Here’s the video of the prototype.
+  
+  +video("https://www.youtube.com/embed/AQ-9ALKF1Ls?rel=0") 
+
+  +button("https://framer.cloud/OrElC") Open Framer prototype
+
+
+
+
+  ////
+  
+  h2 Screenshots
+  
+  +image(require("../assets/content/metamorph/preview-1.png"), "Preview")
+  +image(require("../assets/content/metamorph/preview-2.png"), "Preview")
+
+
+
+
+// ARTICLE CONTENT DETAILS
++details
+
+  ol
+    li
+      h3 Team
+      ul
+        li Nathan Gaberel
+        li Me 
+    li
+      h3 Role
+      p Design of the desktop app
+      p Design and code of the landing page
+
+    li
+      h3 Timing
+
+      p Launched in January 2016
+      p Latest version launched in August 2018
+      p Ongoing
+
+
+    // END
+
+
+
+
+// END
