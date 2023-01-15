@@ -19,7 +19,6 @@ dist/*
 !dist/resume.pdf
 !dist/safari-pinned-tab.svg
 
-*.css
 *.html
 
 launch.sh

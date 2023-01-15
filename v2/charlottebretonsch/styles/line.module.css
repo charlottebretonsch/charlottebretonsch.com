@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+  width: 100vw;
+  margin: 8px 0;
+}
+
+.lineContainer {
+  position: absolute;
+  overflow: hidden;
+  height: 6px;
+}
+
+.container svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
