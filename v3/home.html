@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charlotte Breton Schreiner - Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #111111;
+    background-color: #fff;
+    line-height: 1.6;
+    cursor: url('assets/Cursor-Arrow.png'), auto;
+    position: relative;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-wrap: balance; 
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-wrap: balance;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-wrap: balance;
+}
+
+.prize-highlight,
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-wrap: balance;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+    text-wrap: balance;
+}
+
+span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+a { text-decoration: none; color: inherit; }
+
+a, button, .prize-highlight {
+    cursor: url('assets/Cursor-Pointer.png'), pointer;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+.container {
+    padding: 0 40px;
+    max-width: 1512px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF calc(100% - 9px), transparent calc(100% - 9px), transparent 100%);
+    z-index: 1000;
+    padding: 28px 40px 32px 40px;
+}
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1436px;
+    margin: 0 auto;
+    position: relative;
+}
+.logo { font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+.nav-links {
+    display: flex;
+    gap: 40px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.mobile-menu-btn {
+    display: none;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: inherit;
+    letter-spacing: 1px;
+    font-family: inherit;
+}
+
+.progress-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    overflow: hidden;
+    pointer-events: none;
+}
+.progress-bg, .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-repeat: repeat-x;
+    background-position: left center;
+}
+.progress-bg {
+    width: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='10' viewBox='0 0 800 10'%3E%3Cpath d='M0 0 L 0 5 Q 50 7, 100 5 T 200 5 T 300 5 T 400 5 T 500 5 T 600 5 T 700 5 T 800 5 L 800 0 Z' fill='%23FFFFFF'/%3E%3Cpath d='M0 5 Q 50 7, 100 5 T 200 5 T 300 5 T 400 5 T 500 5 T 600 5 T 700 5 T 800 5' fill='none' stroke='%23E0E0E0' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+.progress-bar {
+    width: 0%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='10' viewBox='0 0 800 10'%3E%3Cpath d='M0 5 Q 50 7, 100 5 T 200 5 T 300 5 T 400 5 T 500 5 T 600 5 T 700 5 T 800 5' fill='none' stroke='%23111111' stroke-width='1.5'/%3E%3C/svg%3E");
+    transition: width 0.1s ease;
+}
+
+.hero {
+    padding: 200px 0 48px;
+    text-align: center;
+}
+.hero-title {
+    margin-bottom: 40px;
+    text-wrap: balance;
+}
+.hero-title img {
+    display: inline-block;
+    max-height: 96px;
+    height: auto;
+    width: auto;
+    vertical-align: bottom;
+    margin: -10px 4px;
+    position: relative;
+    top: -9px;
+    object-fit: contain; 
+}
+.hero-subtitle {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-weight: 300;
+    line-height: 1.6;
+    text-wrap: balance;
+}
+.hero-subtitle a,
+.talks-section a,
+.awards a {
+    text-decoration: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 6'%3E%3Cpath d='M0 3 C 20 1, 30 5, 50 3' fill='none' stroke='currentColor' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    background-size: 40px 5px;
+    padding-bottom: 0px;
+}
+.hero-links,
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.work-section {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 40px; 
+    padding: 80px 0;
+    align-items: flex-start;
+    margin: 0;
+}
+.card {
+    flex-basis: 100%;
+    position: relative;
+    display: flex; 
+    border-radius: 24px;
+    min-height: 344px;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: -4px; left: -4px; right: -4px; bottom: -4px; 
+    border-radius: 28px; 
+    border: 8px solid white;
+    pointer-events: none; 
+    z-index: 10; 
+    filter: url(#hand-drawn-border);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    background-color: #F8F8F8; 
+    z-index: 0; 
+    transition: background-color 0.3s ease; 
+}
+
+.card-content,
+.card-image-wrapper {
+    position: relative; 
+    z-index: 1;
+}
+
+.card.image-left {
+    flex-direction: row-reverse;
+}
+
+.card-content {
+    padding: 40px 80px; 
+    display: flex; 
+    flex-direction: column; 
+    flex-basis: 50%;
+    justify-content: center;
+    text-align: left; 
+    align-items: flex-start; 
+}
+
+.card-title {
+    margin-bottom: 20px;
+}
+.card-description {
+    margin-bottom: 20px;
+    display: none; 
+}
+.card-description p + p {
+    margin-top: 8px;
+}
+.card-meta {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start; 
+}
+.card-meta span {
+    font-weight: 300; 
+    text-transform: uppercase; 
+}
+.card-image-wrapper {
+    flex-basis: 50%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.card:not(.image-left) .card-image-wrapper {
+    border-radius: 0 24px 24px 0;
+}
+.card.image-left .card-image-wrapper {
+    border-radius: 24px 0 0 24px;
+}
+.card-image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.speaker-video {
+    flex-grow: 1;
+    position: relative;
+    border-radius: 24px;
+}
+
+.speaker-video .video-embed-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.card-blue.active::before { background-color: #EAF2FF; }
+.card-pink.active::before { background-color: #F6E8FF; }
+.card-red.active::before { background-color: #FCE8E6; }
+.card-teal.active::before { background-color: #E3F2F1; }
+.card-orange.active::before { background-color: #FFF2E5; }
+.card-purple.active::before { background-color: #E2E2FF; }
+.card-green.active::before { background-color: #E8FBE6; }
+
+.video-card-blue.active::before { background-color: #EAF2FF; }
+.video-card-teal.active::before { background-color: #E3F2F1; }
+
+@media (min-width: 881px) {
+    .card-more {
+        display: grid;
+    }
+    .card-more .card-content,
+    .card-more .card-image-wrapper {
+        grid-area: 1 / 1;
+    }
+    .card-more .card-content {
+        z-index: 2;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .card-more .card-title {
+        margin-bottom: 0;
+    }
+    .card-more .card-image-wrapper {
+        width: 100%;
+        height: 100%;
+        border-radius: 24px;
+        overflow: hidden;
+        flex-basis: auto;
+    }
+    .card-more .card-image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.expertise-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.expertise-section h2 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.expertise-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 32px;
+}
+.expertise-item {
+    text-align: center;
+    width: 360px;
+}
+.expertise-item img {
+    height: 48px;
+    margin: 0 auto 24px;
+}
+.expertise-item h4 {
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+.expertise-item p {
+    text-align: center;
+}
+
+.talks-section,
+.awards,
+.contact-section {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-section {
+    padding-bottom: 160px;
+}
+
+footer {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.talks-content {
+    position: relative; 
+    max-width: 640px; 
+}
+
+.talks-section h2,
+.awards h2,
+.contact-section h2 {
+    margin-bottom: 40px;
+}
+
+.talks-list,
+.awards-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.talk-item h4 {
+    margin-bottom: 8px;
+}
+
+#speaker-video-anxious,
+#speaker-video-research {
+    position: absolute;
+    width: 320px;
+    min-width: 0; 
+    z-index: 1; 
+}
+
+#speaker-video-anxious {
+    top: 100px;
+    left: calc(160px - 48vw);
+    transform: rotate(-8deg);
+}
+
+#speaker-video-research {
+    bottom: 0;
+    right: calc(160px - 48vw);
+    transform: rotate(6deg);
+}
+
+@media (max-width: 880px) {
+    body.menu-open .nav-links {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #111111;
+        color: #FFFFFF;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 998;
+        padding: 0;
+        gap: 30px;
+    }
+    body.menu-open .nav-links a { font-size: 24px; }
+    body.menu-open { overflow: hidden; }
+    html { scroll-padding-top: 68px; }
+
+    .nav-links { display: none; }
+    .mobile-menu-btn { display: block; }
+
+    .talk-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .talks-content {
+        max-width: none; 
+    }
+    #speaker-video-anxious,
+    #speaker-video-research {
+        order: 3;
+        display: block;
+        position: relative;
+        width: 100%;
+        max-width: 280px;
+        left: auto; right: auto; top: auto; bottom: auto;
+        transform: none;
+        z-index: auto;
+        margin: 12px auto 0; 
+    }
+
+    .card,
+    .card.image-left { 
+        flex-direction: column-reverse; 
+    }
+
+    .card.bottom,
+    .card.bottom-left,
+    .card.bottom-right {
+        flex-direction: column; 
+    }
+
+    .card.top-left .card-image-wrapper,
+    .card.bottom-left .card-image-wrapper {
+        justify-content: flex-start;
+    }
+    .card.top-right .card-image-wrapper,
+    .card.bottom-right .card-image-wrapper {
+        justify-content: flex-end;
+    }
+
+    .card-content,
+    .card-image-wrapper {
+        flex-basis: auto; 
+        width: 100%;
+    }
+    .card .card-image-wrapper {
+        border-radius: 0; 
+    }
+    .card:not(.bottom):not(.bottom-left):not(.bottom-right) .card-image-wrapper {
+        border-radius: 24px 24px 0 0; 
+    }
+    .card.bottom .card-image-wrapper,
+    .card.bottom-left .card-image-wrapper,
+    .card.bottom-right .card-image-wrapper {
+        border-radius: 0 0 24px 24px; 
+    }
+
+    .container { padding: 0 24px; } 
+    header { padding: 20px 24px 28px 24px; } 
+
+    .hero { padding-top: 120px; }
+
+    .hero-title br,
+    .hero-subtitle br {
+        display: none;
+    }
+
+    .hero-title,
+    .hero-subtitle {
+        margin-bottom: 24px;
+    }
+
+    .card-content { align-items: center; text-align: center;  }
+    .card-meta {
+        justify-content: center;
+    }
+ 
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .talks-section { flex-direction: column; }
+    .project-page-container {
+        padding: 0 40px;
+    }
+    .project-navigation {
+        padding: 120px 0 60px 0;
+    }
+    .project-title {
+        font-size: 48px;
+    }
+    .project-full-bleed-image {
+        margin-bottom: 60px;
+    }
+
+    .hero-title {
+        padding-top: 92px; 
+        position: relative;
+    }
+    .hero-title::before {
+        content: ''; 
+        position: absolute; 
+        top: 0; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        width: 80px; 
+        height: 80px; 
+        background: url('assets/ProfilePhoto.png') no-repeat center center; 
+        background-size: contain;
+    }
+    .hero-title img {
+        display: none;
+    }
+
+    h1,
+    .hero-title {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4,
+    .prize-highlight {
+        font-size: 16px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    .card-meta span {
+        font-size: 10px;
+    }
+
+    .card:not(.bottom):not(.bottom-left):not(.bottom-right) .card-content {
+        padding: 20px 24px 56px;
+    }
+    .card.bottom .card-content, .card.bottom-left .card-content, .card.bottom-right .card-content {
+        padding: 56px 24px 20px;
+    }
+    .expertise-section h2 {
+        margin-bottom: 40px;
+    }
+    .expertise-grid {
+        gap: 40px;
+    }
+    .talks-list {
+        gap: 40px;
+    }
+    .card-image-wrapper img {
+        height: auto; 
+        object-fit: initial; 
+        width: 100%; 
+        max-height: 320px;
+    }
+
+    .work-section {
+        gap: 24px;
+    }
+
+    .hero {
+        padding-bottom: 28px;
+    }
+    .work-section, .expertise-section, .talks-section, .awards, .contact-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .contact-section {
+        padding-bottom: 80px; 
+    }
+}
+
+</style>
+</head>
+<body>
+
+<svg style="position: absolute; width: 0; height: 0; pointer-events: none;" aria-hidden="true">
+    <filter id="hand-drawn-border" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+</svg>
+
+<header>
+    <div class="nav-inner">
+        <a href="home.html" class="logo">CHARLOTTE BRETON SCHREINER</a>
+        <nav class="nav-links" id="navLinks"> 
+            <a href="#about">ABOUT</a>
+            <a href="#work">WORK</a>
+            <a href="#expertise">EXPERTISE</a>
+            <a href="#speaker">Speaker</a> 
+            <a href="#awards">AWARDS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">Menu</button>
+    </div>
+    <div class="progress-container">
+        <div class="progress-bg"></div>
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+</header>
+
+<main class="container">
+
+    <section id="about" class="hero">
+        <h1 class="hero-title">
+            Hi, I’m <img src="assets/ProfilePhoto.png" alt=""> Charlotte.<br>
+            I design products and systems<br>
+            for people, with people.
+        </h1>
+        <p class="hero-subtitle">Principal Product Designer at <a href="https://www.meta.com/" target="_blank">Meta</a>, leading Calling and Voice Messaging across <a href="https://www.messenger.com" target="_blank">Messenger</a> and <a href="https://www.facebook.com" target="_blank">Facebook</a>.</p>
+        <div class="hero-links"><a href="https://www.linkedin.com/in/charlotte-breton-schreiner/" target="_blank">LINKEDIN</a><a href="mailto:charlottebretonsch@gmail.com">EMAIL</a></div>
+    </section>
+
+    <section id="work" class="work-section">
+        
+        <div class="card card-blue top"> 
+            <div class="card-content">
+                <h3 class="card-title">Voice Messaging on Messenger</h3>
+                <div class="card-description">
+                    <p>Secured Voice Messaging investments in Messenger and led its successful redesign, ensuring users can easily create voice messages, identify voice messages they haven’t yet heard, and navigate the timeline of a voice message.</p>
+                    <p>Influenced voice messaging strategy Meta-wide, across WhatsApp, Instagram, Messenger, Facebook, AI, and Reality Labs.</p>
+                    <p>Co-designed voice messaging with Meta AI and AI voice effects.</p>
+                </div>
+                <div class="card-meta"><span>2025, 2026</span><span>META</span></div>
+            </div>
+            <div class="card-image-wrapper">
+                <picture>
+                    <source media="(max-width: 880px)" srcset="assets/Work-VoiceMessaging-mobile.png">
+                    <img src="assets/Work-VoiceMessaging.png" alt="Voice Messaging on Messenger">
+                </picture>
+            </div>
+        </div>
+        
+        <div class="card card-green image-left top"> 
+            <div class="card-content">
+                <h3 class="card-title">Calling on Messenger and Facebook</h3>
+                <div class="card-description">
+                    <p>Led design for calling, launching dozens of features including clear control states, discoverable video effects, Generative AI background effects, visible muted indicators, one-stop-shop settings, shared experiences homepage, voicemail, and more.</p>
+                    <p>Initiated several high impact features, including top performing.</p>
+                </div>
+                <div class="card-meta"><span>2024, 2025, 2026</span><span>META</span></div>
+            </div>
+            <div class="card-image-wrapper">
+                <picture>
+                    <source media="(max-width: 880px)" srcset="assets/Work-Calling-mobile.png">
+                    <img src="assets/Work-Calling.png" alt="Calling on Messenger and Facebook">
+                </picture>
+            </div>
+        </div>
+        
+        <div class="card card-pink bottom"> 
+            <div class="card-content">
+                <h3 class="card-title">UI Illustrations & Design System for Messenger</h3>
+                <div class="card-description">
+                    <p>Initiated and designed a self-serve illustration system in collaboration with the creative team to empower hundreds of designers to create their own educational and promotional illustrations, effectively scaling the creative team.</p>
+                    <p>Redesigned Messenger sheets, navigations, and banner patterns and guidelines.</p>
+                </div>
+                <div class="card-meta"><span>2023</span><span>META</span></div>
+            </div>
+            <div class="card-image-wrapper">
+                <picture>
+                    <source media="(max-width: 880px)" srcset="assets/Work-IllustrationSystem-mobile.png">
+                    <img src="assets/Work-IllustrationSystem.png" alt="In-App Communication and UI Illustration system for Messenger">
+                </picture>
+            </div>
+        </div>
+
+        <div class="card card-red image-left top">
+            <div class="card-content">
+                <h3 class="card-title">Unified Calling on Instagram, Messenger and Facebook</h3>
+                <div class="card-description">
+                    <p>Established the design system team for calling across Facebook, Messenger, and Instagram. </p>
+                    <p>Led successful redesign and alignment of calling user interface across 4 orgs and 3 products. </p>
+                    <p>Unblocked high priority initiatives in standstill for &gt;1 year in &lt;3 months by analyzing dozens of experiments, negotiating regression budgets with VP, and organizing fast-follows.</p>
+                </div>
+                <div class="card-meta"><span>2022</span><span>META</span></div>
+            </div>
+            <div class="card-image-wrapper">
+                <picture>
+                    <source media="(max-width: 880px)" srcset="assets/Work-UnifiedCalling-mobile.png">
+                    <img src="assets/Work-UnifiedCalling.png" alt="Unified Calling on Instagram, Messenger and Facebook">
+                </picture>
+            </div>
+        </div>
+
+        <div class="card card-teal bottom">
+            <div class="card-content">
+                <h3 class="card-title">Collaboration Spaces for Horizon Workrooms</h3>
+                <div class="card-description">
+                    <p>Initiated redesign of the information architecture to address usability issues and user research feedback, centering the product around meeting collaboration.</p>
+                    <p>Designed meeting experiences including calendar, scheduling, and RSVPing, and viewing of shared content in chats.</p>
+                </div>
+                <div class="card-meta"><span>2020, 2021</span><span>META</span></div>
+            </div>
+            <div class="card-image-wrapper">
+                <picture>
+                    <source media="(max-width: 880px)" srcset="assets/Work-Workrooms-mobile.png">
+                    <img src="assets/Work-Workrooms.png" alt="Collaboration Spaces for Horizon Workrooms">
+                </picture>
+            </div>
+        </div>
+
+        <div class="card card-more bottom"> 
+            <div class="card-content">
+                <h3 class="card-title">...and more!</h3>
+            </div>
+            <div class="card-image-wrapper">
+                <picture>
+                    <source media="(max-width: 880px)" srcset="assets/Work-More-mobile.png">
+                    <img src="assets/Work-More.png" alt="...and more!">
+                </picture>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="expertise" class="expertise-section">
+        <h2>Expertise</h2>
+        <div class="expertise-grid">
+            <div class="expertise-item">
+                <img src="assets/Expertise-PM.png" alt="Product Leadership Icon">
+                <h4>Product Leadership</h4>
+                <p>As a hybrid Product Manager, I own the end-to-end product lifecycle, from strategy and roadmap definition to cross-functional execution, and step-in to maintain teams' momentum.</p>
+            </div>
+            <div class="expertise-item">
+                <img src="assets/Expertise-Impact.png" alt="Impactful Initiatives Icon">
+                <h4>Impactful Initiatives</h4>
+                <p>Consistently spearhead impactful initiatives, initiating >50% of roadmaps. Track record includes exceeding team goals by 2.5x, 400% increase in adoption, and 790% increase in engagement.</p>
+            </div>
+            <div class="expertise-item">
+                <img src="assets/Expertise-System.png" alt="Design Systems Icon">
+                <h4>Design Systems</h4>
+                <p>Architect scalable design systems, delivering hundreds of Figma components used by hundreds of designers, designing net new patterns, and overseeing system governance.</p>
+            </div>
+            <div class="expertise-item">
+                <img src="assets/Expertise-Management.png" alt="People Management Icon">
+                <h4>People Management</h4>
+                <p>Player-coach, I manage contractors and interns, and oversee work from junior and senior designers across multiple orgs, on behalf of design leadership.</p>
+            </div>
+            <div class="expertise-item">
+                <img src="assets/Expertise-AI.png" alt="AI Native Icon">
+                <h4>AI Native</h4>
+                <p>AI powers my entire workflow, from synthesizing data and framing insights to prototyping concepts and deploying production code.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="speaker" class="talks-section">
+        <div class="talks-content">
+            <h2>Speaker</h2>
+            <div class="talks-list">
+                <div class="talk-item"><h4>
+                    AI Driven Product Clarity
+                </h4><p>
+                    Facebook AI Week 2026 · 1K attendees · San Francisco, USA
+                </p></div>
+                <div class="talk-item">
+                <a id="speaker-video-anxious" href="https://youtu.be/C5FfPbduvsU?si=2KUmYu9ukF8W40qc&t=11" target="_blank" class="speaker-video">
+                    <img src="assets/youtube-anxious-minds.png" alt="Video thumbnail for Designing for Anxious Minds talk">
+                </a><h4><a href="https://www.slideshare.net/secret/BP1dMQ3sJTDKLi" target="_blank">
+                    Designing for Anxious Minds
+                </a></h4><p>
+                    <a href="https://youtu.be/C5FfPbduvsU?si=2KUmYu9ukF8W40qc&t=11" target="_blank">YouTube</a> · 200+ views 
+                    </br>Facebook Tech Summit 2019 · 150 attendees · London, UK
+                    </br>Flupa UX Days 2019 · 300 attendees · Paris, France
+                    </br>UX Camp Brighton 2019 · 50 attendees · Brighton, UK
+                </p></div>
+                <div class="talk-item"><h4>
+                    Women supporting Women
+                </h4><p>
+                    Facebook Women Breakfast 2019 · 40 attendees · London, UK
+                </p></div>
+                <div class="talk-item"><h4><a href="https://www.slideshare.net/CharlotteBretonSchre/5-tips-to-validate-your-idea" target="_blank">
+                    5 Tips to Validate your Ideas
+                </a></h4><p>
+                    Start Up Weekend Prague 2019 · 100 attendees · Prague, CZ
+                </p></div>
+                <div class="talk-item"><h4><a href="https://www.slideshare.net/CharlotteBretonSchre/create-empathy-and-break-hierarchies-democratising-user-research-for-startup-and-midsized-companies" target="_blank">
+                    Create Empathy and Break Hierarchies
+                </a></h4><p>
+                    UX Camp Brighton 2018 · 60 attendees · Brighton, UK
+                </p></div>
+                <div class="talk-item">
+                <a id="speaker-video-research" href="https://youtu.be/oeSsyb-tzfo" target="_blank" class="speaker-video">
+                    <img src="assets/youtube-user-research.png" alt="Video thumbnail for User Research 101 talk">
+                </a><h4><a href="https://www.slideshare.net/CharlotteBretonSchre/ux-101-user-research-methods-to-kickstart-your-project" target="_blank">
+                    User Research 101
+                </a></h4><p>
+                    <a href="https://youtu.be/oeSsyb-tzfo" target="_blank">YouTube</a> · 70K+ views 
+                    </br>Le Wagon 2017 · 60 attendees · London, UK
+                </p></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="awards" class="awards">
+        <h2>Awards</h2>
+        <div class="awards-grid">
+            <div class="award-item"><p>2nd prize awarded by <a href="https://www.worldpay.com/" target="_blank" class="prize-highlight">World Pay</a> for “Fit & Fund” at Payments & IoT Hackathon 2016</p></div>
+            <div class="award-item"><p>1st prize awarded by <a href="https://www.eulerhermes.com/" target="_blank" class="prize-highlight">Euler Hermes</a> for “Digitom” at EHackathon 2016</p></div>
+            <div class="award-item"><p>2nd prize awarded by <a href="https://www.ingenico.com/" target="_blank" class="prize-highlight">Ingenico</a> for “Louise” at App Shop Hackathon 2015</p></div>
+            <div class="award-item"><p>1st prize & Mobility prize awarded by <a href="https://www.uber.com/" target="_blank" class="prize-highlight">Uber</a> for “Welcom” at Hack 4 Europe 2015</p></div>
+            <div class="award-item"><p>API prize awarded by <a href="https://www.here.com/" target="_blank" class="prize-highlight">Here</a> for “Calm Way” at Hack and Fly 2015</p></div>
+            <div class="award-item"><p>2nd prize awarded by <a href="https://www.essilor.com/" target="_blank" class="prize-highlight">Essilor</a> for “Captain Sight” at Hack and See 2015</p></div>
+            <div class="award-item"><p>2nd prize awarded by <a href="https://www.credit-agricole.com/" target="_blank" class="prize-highlight">Crédit Agricole</a> for “CApoly” at Game the Bank Hackathon 2015</p></div>
+            <div class="award-item"><p>1st prize awarded by <a href="https://www.cdiscount.com/" target="_blank" class="prize-highlight">Cdiscount</a> for “Boom!” at Shop Against The Clock 2014</p></div>
+            <div class="award-item"><p>2nd prize awarded by <a href="https://www.societegenerale.com/" target="_blank" class="prize-highlight">Société Générale</a> for “We Care For You” at SG Connected Hack 2014</p></div>
+            <div class="award-item"><p>3rd prize awarded by <a href="https://www.societegenerale.com/" target="_blank" class="prize-highlight">Société Générale</a> for “Sheldon” at SG Connected Hack 2014</p></div>
+            <div class="award-item"><p>1st prize awarded by <a href="https://www.acadomia.fr/" target="_blank" class="prize-highlight">Acadomia</a> for “Métamorphe” at e-Education Hackathon 2013</p></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <div class="contact-links"><a href="https://www.linkedin.com/in/charlotte-breton-schreiner/" target="_blank">LINKEDIN</a><a href="mailto:charlottebretonsch@gmail.com">EMAIL</a></div>
+    </section>
+
+</main>
+
+<script>
+    function updateScrollProgress() {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrolled = (winScroll / height) * 100;
+        document.getElementById("progressBar").style.width = Math.max(0, Math.min(100, scrolled)) + "%";
+    }
+
+    function updateActiveCard() {
+        const cards = document.querySelectorAll('.card, .video-card');
+        const viewportCenter = window.innerHeight / 2;
+        let closestCard = null;
+        let minDistance = Infinity;
+        cards.forEach(card => {
+            const rect = card.getBoundingClientRect();
+            const cardCenter = rect.top + (rect.height / 2);
+            const distance = Math.abs(viewportCenter - cardCenter);
+            if (distance < minDistance) { minDistance = distance; closestCard = card; }
+        });
+        cards.forEach(card => card.classList.remove('active'));
+        if (closestCard) closestCard.classList.add('active');
+    }
+
+    window.addEventListener('scroll', () => { updateScrollProgress(); updateActiveCard(); });
+    window.addEventListener('load', () => { updateScrollProgress(); updateActiveCard(); });
+
+    function toggleMenu() {
+        const navLinks = document.getElementById("navLinks");
+        const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+        const body = document.body;
+        navLinks.classList.toggle("active");
+        body.classList.toggle("menu-open");
+        mobileMenuBtn.textContent = navLinks.classList.contains("active") ? "Close" : "Menu";
+    }
+
+    document.querySelectorAll('#navLinks a').forEach(link => {
+        link.addEventListener('click', () => { if (document.body.classList.contains('menu-open')) toggleMenu(); });
+    });
+</script>
+<script>
+    document.querySelectorAll('.card-link').forEach(link => {
+        link.addEventListener('click', function() {
+            const cardElement = this.querySelector('.card');
+            if (cardElement) {
+                const computedStyle = window.getComputedStyle(cardElement, '::before');
+                const bgColor = computedStyle.backgroundColor;
+                localStorage.setItem('projectCardBackgroundColor', bgColor);
+            }
+        });
+    });
+</script>
+</body>
+</html>
