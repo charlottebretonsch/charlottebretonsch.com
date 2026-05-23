@@ -1,21 +1,21 @@
 version: 2
 
 jobs:
-  test:
-    working_directory: ~/cbs.com
+  test-v1:
+    working_directory: ~/cbs.com/v1
 
     docker:
       - image: node:8
 
     steps:
-      - checkout
+      - checkout:
+          path: ~/cbs.com
 
       - restore_cache:
           keys:
-            - cbs-{{ .Branch }}-{{ checksum "package.json" }}
-            - cbs-{{ .Branch }}
-            - cbs-master-{{ checksum "package.json" }}
-            - cbs-master
+            - cbs-v1-{{ .Branch }}-{{ checksum "package.json" }}
+            - cbs-v1-{{ .Branch }}
+            - cbs-v1-master
 
       - run:
           name: Install dependencies
@@ -26,47 +26,48 @@ jobs:
           command: yarn test
 
       - save_cache:
-          key: cbs-{{ .Branch }}-{{ checksum "package.json" }}
+          key: cbs-v1-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
             - ~/.yarn
-            - ~/cbs.com/node_modules
+            - ~/cbs.com/v1/node_modules
 
-  deploy:
-    working_directory: ~/cbs.com
+  test-v2:
+    working_directory: ~/cbs.com/v2
 
     docker:
-      - image: node:8
+      - image: node:18
 
     steps:
-      - checkout
+      - checkout:
+          path: ~/cbs.com
 
       - restore_cache:
           keys:
-            - cbs-{{ .Branch }}-{{ checksum "package.json" }}
-            - cbs-{{ .Branch }}
-            - cbs-master-{{ checksum "package.json" }}
-            - cbs-master
+            - cbs-v2-{{ .Branch }}-{{ checksum "package.json" }}
+            - cbs-v2-{{ .Branch }}
+            - cbs-v2-master
 
       - run:
           name: Install dependencies
           command: yarn
 
       - run:
+          name: Lint
+          command: yarn lint
+
+      - run:
           name: Build
           command: yarn build
 
-      - deploy:
-          name: Deploy
-          command: yarn deploy --token "$FIREBASE_TOKEN"
+      - save_cache:
+          key: cbs-v2-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - ~/.yarn
+            - ~/cbs.com/v2/node_modules
 
 workflows:
   version: 2
   stack:
     jobs:
-      - test
-      - deploy:
-          requires:
-            - test
-          filters:
-            branches:
-              only: master
+      - test-v1
+      - test-v2
