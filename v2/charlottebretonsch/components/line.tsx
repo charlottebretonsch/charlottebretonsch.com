@@ -38,11 +38,15 @@ function Line({ type, width }: LineProps) {
   )
 }
 
-export default function DynamicLine() {
+interface DynamicLineProps {
+  pct: number;
+}
+
+export default function DynamicLine({ pct }: DynamicLineProps) {
   return (
     <div className={styles.container}>
       <Line type="background" width={100} />
-      <Line type="fill" width={60} />
+      <Line type="fill" width={pct} />
     </div>
   )
 }

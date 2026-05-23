@@ -27,6 +27,14 @@ body {
   letter-spacing: 0.04em;
 }
 
+h1, h2, h3 {
+  line-height: 120%;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 a {
   color: inherit;
   text-decoration: none;

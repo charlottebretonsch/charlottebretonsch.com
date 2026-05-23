@@ -1,0 +1,25 @@
+.hero {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 200px 0 240px 0;
+}
+.hero h2 {
+  text-align: center;
+  font-size: 80px;
+  max-width: 1060px;
+}
+.hero nav {
+  margin-top: 40px;
+}
+.hero nav ol {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+.hero nav ol li {
+  text-transform: uppercase;
+}
+.hero nav ol li + li {
+  margin-left: 32px;
+}

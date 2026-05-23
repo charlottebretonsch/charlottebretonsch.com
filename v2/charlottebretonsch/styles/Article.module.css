@@ -1,0 +1,41 @@
+.article {
+  height: 664px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+}
+
+.article[data-reversed] {
+  flex-direction: row-reverse;
+}
+
+.article main, .article figure {
+  width: 50%;
+  flex-grow: 1;
+}
+
+.article main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 0 160px;
+}
+
+.article main h3 {
+  font-size: 56px;
+}
+
+.article main p {
+  font-weight: 400;
+  margin-top: 24px;
+}
+
+.article main p .year {
+  margin-right: 25px;
+}
+
+.article figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

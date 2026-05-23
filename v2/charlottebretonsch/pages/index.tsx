@@ -1,11 +1,10 @@
 import Head from "next/head"
 import Image from "next/image"
 import styles from "@/styles/Home.module.css"
-import { Abhaya_Libre } from "@next/font/google"
 import Signature from "@/components/signature"
-import Line from "@/components/line"
-
-const abhaya = Abhaya_Libre({ weight: "400", subsets: ["latin"] })
+import Header from "@/components/header"
+import Hero from "@/components/hero"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -17,22 +16,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.fullscreen}>
-        <header className={styles.header}>
-          <Line />
-          <h1>Charlotte Breton Schreiner</h1>
-        </header>
-        <main className={styles.main}>
-          <h2 className={abhaya.className}>Hi, I&apos;m a designer.</h2>
+        <Header />
+        <Hero title="Hi, I&apos;m a designer." className={styles.hero}>
           <nav>
             <ol>
               <li>About me</li>
               <li>Product design</li>
-              <li>Interior design</li>
+              <li>
+                <Link href="/interior">Interior design</Link>
+              </li>
               <li>Lifestyle & finances</li>
               <li>Contact</li>
             </ol>
           </nav>
-        </main>
+        </Hero>
         <Image
           src="/phone.svg"
           alt="Phone"

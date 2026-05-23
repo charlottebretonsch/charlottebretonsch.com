@@ -1,0 +1,13 @@
+.header {
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 40px 0 0;
+  font-size: 16px;
+  font-weight: normal;
+  list-style: 24px;
+}
